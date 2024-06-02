@@ -4,41 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relatórios NeuralMarket</title>
-    <!-- Inclua a biblioteca Marked.js -->
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
-    <div class="container_WDO">
-        <h1>NeuralMarket Dólar</h1>
-        <p>Relatórios com análises realizadas pelo modelo de inteligência artificial NeuralMarket para o ativo WDO.</p>
-        <div id="markdown-content-wdo">
-            <!-- O conteúdo do arquivo WDO.md será renderizado aqui -->
-        </div>
-    </div>
-
-    <div class="container_WIN">
-        <h1>NeuralMarket Índice-BR</h1>
-        <p>Relatórios com análises realizadas pelo modelo de inteligência artificial NeuralMarket para o ativo WIN.</p>
-        <div id="markdown-content-win">
-            <!-- O conteúdo do arquivo WIN.md será renderizado aqui -->
-        </div>
-    </div>
-
-    <!-- Script para carregar o conteúdo dos arquivos Markdown -->
-    <script>
-        fetch('https://raw.githubusercontent.com/JimSP/jimsp.github.io/master/neural-report_20240602_WDO%40.MD')
-            .then(response => response.text())
-            .then(markdownContent => {
-                const htmlContent = marked(markdownContent);
-                document.getElementById('markdown-content-wdo').innerHTML = htmlContent;
-            });
-
-        fetch('https://raw.githubusercontent.com/JimSP/jimsp.github.io/master/neural-report_20240602_WIN%40.MD')
-            .then(response => response.text())
-            .then(markdownContent => {
-                const htmlContent = marked(markdownContent);
-                document.getElementById('markdown-content-win').innerHTML = htmlContent;
-            });
-    </script>
+    <ul>
+        <li><a href="neural-report_20240602_WDO@.pdf">Relatório WDO 2024/06/02</a></li>
+        <li><a href="neural-report_20240602_WDO@.pdf">Relatório WIN 2024/06/02</a></li>
+    </ul>
 </body>
 </html>
