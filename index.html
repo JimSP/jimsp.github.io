@@ -3,45 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo de Renderização de Markdown</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color:#f0f0f0;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #666;
-        }
-    </style>
+    <title>Relatórios NeuralMarket</title>
+    <!-- Inclua a biblioteca Marked.js -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
     <div class="container_WDO">
         <h1>NeuralMarket Dólar</h1>
-        <p>relatórios com analises realizadas pelo modelo de inteligencia artificial NeuralMarket para o ativo WDO.</p>
+        <p>Relatórios com análises realizadas pelo modelo de inteligência artificial NeuralMarket para o ativo WDO.</p>
         <div id="markdown-content-wdo">
+            <!-- O conteúdo do arquivo WDO.md será renderizado aqui -->
         </div>
     </div>
 
     <div class="container_WIN">
-        <h1>NeuralMarket Indice-BR</h1>
-        <p>relatórios com analises realizadas pelo modelo de inteligencia artificial NeuralMarket para o ativo WIN.</p>
+        <h1>NeuralMarket Índice-BR</h1>
+        <p>Relatórios com análises realizadas pelo modelo de inteligência artificial NeuralMarket para o ativo WIN.</p>
         <div id="markdown-content-win">
+            <!-- O conteúdo do arquivo WIN.md será renderizado aqui -->
         </div>
     </div>
 
+    <!-- Script para carregar o conteúdo dos arquivos Markdown -->
     <script>
         fetch('https://raw.githubusercontent.com/JimSP/jimsp.github.io/master/neural-report_20240602_WDO%40.MD')
             .then(response => response.text())
@@ -57,8 +40,5 @@
                 document.getElementById('markdown-content-win').innerHTML = htmlContent;
             });
     </script>
-
-    <!-- Inclua a biblioteca Marked.js -->
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </body>
 </html>
