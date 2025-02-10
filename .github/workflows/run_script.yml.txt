@@ -31,6 +31,6 @@ jobs:
           git commit -m "Atualização automática via GitHub Actions [skip ci]" || echo "Nenhuma alteração para commitar"
       - name: Push para a branch
         run: |
-          git push origin main
+          git push origin master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
