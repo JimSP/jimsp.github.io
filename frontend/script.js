@@ -7,21 +7,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function loadAllReports() {
   const dash = document.getElementById("dashboard");
-  dash.innerHTML = '<div class="loading">ðŸ”„ Carregando relatÃ³rios...</div>';
+  dash.innerHTML = '<div class="loading">?? Carregando relatórios...</div>';
 
-  fetch("json/main.json")
+  fetch("frontend/json/main.json")
     .then(r => r.json())
     .then(data => {
       const paths = listAllFiles(data.reports);
       dash.innerHTML = ""; 
 
       if (paths.length === 0) {
-        dash.textContent = "Nenhum relatÃ³rio encontrado.";
+        dash.textContent = "Nenhum relatório encontrado.";
         return;
       }
 
       paths.forEach(filePath => {
-        fetch("json/" + filePath)
+        fetch("frontend/json/" + filePath)
           .then(resp => resp.json())
           .then(jsonData => {
             const card = buildCardResumo(filePath, jsonData);
@@ -34,7 +34,7 @@ function loadAllReports() {
     })
     .catch(err => {
       console.error("Erro ao carregar main.json:", err);
-      dash.textContent = "NÃ£o foi possÃ­vel carregar main.json.";
+      dash.textContent = "Não foi possível carregar main.json.";
     });
 }
 
@@ -84,7 +84,7 @@ function buildCardResumo(filePath, jsonData) {
   header.textContent = assetName;
   card.appendChild(header);
 
-  // Cria um grÃ¡fico dentro do card utilizando Chart.js
+  // Cria um gráfico dentro do card utilizando Chart.js
   const chartCanvas = document.createElement("canvas");
   chartCanvas.width = 280;
   chartCanvas.height = 100;
@@ -92,7 +92,7 @@ function buildCardResumo(filePath, jsonData) {
 
   setTimeout(() => createChart(chartCanvas, probAl, probNeu, probQue), 200);
 
-  // Ao clicar no card, abre o modal com informaÃ§Ãµes detalhadas
+  // Ao clicar no card, abre o modal com informações detalhadas
   card.addEventListener("click", () => {
     openModal(assetName, dataRelatorio, probAl, probNeu, probQue, jsonData);
   });
@@ -122,7 +122,7 @@ function createChart(canvas, probAl, probNeu, probQue) {
   });
 }
 
-// FunÃ§Ã£o para configurar o modal
+// Função para configurar o modal
 function setupModal() {
   const modal = document.createElement("div");
   modal.id = "reportModal";
@@ -130,7 +130,7 @@ function setupModal() {
   modal.innerHTML = `
     <div class="modal-content">
       <span class="close">&times;</span>
-      <h2 id="modal-title">Detalhes do RelatÃ³rio</h2>
+      <h2 id="modal-title">Detalhes do Relatório</h2>
       <table id="modal-table"></table>
     </div>
   `;
@@ -141,7 +141,7 @@ function setupModal() {
     closeModal();
   });
 
-  // Fecha o modal ao clicar fora da Ã¡rea de conteÃºdo
+  // Fecha o modal ao clicar fora da área de conteúdo
   window.addEventListener("click", (event) => {
     if (event.target === modal) {
       closeModal();
@@ -149,23 +149,23 @@ function setupModal() {
   });
 }
 
-// FunÃ§Ã£o para abrir o modal com informaÃ§Ãµes detalhadas
+// Função para abrir o modal com informações detalhadas
 function openModal(assetName, dataRelatorio, probAl, probNeu, probQue, jsonData) {
   const modal = document.getElementById("reportModal");
   if (!modal) {
-    console.error("Modal nÃ£o encontrado!");
+    console.error("Modal não encontrado!");
     return;
   }
 
-  document.getElementById("modal-title").textContent = `RelatÃ³rio de ${assetName}`;
+  document.getElementById("modal-title").textContent = `Relatório de ${assetName}`;
 
   const table = document.getElementById("modal-table");
   if (!table) {
-    console.error("Tabela nÃ£o encontrada dentro do modal!");
+    console.error("Tabela não encontrada dentro do modal!");
     return;
   }
 
-  // ConteÃºdo inicial do modal com as probabilidades do relatÃ³rio
+  // Conteúdo inicial do modal com as probabilidades do relatório
   let tableContent = `
     <tr><th>Data</th><td>${dataRelatorio}</td></tr>
     <tr><th>Alta</th><td>${probAl.toFixed(2)}%</td></tr>
@@ -173,7 +173,7 @@ function openModal(assetName, dataRelatorio, probAl, probNeu, probQue, jsonData)
     <tr><th>Queda</th><td>${probQue.toFixed(2)}%</td></tr>
   `;
 
-  // Verifica se existem informaÃ§Ãµes de gerenciamento de risco e as adiciona Ã  tabela
+  // Verifica se existem informações de gerenciamento de risco e as adiciona à tabela
   if (jsonData.gerenciamento_risco_global) {
     const gr = jsonData.gerenciamento_risco_global;
     const regime = gr.regime_global;
@@ -181,13 +181,13 @@ function openModal(assetName, dataRelatorio, probAl, probNeu, probQue, jsonData)
 
     tableContent += `
       <tr><th colspan="2" style="background-color: #333;">Gerenciamento de Risco</th></tr>
-      <tr><th>DireÃ§Ã£o Global</th><td>${regime.direcao_global}</td></tr>
+      <tr><th>Direção Global</th><td>${regime.direcao_global}</td></tr>
       <tr><th>Volatilidade Global</th><td>${regime.volatilidade_global}</td></tr>
       <tr><th>Interesse Global</th><td>${regime.interesse_global}</td></tr>
-      <tr><th>Prob. DireÃ§Ã£o Global</th><td>${(regime.prob_direcao_global * 100).toFixed(2)}%</td></tr>
-      <tr><th>AÃ§Ã£o Recomendada</th><td>${risk.recommended_action}</td></tr>
+      <tr><th>Prob. Direção Global</th><td>${(regime.prob_direcao_global * 100).toFixed(2)}%</td></tr>
+      <tr><th>Ação Recomendada</th><td>${risk.recommended_action}</td></tr>
       <tr><th>Tamanho Recomendado</th><td>${risk.recommended_size}</td></tr>
-      <tr><th>PreÃ§o de Entrada</th><td>${risk.entry_price}</td></tr>
+      <tr><th>Preço de Entrada</th><td>${risk.entry_price}</td></tr>
       <tr><th>VAR Esperado</th><td>${risk.expected_var}</td></tr>
     `;
   }
@@ -196,7 +196,7 @@ function openModal(assetName, dataRelatorio, probAl, probNeu, probQue, jsonData)
   modal.style.display = "flex";
 }
 
-// FunÃ§Ã£o para fechar o modal
+// Função para fechar o modal
 function closeModal() {
   const modal = document.getElementById("reportModal");
   if (modal) {
