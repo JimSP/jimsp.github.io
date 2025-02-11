@@ -1,0 +1,77 @@
+================================================================================
+             DVI_M - Relatório de Regime Atual para BONK/USDT (15m)             
+   ANALISANDO O REGIME ATUAL - PERSPECTIVA DE PREÇO, VOLATILIDADE E INTERESSE   
+================================================================================
+
+Regime Atual:
+
+ - Direção: Neutra
+ - Volatilidade: Baixa
+ - Interesse: Baixo
+ - Tempo: 300 minutos consecutivos
+
+Análise de Tempo no Regime (em minutos):
+
+ - Duração Média Histórica: 0.00 minutos
+ - Duração Máxima Histórica: 0 minutos
+ - Este regime já ultrapassou a média histórica de duração!
+
+Probabilidade de Direção:
+ - Neutra: 98.81%
+ - Queda: 1.19%
+ - Alta: 0.00%
+
+Probabilidade de Volatilidade:
+ - Moderada: 50.00%
+ - Baixa: 45.24%
+ - Alta: 4.76%
+
+Probabilidade de Interesse:
+ - Moderado: 40.48%
+ - Baixo: 55.95%
+ - Alto: 3.57%
+
+Previsão de persistência da direção:
+ - Passo 1:
+   -> Regime Atual: Neutra
+   -> Próximo Regime: Neutra
+   -> Probabilidade da Sequência: 35.71%
+   -> Tempo Médio Acumulado: 0.00 minutos
+
+ - Passo 2:
+   -> Regime Atual: Neutra
+   -> Próximo Regime: Neutra
+   -> Probabilidade da Sequência: 12.76%
+   -> Tempo Médio Acumulado: 0.00 minutos
+
+ - Passo 3:
+   -> Regime Atual: Neutra
+   -> Próximo Regime: Neutra
+   -> Probabilidade da Sequência: 4.56%
+   -> Tempo Médio Acumulado: 0.00 minutos
+
+ - Passo 4:
+   -> Regime Atual: Neutra
+   -> Próximo Regime: Neutra
+   -> Probabilidade da Sequência: 1.63%
+   -> Tempo Médio Acumulado: 0.00 minutos
+
+ - Passo 5:
+   -> Regime Atual: Neutra
+   -> Próximo Regime: Neutra
+   -> Probabilidade da Sequência: 0.58%
+   -> Tempo Médio Acumulado: 0.00 minutos
+
+ - Passo 6:
+   -> Regime Atual: Neutra
+   -> Próximo Regime: Neutra
+   -> Probabilidade da Sequência: 0.21%
+   -> Tempo Médio Acumulado: 0.00 minutos
+
+ - Passo 7:
+   -> Regime Atual: Neutra
+   -> Próximo Regime: Neutra
+   -> Probabilidade da Sequência: 0.07%
+   -> Tempo Médio Acumulado: 0.00 minutos
+
+A 'Probabilidade da Sequência' indica a chance de transitar pela cadeia de regimes prevista, levando em consideração as probabilidades de cada transição intermediária.

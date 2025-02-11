@@ -1,0 +1,61 @@
+{
+    "catalog": {},
+    "reports": {
+        "2025": {
+            "02": {
+                "11": {
+                    "PEPE-USDT": {
+                        "files": [
+                            "2025/02/11/PEPE-USDT/report_HMM_multitimeframe_PEPE-USDT_15m_20250211T172207.json"
+                        ]
+                    },
+                    "1000CHEEMS-USDT": {
+                        "files": [
+                            "2025/02/11/1000CHEEMS-USDT/report_HMM_multitimeframe_1000CHEEMS-USDT_15m_20250211T172220.json"
+                        ]
+                    },
+                    "BONK-USDT": {
+                        "files": [
+                            "2025/02/11/BONK-USDT/report_HMM_multitimeframe_BONK-USDT_15m_20250211T172209.json"
+                        ]
+                    },
+                    "1000SATS-USDT": {
+                        "files": [
+                            "2025/02/11/1000SATS-USDT/report_HMM_multitimeframe_1000SATS-USDT_15m_20250211T172210.json"
+                        ]
+                    },
+                    "BTTC-USDT": {
+                        "files": [
+                            "2025/02/11/BTTC-USDT/report_HMM_multitimeframe_BTTC-USDT_15m_20250211T172208.json"
+                        ]
+                    },
+                    "SHIB-FDUSD": {
+                        "files": [
+                            "2025/02/11/SHIB-FDUSD/report_HMM_multitimeframe_SHIB-FDUSD_15m_20250211T172220.json"
+                        ]
+                    },
+                    "LUNC-USDT": {
+                        "files": [
+                            "2025/02/11/LUNC-USDT/report_HMM_multitimeframe_LUNC-USDT_15m_20250211T172210.json"
+                        ]
+                    },
+                    "SHIB-USDT": {
+                        "files": [
+                            "2025/02/11/SHIB-USDT/report_HMM_multitimeframe_SHIB-USDT_15m_20250211T172208.json"
+                        ]
+                    },
+                    "PEPE-FDUSD": {
+                        "files": [
+                            "2025/02/11/PEPE-FDUSD/report_HMM_multitimeframe_PEPE-FDUSD_15m_20250211T172208.json"
+                        ]
+                    },
+                    "FLOKI-USDT": {
+                        "files": [
+                            "2025/02/11/FLOKI-USDT/report_HMM_multitimeframe_FLOKI-USDT_15m_20250211T172209.json"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}
