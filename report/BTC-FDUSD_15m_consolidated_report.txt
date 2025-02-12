@@ -4,15 +4,14 @@
 ================================================================================
 
 🔹 Sequência de Regimes Prováveis:
- - Regime Atual: Alta_Baixa_Baixo, Próximo Regime: Alta_Baixa_Baixo, Probabilidade Acumulada: 37.35%
- - Regime Atual: Alta_Baixa_Baixo, Próximo Regime: Alta_Baixa_Baixo, Probabilidade Acumulada: 13.95%
- - Regime Atual: Alta_Baixa_Baixo, Próximo Regime: Alta_Baixa_Baixo, Probabilidade Acumulada: 5.21%
- - Regime Atual: Alta_Baixa_Baixo, Próximo Regime: Alta_Baixa_Baixo, Probabilidade Acumulada: 1.95%
- - Regime Atual: Alta_Baixa_Baixo, Próximo Regime: Alta_Baixa_Baixo, Probabilidade Acumulada: 0.73%
- - Regime Atual: Alta_Baixa_Baixo, Próximo Regime: Alta_Baixa_Baixo, Probabilidade Acumulada: 0.27%
- - Regime Atual: Alta_Baixa_Baixo, Próximo Regime: Alta_Baixa_Baixo, Probabilidade Acumulada: 0.10%
- - Regime Atual: Alta_Baixa_Baixo, Próximo Regime: Alta_Baixa_Baixo, Probabilidade Acumulada: 0.04%
+ - Regime Atual: Queda_Moderada_Baixo, Próximo Regime: Queda_Baixa_Baixo, Probabilidade Acumulada: 30.00%
+ - Regime Atual: Queda_Baixa_Baixo, Próximo Regime: Queda_Baixa_Baixo, Probabilidade Acumulada: 9.82%
+ - Regime Atual: Queda_Baixa_Baixo, Próximo Regime: Queda_Baixa_Baixo, Probabilidade Acumulada: 3.21%
+ - Regime Atual: Queda_Baixa_Baixo, Próximo Regime: Queda_Baixa_Baixo, Probabilidade Acumulada: 1.05%
+ - Regime Atual: Queda_Baixa_Baixo, Próximo Regime: Queda_Baixa_Baixo, Probabilidade Acumulada: 0.34%
+ - Regime Atual: Queda_Baixa_Baixo, Próximo Regime: Queda_Baixa_Baixo, Probabilidade Acumulada: 0.11%
+ - Regime Atual: Queda_Baixa_Baixo, Próximo Regime: Queda_Baixa_Baixo, Probabilidade Acumulada: 0.04%
 
 
-🔹 Último preço: 97409.560000
+🔹 Último preço: 96526.020000
 ================================================================================
