@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo git pull
+
 # Definir a data para o commit
 DATA=$(date +"%Y-%m-%d %H:%M:%S")
 

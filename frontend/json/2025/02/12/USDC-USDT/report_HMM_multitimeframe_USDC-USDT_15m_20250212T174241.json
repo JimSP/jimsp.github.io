@@ -1,11 +1,11 @@
 {
     "relatorio_C": {
-        "data": "2025-02-12 14:57:31",
+        "data": "2025-02-12 17:42:41",
         "regime_atual": {
             "titulo_janela": "Curto Prazo",
             "direcao": "Neutra",
-            "volatilidade": "Moderada",
-            "interesse": "Baixo",
+            "volatilidade": "Alta",
+            "interesse": "Alto",
             "tempo_consecutivos": "75 minutos consecutivos"
         },
         "analise_tempo": {
@@ -15,9 +15,9 @@
         },
         "probabilidade": {
             "direcao": {
-                "Alta": "4.12%",
-                "Neutra": "92.14%",
-                "Queda": "3.74%"
+                "Neutra": "83.04%",
+                "Queda": "4.83%",
+                "Alta": "12.13%"
             },
             "volatilidade": {
                 "Moderada": "53.26%",
@@ -35,60 +35,53 @@
                 "passo": 1,
                 "regime_atual": "Neutra",
                 "proximo_regime": "Neutra",
-                "probabilidade_sequencia": "32.99%",
+                "probabilidade_sequencia": "29.83%",
                 "tempo_medio_acumulado": "0.00 minutos"
             },
             {
                 "passo": 2,
                 "regime_atual": "Neutra",
                 "proximo_regime": "Neutra",
-                "probabilidade_sequencia": "15.79%",
+                "probabilidade_sequencia": "13.04%",
                 "tempo_medio_acumulado": "0.00 minutos"
             },
             {
                 "passo": 3,
                 "regime_atual": "Neutra",
                 "proximo_regime": "Neutra",
-                "probabilidade_sequencia": "7.56%",
+                "probabilidade_sequencia": "5.70%",
                 "tempo_medio_acumulado": "0.00 minutos"
             },
             {
                 "passo": 4,
                 "regime_atual": "Neutra",
                 "proximo_regime": "Neutra",
-                "probabilidade_sequencia": "3.62%",
+                "probabilidade_sequencia": "2.49%",
                 "tempo_medio_acumulado": "0.00 minutos"
             },
             {
                 "passo": 5,
                 "regime_atual": "Neutra",
                 "proximo_regime": "Neutra",
-                "probabilidade_sequencia": "1.73%",
+                "probabilidade_sequencia": "1.09%",
                 "tempo_medio_acumulado": "0.00 minutos"
             },
             {
                 "passo": 6,
                 "regime_atual": "Neutra",
                 "proximo_regime": "Neutra",
-                "probabilidade_sequencia": "0.83%",
+                "probabilidade_sequencia": "0.48%",
                 "tempo_medio_acumulado": "0.00 minutos"
             },
             {
                 "passo": 7,
                 "regime_atual": "Neutra",
                 "proximo_regime": "Neutra",
-                "probabilidade_sequencia": "0.40%",
+                "probabilidade_sequencia": "0.21%",
                 "tempo_medio_acumulado": "0.00 minutos"
             },
             {
                 "passo": 8,
-                "regime_atual": "Neutra",
-                "proximo_regime": "Neutra",
-                "probabilidade_sequencia": "0.19%",
-                "tempo_medio_acumulado": "0.00 minutos"
-            },
-            {
-                "passo": 9,
                 "regime_atual": "Neutra",
                 "proximo_regime": "Neutra",
                 "probabilidade_sequencia": "0.09%",
@@ -97,13 +90,13 @@
         ]
     },
     "relatorio_M": {
-        "data": "2025-02-12 14:57:31",
+        "data": "2025-02-12 17:42:41",
         "regime_atual": {
             "titulo_janela": "Médio Prazo",
             "direcao": "Neutra",
-            "volatilidade": "Moderada",
-            "interesse": "Moderado",
-            "tempo_consecutivos": "0 minutos consecutivos"
+            "volatilidade": "Alta",
+            "interesse": "Alto",
+            "tempo_consecutivos": "300 minutos consecutivos"
         },
         "analise_tempo": {
             "duracao_media_historica": "0.00 minutos",
@@ -112,9 +105,9 @@
         },
         "probabilidade": {
             "direcao": {
-                "Neutra": "96.16%",
-                "Alta": "1.94%",
-                "Queda": "1.91%"
+                "Neutra": "89.25%",
+                "Queda": "5.31%",
+                "Alta": "5.44%"
             },
             "volatilidade": {
                 "Moderada": "53.26%",
@@ -132,81 +125,67 @@
                 "passo": 1,
                 "regime_atual": "Neutra",
                 "proximo_regime": "Neutra",
-                "probabilidade_sequencia": "54.25%",
+                "probabilidade_sequencia": "35.23%",
                 "tempo_medio_acumulado": "0.00 minutos"
             },
             {
                 "passo": 2,
                 "regime_atual": "Neutra",
                 "proximo_regime": "Neutra",
-                "probabilidade_sequencia": "29.43%",
+                "probabilidade_sequencia": "17.32%",
                 "tempo_medio_acumulado": "0.00 minutos"
             },
             {
                 "passo": 3,
                 "regime_atual": "Neutra",
                 "proximo_regime": "Neutra",
-                "probabilidade_sequencia": "15.96%",
+                "probabilidade_sequencia": "8.51%",
                 "tempo_medio_acumulado": "0.00 minutos"
             },
             {
                 "passo": 4,
                 "regime_atual": "Neutra",
                 "proximo_regime": "Neutra",
-                "probabilidade_sequencia": "8.66%",
+                "probabilidade_sequencia": "4.18%",
                 "tempo_medio_acumulado": "0.00 minutos"
             },
             {
                 "passo": 5,
                 "regime_atual": "Neutra",
                 "proximo_regime": "Neutra",
-                "probabilidade_sequencia": "4.70%",
+                "probabilidade_sequencia": "2.06%",
                 "tempo_medio_acumulado": "0.00 minutos"
             },
             {
                 "passo": 6,
                 "regime_atual": "Neutra",
                 "proximo_regime": "Neutra",
-                "probabilidade_sequencia": "2.55%",
+                "probabilidade_sequencia": "1.01%",
                 "tempo_medio_acumulado": "0.00 minutos"
             },
             {
                 "passo": 7,
                 "regime_atual": "Neutra",
                 "proximo_regime": "Neutra",
-                "probabilidade_sequencia": "1.38%",
+                "probabilidade_sequencia": "0.50%",
                 "tempo_medio_acumulado": "0.00 minutos"
             },
             {
                 "passo": 8,
                 "regime_atual": "Neutra",
                 "proximo_regime": "Neutra",
-                "probabilidade_sequencia": "0.75%",
+                "probabilidade_sequencia": "0.24%",
                 "tempo_medio_acumulado": "0.00 minutos"
             },
             {
                 "passo": 9,
                 "regime_atual": "Neutra",
                 "proximo_regime": "Neutra",
-                "probabilidade_sequencia": "0.41%",
-                "tempo_medio_acumulado": "0.00 minutos"
-            },
-            {
-                "passo": 10,
-                "regime_atual": "Neutra",
-                "proximo_regime": "Neutra",
-                "probabilidade_sequencia": "0.22%",
-                "tempo_medio_acumulado": "0.00 minutos"
-            },
-            {
-                "passo": 11,
-                "regime_atual": "Neutra",
-                "proximo_regime": "Neutra",
                 "probabilidade_sequencia": "0.12%",
                 "tempo_medio_acumulado": "0.00 minutos"
             },
             {
-                "passo": 12,
+                "passo": 10,
                 "regime_atual": "Neutra",
                 "proximo_regime": "Neutra",
                 "probabilidade_sequencia": "0.06%",
@@ -215,13 +194,13 @@
         ]
     },
     "relatorio_L": {
-        "data": "2025-02-12 14:57:31",
+        "data": "2025-02-12 17:42:41",
         "regime_atual": {
             "titulo_janela": "Longo Prazo",
             "direcao": "Neutra",
-            "volatilidade": "Moderada",
-            "interesse": "Moderado",
-            "tempo_consecutivos": "0 minutos consecutivos"
+            "volatilidade": "Alta",
+            "interesse": "Alto",
+            "tempo_consecutivos": "900 minutos consecutivos"
         },
         "analise_tempo": {
             "duracao_media_historica": "0.00 minutos",
@@ -230,9 +209,9 @@
         },
         "probabilidade": {
             "direcao": {
-                "Neutra": "96.85%",
-                "Alta": "1.51%",
-                "Queda": "1.64%"
+                "Neutra": "91.82%",
+                "Queda": "4.49%",
+                "Alta": "3.69%"
             },
             "volatilidade": {
                 "Moderada": "53.26%",
@@ -250,84 +229,49 @@
                 "passo": 1,
                 "regime_atual": "Neutra",
                 "proximo_regime": "Neutra",
-                "probabilidade_sequencia": "56.13%",
+                "probabilidade_sequencia": "35.94%",
                 "tempo_medio_acumulado": "0.00 minutos"
             },
             {
                 "passo": 2,
                 "regime_atual": "Neutra",
                 "proximo_regime": "Neutra",
-                "probabilidade_sequencia": "31.51%",
+                "probabilidade_sequencia": "12.92%",
                 "tempo_medio_acumulado": "0.00 minutos"
             },
             {
                 "passo": 3,
                 "regime_atual": "Neutra",
                 "proximo_regime": "Neutra",
-                "probabilidade_sequencia": "17.69%",
+                "probabilidade_sequencia": "4.64%",
                 "tempo_medio_acumulado": "0.00 minutos"
             },
             {
                 "passo": 4,
                 "regime_atual": "Neutra",
                 "proximo_regime": "Neutra",
-                "probabilidade_sequencia": "9.93%",
+                "probabilidade_sequencia": "1.67%",
                 "tempo_medio_acumulado": "0.00 minutos"
             },
             {
                 "passo": 5,
                 "regime_atual": "Neutra",
                 "proximo_regime": "Neutra",
-                "probabilidade_sequencia": "5.57%",
+                "probabilidade_sequencia": "0.60%",
                 "tempo_medio_acumulado": "0.00 minutos"
             },
             {
                 "passo": 6,
                 "regime_atual": "Neutra",
                 "proximo_regime": "Neutra",
-                "probabilidade_sequencia": "3.13%",
+                "probabilidade_sequencia": "0.22%",
                 "tempo_medio_acumulado": "0.00 minutos"
             },
             {
                 "passo": 7,
                 "regime_atual": "Neutra",
                 "proximo_regime": "Neutra",
-                "probabilidade_sequencia": "1.76%",
-                "tempo_medio_acumulado": "0.00 minutos"
-            },
-            {
-                "passo": 8,
-                "regime_atual": "Neutra",
-                "proximo_regime": "Neutra",
-                "probabilidade_sequencia": "0.99%",
-                "tempo_medio_acumulado": "0.00 minutos"
-            },
-            {
-                "passo": 9,
-                "regime_atual": "Neutra",
-                "proximo_regime": "Neutra",
-                "probabilidade_sequencia": "0.55%",
-                "tempo_medio_acumulado": "0.00 minutos"
-            },
-            {
-                "passo": 10,
-                "regime_atual": "Neutra",
-                "proximo_regime": "Neutra",
-                "probabilidade_sequencia": "0.31%",
-                "tempo_medio_acumulado": "0.00 minutos"
-            },
-            {
-                "passo": 11,
-                "regime_atual": "Neutra",
-                "proximo_regime": "Neutra",
-                "probabilidade_sequencia": "0.17%",
-                "tempo_medio_acumulado": "0.00 minutos"
-            },
-            {
-                "passo": 12,
-                "regime_atual": "Neutra",
-                "proximo_regime": "Neutra",
-                "probabilidade_sequencia": "0.10%",
+                "probabilidade_sequencia": "0.08%",
                 "tempo_medio_acumulado": "0.00 minutos"
             }
         ]
@@ -335,15 +279,15 @@
     "gerenciamento_risco_global": {
         "regime_global": {
             "direcao_global": "Neutra",
-            "volatilidade_global": "Moderada",
-            "interesse_global": "Moderado",
-            "prob_direcao_global": 0.957
+            "volatilidade_global": "Alta",
+            "interesse_global": "Alto",
+            "prob_direcao_global": 0.8929
         },
         "risk_management": {
             "recommended_action": "HOLD",
             "recommended_size": 1.0,
-            "entry_price": 2595.36,
-            "expected_var": 1.2948347972902616
+            "entry_price": 0.9999,
+            "expected_var": 1.3043478260869565
         }
     }
 }
