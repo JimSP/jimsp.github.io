@@ -10,9 +10,9 @@ from datetime import timedelta
 import json
 
 # ------------------- CONFIGURAÇÕES GLOBAIS -------------------
-TOP_VOLUME = 10
-TIMEFRAME = "15m"
-TOTAL_CANDLES = 1000
+TOP_VOLUME = 50
+TIMEFRAME = "1h"
+TOTAL_CANDLES = 10000
 THREASHIOLD_MIN = 0.20
 THREASHIOLD_MAX = 0.80
 
