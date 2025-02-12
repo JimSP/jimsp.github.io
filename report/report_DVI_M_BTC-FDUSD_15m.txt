@@ -1,0 +1,101 @@
+================================================================================
+             DVI_M - Relatório de Regime Atual para BTC/FDUSD (15m)             
+   ANALISANDO O REGIME ATUAL - PERSPECTIVA DE PREÇO, VOLATILIDADE E INTERESSE   
+================================================================================
+
+Regime Atual:
+
+ - Direção: Alta
+ - Volatilidade: Moderada
+ - Interesse: Moderado
+ - Tempo: 300 minutos consecutivos
+
+Análise de Tempo no Regime (em minutos):
+
+ - Duração Média Histórica: 0.00 minutos
+ - Duração Máxima Histórica: 0 minutos
+ - Este regime já ultrapassou a média histórica de duração!
+
+Probabilidade de Direção:
+ - Neutra: 18.59%
+ - Alta: 81.41%
+ - Queda: 0.00%
+
+Probabilidade de Volatilidade:
+ - Moderada: 72.00%
+ - Baixa: 12.24%
+ - Alta: 15.76%
+
+Probabilidade de Interesse:
+ - Moderado: 81.65%
+ - Baixo: 8.71%
+ - Alto: 9.65%
+
+Previsão de persistência da direção:
+ - Passo 1:
+   -> Regime Atual: Alta
+   -> Próximo Regime: Alta
+   -> Probabilidade da Sequência: 52.94%
+   -> Tempo Médio Acumulado: 0.00 minutos
+
+ - Passo 2:
+   -> Regime Atual: Alta
+   -> Próximo Regime: Alta
+   -> Probabilidade da Sequência: 28.03%
+   -> Tempo Médio Acumulado: 0.00 minutos
+
+ - Passo 3:
+   -> Regime Atual: Alta
+   -> Próximo Regime: Alta
+   -> Probabilidade da Sequência: 14.84%
+   -> Tempo Médio Acumulado: 0.00 minutos
+
+ - Passo 4:
+   -> Regime Atual: Alta
+   -> Próximo Regime: Alta
+   -> Probabilidade da Sequência: 7.86%
+   -> Tempo Médio Acumulado: 0.00 minutos
+
+ - Passo 5:
+   -> Regime Atual: Alta
+   -> Próximo Regime: Alta
+   -> Probabilidade da Sequência: 4.16%
+   -> Tempo Médio Acumulado: 0.00 minutos
+
+ - Passo 6:
+   -> Regime Atual: Alta
+   -> Próximo Regime: Alta
+   -> Probabilidade da Sequência: 2.20%
+   -> Tempo Médio Acumulado: 0.00 minutos
+
+ - Passo 7:
+   -> Regime Atual: Alta
+   -> Próximo Regime: Alta
+   -> Probabilidade da Sequência: 1.17%
+   -> Tempo Médio Acumulado: 0.00 minutos
+
+ - Passo 8:
+   -> Regime Atual: Alta
+   -> Próximo Regime: Alta
+   -> Probabilidade da Sequência: 0.62%
+   -> Tempo Médio Acumulado: 0.00 minutos
+
+ - Passo 9:
+   -> Regime Atual: Alta
+   -> Próximo Regime: Alta
+   -> Probabilidade da Sequência: 0.33%
+   -> Tempo Médio Acumulado: 0.00 minutos
+
+ - Passo 10:
+   -> Regime Atual: Alta
+   -> Próximo Regime: Alta
+   -> Probabilidade da Sequência: 0.17%
+   -> Tempo Médio Acumulado: 0.00 minutos
+
+ - Passo 11:
+   -> Regime Atual: Alta
+   -> Próximo Regime: Alta
+   -> Probabilidade da Sequência: 0.09%
+   -> Tempo Médio Acumulado: 0.00 minutos
+
+A 'Probabilidade da Sequência' indica a chance de transitar pela cadeia de regimes prevista, levando em consideração as probabilidades de cada transição intermediária.

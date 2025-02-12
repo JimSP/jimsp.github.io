@@ -1,0 +1,83 @@
+================================================================================
+             DVI_M - Relatório de Regime Atual para LINA/USDT (15m)             
+   ANALISANDO O REGIME ATUAL - PERSPECTIVA DE PREÇO, VOLATILIDADE E INTERESSE   
+================================================================================
+
+Regime Atual:
+
+ - Direção: Queda
+ - Volatilidade: Baixa
+ - Interesse: Baixo
+ - Tempo: 300 minutos consecutivos
+
+Análise de Tempo no Regime (em minutos):
+
+ - Duração Média Histórica: 0.00 minutos
+ - Duração Máxima Histórica: 0 minutos
+ - Este regime já ultrapassou a média histórica de duração!
+
+Probabilidade de Direção:
+ - Neutra: 40.00%
+ - Queda: 60.00%
+ - Alta: 0.00%
+
+Probabilidade de Volatilidade:
+ - Moderada: 51.43%
+ - Alta: 2.86%
+ - Baixa: 45.71%
+
+Probabilidade de Interesse:
+ - Moderado: 45.71%
+ - Alto: 0.00%
+ - Baixo: 54.29%
+
+Previsão de persistência da direção:
+ - Passo 1:
+   -> Regime Atual: Queda
+   -> Próximo Regime: Queda
+   -> Probabilidade da Sequência: 20.00%
+   -> Tempo Médio Acumulado: 0.00 minutos
+
+ - Passo 2:
+   -> Regime Atual: Queda
+   -> Próximo Regime: Queda
+   -> Probabilidade da Sequência: 8.95%
+   -> Tempo Médio Acumulado: 0.00 minutos
+
+ - Passo 3:
+   -> Regime Atual: Queda
+   -> Próximo Regime: Queda
+   -> Probabilidade da Sequência: 4.01%
+   -> Tempo Médio Acumulado: 0.00 minutos
+
+ - Passo 4:
+   -> Regime Atual: Queda
+   -> Próximo Regime: Queda
+   -> Probabilidade da Sequência: 1.79%
+   -> Tempo Médio Acumulado: 0.00 minutos
+
+ - Passo 5:
+   -> Regime Atual: Queda
+   -> Próximo Regime: Queda
+   -> Probabilidade da Sequência: 0.80%
+   -> Tempo Médio Acumulado: 0.00 minutos
+
+ - Passo 6:
+   -> Regime Atual: Queda
+   -> Próximo Regime: Queda
+   -> Probabilidade da Sequência: 0.36%
+   -> Tempo Médio Acumulado: 0.00 minutos
+
+ - Passo 7:
+   -> Regime Atual: Queda
+   -> Próximo Regime: Queda
+   -> Probabilidade da Sequência: 0.16%
+   -> Tempo Médio Acumulado: 0.00 minutos
+
+ - Passo 8:
+   -> Regime Atual: Queda
+   -> Próximo Regime: Queda
+   -> Probabilidade da Sequência: 0.07%
+   -> Tempo Médio Acumulado: 0.00 minutos
+
+A 'Probabilidade da Sequência' indica a chance de transitar pela cadeia de regimes prevista, levando em consideração as probabilidades de cada transição intermediária.

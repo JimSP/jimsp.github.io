@@ -1,0 +1,41 @@
+================================================================================
+             DVI_C - Relatório de Regime Atual para LUNC/USDT (1h)              
+   ANALISANDO O REGIME ATUAL - PERSPECTIVA DE PREÇO, VOLATILIDADE E INTERESSE   
+================================================================================
+
+Regime Atual:
+
+ - Direção: Alta
+ - Volatilidade: Baixa
+ - Interesse: Baixo
+ - Tempo: 5 minutos consecutivos
+
+Análise de Tempo no Regime (em minutos):
+
+ - Duração Média Histórica: 0.00 minutos
+ - Duração Máxima Histórica: 0 minutos
+ - Este regime já ultrapassou a média histórica de duração!
+
+Probabilidade de Direção:
+ - Neutra: 100.00%
+ - Alta: 0.00%
+ - Queda: 0.00%
+
+Probabilidade de Volatilidade:
+ - Moderada: 0.00%
+ - Alta: 0.00%
+ - Baixa: 100.00%
+
+Probabilidade de Interesse:
+ - Moderado: 100.00%
+ - Baixo: 0.00%
+ - Alto: 0.00%
+
+Previsão de persistência da direção:
+ - Passo 1:
+   -> Regime Atual: Alta
+   -> Próximo Regime: Alta
+   -> Probabilidade da Sequência: 0.00%
+   -> Tempo Médio Acumulado: 0.00 minutos
+
+A 'Probabilidade da Sequência' indica a chance de transitar pela cadeia de regimes prevista, levando em consideração as probabilidades de cada transição intermediária.

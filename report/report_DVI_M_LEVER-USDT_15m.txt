@@ -1,0 +1,89 @@
+================================================================================
+            DVI_M - Relatório de Regime Atual para LEVER/USDT (15m)             
+   ANALISANDO O REGIME ATUAL - PERSPECTIVA DE PREÇO, VOLATILIDADE E INTERESSE   
+================================================================================
+
+Regime Atual:
+
+ - Direção: Neutra
+ - Volatilidade: Moderada
+ - Interesse: Moderado
+ - Tempo: 300 minutos consecutivos
+
+Análise de Tempo no Regime (em minutos):
+
+ - Duração Média Histórica: 0.00 minutos
+ - Duração Máxima Histórica: 0 minutos
+ - Este regime já ultrapassou a média histórica de duração!
+
+Probabilidade de Direção:
+ - Neutra: 95.76%
+ - Alta: 2.18%
+ - Queda: 2.06%
+
+Probabilidade de Volatilidade:
+ - Moderada: 65.13%
+ - Alta: 16.45%
+ - Baixa: 18.42%
+
+Probabilidade de Interesse:
+ - Moderado: 68.25%
+ - Alto: 14.90%
+ - Baixo: 16.84%
+
+Previsão de persistência da direção:
+ - Passo 1:
+   -> Regime Atual: Neutra
+   -> Próximo Regime: Neutra
+   -> Probabilidade da Sequência: 45.71%
+   -> Tempo Médio Acumulado: 0.00 minutos
+
+ - Passo 2:
+   -> Regime Atual: Neutra
+   -> Próximo Regime: Neutra
+   -> Probabilidade da Sequência: 20.90%
+   -> Tempo Médio Acumulado: 0.00 minutos
+
+ - Passo 3:
+   -> Regime Atual: Neutra
+   -> Próximo Regime: Neutra
+   -> Probabilidade da Sequência: 9.55%
+   -> Tempo Médio Acumulado: 0.00 minutos
+
+ - Passo 4:
+   -> Regime Atual: Neutra
+   -> Próximo Regime: Neutra
+   -> Probabilidade da Sequência: 4.37%
+   -> Tempo Médio Acumulado: 0.00 minutos
+
+ - Passo 5:
+   -> Regime Atual: Neutra
+   -> Próximo Regime: Neutra
+   -> Probabilidade da Sequência: 2.00%
+   -> Tempo Médio Acumulado: 0.00 minutos
+
+ - Passo 6:
+   -> Regime Atual: Neutra
+   -> Próximo Regime: Neutra
+   -> Probabilidade da Sequência: 0.91%
+   -> Tempo Médio Acumulado: 0.00 minutos
+
+ - Passo 7:
+   -> Regime Atual: Neutra
+   -> Próximo Regime: Neutra
+   -> Probabilidade da Sequência: 0.42%
+   -> Tempo Médio Acumulado: 0.00 minutos
+
+ - Passo 8:
+   -> Regime Atual: Neutra
+   -> Próximo Regime: Neutra
+   -> Probabilidade da Sequência: 0.19%
+   -> Tempo Médio Acumulado: 0.00 minutos
+
+ - Passo 9:
+   -> Regime Atual: Neutra
+   -> Próximo Regime: Neutra
+   -> Probabilidade da Sequência: 0.09%
+   -> Tempo Médio Acumulado: 0.00 minutos
+
+A 'Probabilidade da Sequência' indica a chance de transitar pela cadeia de regimes prevista, levando em consideração as probabilidades de cada transição intermediária.

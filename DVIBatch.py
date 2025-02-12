@@ -11,7 +11,7 @@ import json
 
 # ------------------- CONFIGURAÇÕES GLOBAIS -------------------
 TOP_VOLUME = 50
-TIMEFRAME = "1h"
+TIMEFRAME = "15m"
 TOTAL_CANDLES = 10000
 THREASHIOLD_MIN = 0.20
 THREASHIOLD_MAX = 0.80
@@ -45,8 +45,8 @@ def get_top_symbols(limit: int = 10) -> list[str]:
     tickers = exchange.fetch_tickers()
     rows = []
     for symbol, data in tickers.items():
-        if "baseVolume" in data and data["baseVolume"] is not None:
-            rows.append([symbol, float(data["baseVolume"])])
+        if "baseVolume" in data and data["quoteVolume"] is not None:
+            rows.append([symbol, float(data["quoteVolume"])])
     df = pd.DataFrame(rows, columns=["symbol", "volume"])
     df = df[df["symbol"].str.endswith(("USDT", "USD"))]
     df = df.sort_values("volume", ascending=False).head(limit)

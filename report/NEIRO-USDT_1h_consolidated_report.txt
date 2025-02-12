@@ -1,0 +1,18 @@
+
+================================================================================
+                   RELATÓRIO OPERACIONAL DE GESTÃO DE RISCO                      
+================================================================================
+
+🔹 Sequência de Regimes Prováveis:
+ - Regime Atual: Neutra_Baixa_Baixo, Próximo Regime: Neutra_Moderada_Baixo, Probabilidade Acumulada: 100.00%
+ - Regime Atual: Neutra_Moderada_Baixo, Próximo Regime: Neutra_Moderada_Baixo, Probabilidade Acumulada: 33.33%
+ - Regime Atual: Neutra_Moderada_Baixo, Próximo Regime: Neutra_Moderada_Baixo, Probabilidade Acumulada: 11.11%
+ - Regime Atual: Neutra_Moderada_Baixo, Próximo Regime: Neutra_Moderada_Baixo, Probabilidade Acumulada: 3.70%
+ - Regime Atual: Neutra_Moderada_Baixo, Próximo Regime: Neutra_Moderada_Baixo, Probabilidade Acumulada: 1.23%
+ - Regime Atual: Neutra_Moderada_Baixo, Próximo Regime: Neutra_Moderada_Baixo, Probabilidade Acumulada: 0.41%
+ - Regime Atual: Neutra_Moderada_Baixo, Próximo Regime: Neutra_Moderada_Baixo, Probabilidade Acumulada: 0.14%
+ - Regime Atual: Neutra_Moderada_Baixo, Próximo Regime: Neutra_Moderada_Baixo, Probabilidade Acumulada: 0.05%
+
+
+🔹 Último preço: 0.000323
+================================================================================
