@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 import ccxt
 import collections
 from sklearn.preprocessing import LabelEncoder
@@ -93,28 +94,80 @@ def load_or_fetch_data(symbol: str, timeframe: str, total_candles: int) -> pd.Da
 @measure_time
 def calculate_dvi(df, window_c=5, window_m=20, window_l=60):
     def calculate_dvi_component(series, window, label):
-        direction = series['close'].diff().rolling(window).sum()
-        threshold_dir = direction.abs().quantile([THREASHIOLD_MIN, THREASHIOLD_MAX]).values
-        D = pd.cut(direction, bins=[-float('inf'), -threshold_dir[1], threshold_dir[1], float('inf')],
-                   labels=['Queda', 'Neutra', 'Alta'], right=False)
+        # 1) direction
+        direction = series['close'].fillna(method='ffill').diff().rolling(window).sum()
 
+        # Substituindo NaN por 0 caso não haja dados suficientes
+        if direction.isna().all():
+            direction = direction.fillna(0)
+
+        threshold_dir = direction.abs().quantile([THREASHIOLD_MIN, THREASHIOLD_MAX]).values
+        threshold_dir = [0 if pd.isna(x) else x for x in threshold_dir]
+        threshold_dir = sorted(threshold_dir)
+        # Ajuste se forem iguais
+        if threshold_dir[0] == threshold_dir[1]:
+            threshold_dir[1] += 1e-9
+        # Ajuste se 0 >= 1
+        if threshold_dir[0] >= threshold_dir[1]:
+            threshold_dir[1] = threshold_dir[0] + 1e-9
+
+        D = pd.cut(
+            direction,
+            bins=[-float('inf'), -threshold_dir[1], threshold_dir[1], float('inf')],
+            labels=['Queda', 'Neutra', 'Alta'],
+            right=False
+        )
+
+        # 2) volatility
         spread = series['high'] - series['low']
         volatility = spread / spread.rolling(window * 3, min_periods=1).mean()
+        # Se estiver tudo NaN, zere
+        if volatility.isna().all():
+            volatility = volatility.fillna(0)
+
         threshold_vol = volatility.quantile([THREASHIOLD_MIN, THREASHIOLD_MAX]).values
-        V = pd.cut(volatility, bins=[-float('inf'), threshold_vol[0], threshold_vol[1], float('inf')],
-                   labels=['Baixa', 'Moderada', 'Alta'], right=False)
+        threshold_vol = [0 if pd.isna(x) else x for x in threshold_vol]
+        threshold_vol = sorted(threshold_vol)
+        if threshold_vol[0] == threshold_vol[1]:
+            threshold_vol[1] += 1e-9
+        if threshold_vol[0] >= threshold_vol[1]:
+            threshold_vol[1] = threshold_vol[0] + 1e-9
 
+        V = pd.cut(
+            volatility,
+            bins=[-float('inf'), threshold_vol[0], threshold_vol[1], float('inf')],
+            labels=['Baixa', 'Moderada', 'Alta'],
+            right=False
+        )
+
+        # 3) volume anomaly
         volume_anomaly = series['volume'] / series['volume'].rolling(window * 3, min_periods=1).mean()
-        threshold_vol_anom = volume_anomaly.quantile([THREASHIOLD_MIN, THREASHIOLD_MAX]).values
-        I = pd.cut(volume_anomaly, bins=[-float('inf'), threshold_vol_anom[0], threshold_vol_anom[1], float('inf')],
-                   labels=['Baixo', 'Moderado', 'Alto'], right=False)
+        if volume_anomaly.isna().all():
+            volume_anomaly = volume_anomaly.fillna(0)
 
+        threshold_vol_anom = volume_anomaly.quantile([THREASHIOLD_MIN, THREASHIOLD_MAX]).values
+        threshold_vol_anom = [0 if pd.isna(x) else x for x in threshold_vol_anom]
+        threshold_vol_anom = sorted(threshold_vol_anom)
+        if threshold_vol_anom[0] == threshold_vol_anom[1]:
+            threshold_vol_anom[1] += 1e-9
+        if threshold_vol_anom[0] >= threshold_vol_anom[1]:
+            threshold_vol_anom[1] = threshold_vol_anom[0] + 1e-9
+
+        I = pd.cut(
+            volume_anomaly,
+            bins=[-float('inf'), threshold_vol_anom[0], threshold_vol_anom[1], float('inf')],
+            labels=['Baixo', 'Moderado', 'Alto'],
+            right=False
+        )
+
+        # Monta dataframe
         dvi_df = pd.DataFrame({
             f'D_{label}': D,
             f'V_{label}': V,
             f'I_{label}': I
         }, index=series.index)
 
+        # Ajustar categorias indefinido e forward/back fill (se quiser manter)
         for col in dvi_df.columns:
             dvi_df[col] = dvi_df[col].cat.add_categories("Indefinido")
         dvi_df = dvi_df.ffill().bfill()
