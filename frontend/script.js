@@ -5,6 +5,33 @@ document.addEventListener("DOMContentLoaded", () => {
   setupModal();
 });
 
+function parseReportDate(jsonData, filePath) {
+  // Tenta extrair a data do conteúdo JSON
+  if (jsonData.relatorio_C && jsonData.relatorio_C.data) {
+    let dataStr = jsonData.relatorio_C.data;
+    // Se o formato for "20250213T160054", converte para "2025-02-13T16:00:54"
+    if (/^\d{8}T\d{6}$/.test(dataStr)) {
+      dataStr = dataStr.replace(
+        /^(\d{4})(\d{2})(\d{2})T(\d{2})(\d{2})(\d{2})$/,
+        "$1-$2-$3T$4:$5:$6"
+      );
+    }
+    return new Date(dataStr);
+  }
+  // Se não houver data no JSON, tenta extrair do nome do arquivo
+  const regex = /(\d{8}T\d{6})/;
+  const match = filePath.match(regex);
+  if (match) {
+    let dateStr = match[1].replace(
+      /^(\d{4})(\d{2})(\d{2})T(\d{2})(\d{2})(\d{2})$/,
+      "$1-$2-$3T$4:$5:$6"
+    );
+    return new Date(dateStr);
+  }
+  // Se não encontrar nenhuma data, retorna uma data padrão
+  return new Date(0);
+}
+
 function loadAllReports() {
   const dash = document.getElementById("dashboard");
   dash.innerHTML = '<div class="loading">?? Carregando relatórios...</div>';
