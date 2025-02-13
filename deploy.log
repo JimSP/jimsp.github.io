@@ -3062,3 +3062,44 @@ Probabilidade acumulada muito baixa, encerrando.
 Probabilidade acumulada muito baixa, encerrando.
 Probabilidade acumulada muito baixa, encerrando.
 Probabilidade acumulada muito baixa, encerrando.
+Warning: commit message did not conform to UTF-8.
+You may want to amend it after fixing the message, or set the config
+variable i18n.commitEncoding to the encoding your project uses.
+[master 5485af4] Atualização automática - 2025-02-13 17:00:01
+ 41 files changed, 32603 insertions(+), 176 deletions(-)
+ create mode 100644 data/NOT-USDT_15mTOHCLV.csv
+ create mode 100644 frontend/json/2025/02/13/1000CAT-USDT/report_HMM_multitimeframe_1000CAT-USDT_15m_20250213T170056.json
+ create mode 100644 frontend/json/2025/02/13/AAVE-USDT/report_HMM_multitimeframe_AAVE-USDT_15m_20250213T170059.json
+ create mode 100644 frontend/json/2025/02/13/ADA-USDT/report_HMM_multitimeframe_ADA-USDT_15m_20250213T170038.json
+ create mode 100644 frontend/json/2025/02/13/AIXBT-USDT/report_HMM_multitimeframe_AIXBT-USDT_15m_20250213T170100.json
+ create mode 100644 frontend/json/2025/02/13/APT-USDT/report_HMM_multitimeframe_APT-USDT_15m_20250213T170051.json
+ create mode 100644 frontend/json/2025/02/13/AVAX-USDT/report_HMM_multitimeframe_AVAX-USDT_15m_20250213T170054.json
+ create mode 100644 frontend/json/2025/02/13/BAKE-USDT/report_HMM_multitimeframe_BAKE-USDT_15m_20250213T170033.json
+ create mode 100644 frontend/json/2025/02/13/BERA-USDT/report_HMM_multitimeframe_BERA-USDT_15m_20250213T170100.json
+ create mode 100644 frontend/json/2025/02/13/BNX-USDT/report_HMM_multitimeframe_BNX-USDT_15m_20250213T170030.json
+ create mode 100644 frontend/json/2025/02/13/DOGE-FDUSD/report_HMM_multitimeframe_DOGE-FDUSD_15m_20250213T170035.json
+ create mode 100644 frontend/json/2025/02/13/DOT-USDT/report_HMM_multitimeframe_DOT-USDT_15m_20250213T170057.json
+ create mode 100644 frontend/json/2025/02/13/ENA-USDT/report_HMM_multitimeframe_ENA-USDT_15m_20250213T170040.json
+ create mode 100644 frontend/json/2025/02/13/FLOKI-USDT/report_HMM_multitimeframe_FLOKI-USDT_15m_20250213T170202.json
+ create mode 100644 frontend/json/2025/02/13/HBAR-USDT/report_HMM_multitimeframe_HBAR-USDT_15m_20250213T170048.json
+ create mode 100644 frontend/json/2025/02/13/LAYER-USDT/report_HMM_multitimeframe_LAYER-USDT_15m_20250213T170041.json
+ create mode 100644 frontend/json/2025/02/13/LDO-USDT/report_HMM_multitimeframe_LDO-USDT_15m_20250213T170046.json
+ create mode 100644 frontend/json/2025/02/13/LINK-USDT/report_HMM_multitimeframe_LINK-USDT_15m_20250213T170050.json
+ create mode 100644 frontend/json/2025/02/13/LTC-USDT/report_HMM_multitimeframe_LTC-USDT_15m_20250213T170032.json
+ create mode 100644 frontend/json/2025/02/13/NEAR-USDT/report_HMM_multitimeframe_NEAR-USDT_15m_20250213T170201.json
+ create mode 100644 frontend/json/2025/02/13/NOT-USDT/report_HMM_multitimeframe_NOT-USDT_15m_20250213T170159.json
+ create mode 100644 frontend/json/2025/02/13/OM-USDT/report_HMM_multitimeframe_OM-USDT_15m_20250213T170044.json
+ create mode 100644 frontend/json/2025/02/13/PENGU-USDT/report_HMM_multitimeframe_PENGU-USDT_15m_20250213T170055.json
+ create mode 100644 frontend/json/2025/02/13/PEPE-USDT/report_HMM_multitimeframe_PEPE-USDT_15m_20250213T170031.json
+ create mode 100644 frontend/json/2025/02/13/RUNE-USDT/report_HMM_multitimeframe_RUNE-USDT_15m_20250213T170042.json
+ create mode 100644 frontend/json/2025/02/13/S-USDT/report_HMM_multitimeframe_S-USDT_15m_20250213T170043.json
+ create mode 100644 frontend/json/2025/02/13/SHIB-USDT/report_HMM_multitimeframe_SHIB-USDT_15m_20250213T170053.json
+ create mode 100644 frontend/json/2025/02/13/TAO-USDT/report_HMM_multitimeframe_TAO-USDT_15m_20250213T170049.json
+ create mode 100644 frontend/json/2025/02/13/THE-USDT/report_HMM_multitimeframe_THE-USDT_15m_20250213T170034.json
+ create mode 100644 frontend/json/2025/02/13/TRX-USDT/report_HMM_multitimeframe_TRX-USDT_15m_20250213T170039.json
+ create mode 100644 frontend/json/2025/02/13/WIF-USDT/report_HMM_multitimeframe_WIF-USDT_15m_20250213T170045.json
+ create mode 100644 frontend/json/2025/02/13/WLD-USDT/report_HMM_multitimeframe_WLD-USDT_15m_20250213T170200.json
+ create mode 100644 frontend/json/2025/02/13/XRP-FDUSD/report_HMM_multitimeframe_XRP-FDUSD_15m_20250213T170037.json
+ create mode 100644 frontend/json/2025/02/13/ZEN-USDT/report_HMM_multitimeframe_ZEN-USDT_15m_20250213T170058.json
+To https://github.com/JimSP/jimsp.github.io.git
+   d7b60ee..5485af4  master -> master

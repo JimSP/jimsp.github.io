@@ -76,19 +76,88 @@ def fetch_ohlcv_data_chunks(symbol: str, timeframe: str, total_candles: int) -> 
     df.set_index("timestamp", inplace=True)
     return df.iloc[-total_candles:]
 
-@measure_time
 def load_or_fetch_data(symbol: str, timeframe: str, total_candles: int) -> pd.DataFrame:
+    """
+    Lê o CSV se existir e faz atualização incremental na Binance, ou
+    cria do zero se não existir.
+    """
     filename = f"data/{symbol.replace('/', '-')}_{timeframe}TOHCLV.csv"
+    
     if os.path.exists(filename):
         logger.info(f"Arquivo {filename} encontrado. Carregando dados do CSV ...")
-        df = pd.read_csv(filename)
-        df["timestamp"] = pd.to_datetime(df["timestamp"])
-        df.set_index("timestamp", inplace=True)
+        df_local = pd.read_csv(filename, parse_dates=["timestamp"])
+        df_local.set_index("timestamp", inplace=True)
+        
+        # Pega o último timestamp local
+        last_local_ts = df_local.index.max()
+        logger.info(f"Último timestamp local: {last_local_ts}")
+        
+        # Converte para milissegundos (padrão da ccxt)
+        since = int(last_local_ts.timestamp() * 1000) + 1
+        
+        # Busca só candles após esse último timestamp
+        df_new = fetch_ohlcv_incremental(symbol, timeframe, since, total_candles)
+        
+        if not df_new.empty:
+            # Concatena, remove possíveis duplicatas e ordena por data
+            df_concat = pd.concat([df_local, df_new])
+            df_concat = df_concat[~df_concat.index.duplicated(keep="last")]
+            df_concat = df_concat.sort_index()
+            
+            # Corta se quiser limitar o total de candles em disco
+            # Exemplo: manter somente os últimos 'TOTAL_CANDLES' candles
+            if len(df_concat) > total_candles:
+                df_concat = df_concat.iloc[-total_candles:]
+            
+            # Salva novamente em CSV
+            df_concat.to_csv(filename, index=True)
+            logger.info(f"Atualização incremental realizada e salva em {filename}.")
+            return df_concat
+        else:
+            logger.info("Nenhum dado novo retornado da API. Mantendo CSV local.")
+            return df_local
+        
     else:
-        logger.info(f"Arquivo {filename} nÃ£o encontrado. Consultando a API ...")
+        logger.info(f"Arquivo {filename} não encontrado. Consultando a API ...")
+        # Se não existir CSV, baixa tudo de uma vez
         df = fetch_ohlcv_data_chunks(symbol, timeframe, total_candles)
         df.to_csv(filename, index=False)
         logger.info(f"Dados salvos em {filename}.")
+        # Recarrega já em formato com índice
+        df = pd.read_csv(filename, parse_dates=["timestamp"])
+        df.set_index("timestamp", inplace=True)
+        return df
+
+def fetch_ohlcv_incremental(symbol: str, timeframe: str, since: int, total_candles: int) -> pd.DataFrame:
+    """
+    Busca dados OHLCV a partir de 'since' (em ms), retornando até 'total_candles'.
+    Usa a API ccxt.binance() para obter incrementos de candles.
+    """
+    exchange = ccxt.binance()
+    all_ohlcv = []
+    # Cada chamada retorna no máximo 1000 candles, então repetimos se necessário
+    while True:
+        ohlcv = exchange.fetch_ohlcv(symbol, timeframe, since=since, limit=1000)
+        if not ohlcv:
+            break
+        all_ohlcv.extend(ohlcv)
+        
+        # Atualiza o 'since' para continuar de onde parou
+        since = ohlcv[-1][0] + 1
+        
+        # Opcional: se já baixou total_candles, parar
+        if len(all_ohlcv) >= total_candles:
+            break
+        
+        # Evitar rate limit
+        time.sleep(1)
+    
+    if not all_ohlcv:
+        return pd.DataFrame()
+    
+    df = pd.DataFrame(all_ohlcv, columns=["timestamp", "open", "high", "low", "close", "volume"])
+    df["timestamp"] = pd.to_datetime(df["timestamp"], unit="ms")
+    df.set_index("timestamp", inplace=True)
     return df
 
 # ------------------- CALCULA DVI (C, M, L) -------------------
