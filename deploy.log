@@ -3103,3 +3103,8 @@ variable i18n.commitEncoding to the encoding your project uses.
  create mode 100644 frontend/json/2025/02/13/ZEN-USDT/report_HMM_multitimeframe_ZEN-USDT_15m_20250213T170058.json
 To https://github.com/JimSP/jimsp.github.io.git
    d7b60ee..5485af4  master -> master
+Already up to date.
+  File "/opt/jimsp.github.io/DVIBatch.py", line 80
+    """
+    ^^^
+SyntaxError: (unicode error) 'utf-8' codec can't decode byte 0xea in position 6: invalid continuation byte
