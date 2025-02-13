@@ -4,16 +4,13 @@
 ================================================================================
 
 🔹 Sequência de Regimes Prováveis:
- - Regime Atual: Neutra_Moderada_Baixo, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 34.64%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 16.62%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 7.97%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 3.82%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 1.83%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 0.88%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 0.42%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 0.20%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 0.10%
+ - Regime Atual: Queda_Baixa_Baixo, Próximo Regime: Queda_Baixa_Baixo, Probabilidade Acumulada: 30.00%
+ - Regime Atual: Queda_Baixa_Baixo, Próximo Regime: Queda_Baixa_Baixo, Probabilidade Acumulada: 9.00%
+ - Regime Atual: Queda_Baixa_Baixo, Próximo Regime: Queda_Baixa_Baixo, Probabilidade Acumulada: 2.70%
+ - Regime Atual: Queda_Baixa_Baixo, Próximo Regime: Queda_Baixa_Baixo, Probabilidade Acumulada: 0.81%
+ - Regime Atual: Queda_Baixa_Baixo, Próximo Regime: Queda_Baixa_Baixo, Probabilidade Acumulada: 0.24%
+ - Regime Atual: Queda_Baixa_Baixo, Próximo Regime: Queda_Baixa_Baixo, Probabilidade Acumulada: 0.07%
 
 
-🔹 Último preço: 0.913200
+🔹 Último preço: 0.905800
 ================================================================================

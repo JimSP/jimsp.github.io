@@ -4,17 +4,13 @@
 ================================================================================
 
 🔹 Sequência de Regimes Prováveis:
- - Regime Atual: Queda_Moderada_Moderado, Próximo Regime: Queda_Moderada_Moderado, Probabilidade Acumulada: 48.30%
- - Regime Atual: Queda_Moderada_Moderado, Próximo Regime: Queda_Moderada_Moderado, Probabilidade Acumulada: 23.32%
- - Regime Atual: Queda_Moderada_Moderado, Próximo Regime: Queda_Moderada_Moderado, Probabilidade Acumulada: 11.26%
- - Regime Atual: Queda_Moderada_Moderado, Próximo Regime: Queda_Moderada_Moderado, Probabilidade Acumulada: 5.44%
- - Regime Atual: Queda_Moderada_Moderado, Próximo Regime: Queda_Moderada_Moderado, Probabilidade Acumulada: 2.63%
- - Regime Atual: Queda_Moderada_Moderado, Próximo Regime: Queda_Moderada_Moderado, Probabilidade Acumulada: 1.27%
- - Regime Atual: Queda_Moderada_Moderado, Próximo Regime: Queda_Moderada_Moderado, Probabilidade Acumulada: 0.61%
- - Regime Atual: Queda_Moderada_Moderado, Próximo Regime: Queda_Moderada_Moderado, Probabilidade Acumulada: 0.30%
- - Regime Atual: Queda_Moderada_Moderado, Próximo Regime: Queda_Moderada_Moderado, Probabilidade Acumulada: 0.14%
- - Regime Atual: Queda_Moderada_Moderado, Próximo Regime: Queda_Moderada_Moderado, Probabilidade Acumulada: 0.07%
+ - Regime Atual: Neutra_Baixa_Baixo, Próximo Regime: Neutra_Baixa_Baixo, Probabilidade Acumulada: 31.56%
+ - Regime Atual: Neutra_Baixa_Baixo, Próximo Regime: Neutra_Baixa_Baixo, Probabilidade Acumulada: 9.96%
+ - Regime Atual: Neutra_Baixa_Baixo, Próximo Regime: Neutra_Baixa_Baixo, Probabilidade Acumulada: 3.14%
+ - Regime Atual: Neutra_Baixa_Baixo, Próximo Regime: Neutra_Baixa_Baixo, Probabilidade Acumulada: 0.99%
+ - Regime Atual: Neutra_Baixa_Baixo, Próximo Regime: Neutra_Baixa_Baixo, Probabilidade Acumulada: 0.31%
+ - Regime Atual: Neutra_Baixa_Baixo, Próximo Regime: Neutra_Baixa_Baixo, Probabilidade Acumulada: 0.10%
 
 
-🔹 Último preço: 252.240000
+🔹 Último preço: 251.220000
 ================================================================================

@@ -8,7 +8,7 @@ Regime Atual:
  - Direção: Neutra
  - Volatilidade: Moderada
  - Interesse: Moderado
- - Tempo: 300 minutos consecutivos
+ - Tempo: 600 minutos consecutivos
 
 Análise de Tempo no Regime (em minutos):
 
@@ -17,49 +17,49 @@ Análise de Tempo no Regime (em minutos):
  - Este regime já ultrapassou a média histórica de duração!
 
 Probabilidade de Direção:
- - Neutra: 95.65%
+ - Neutra: 95.62%
  - Queda: 2.48%
- - Alta: 1.87%
+ - Alta: 1.90%
 
 Probabilidade de Volatilidade:
- - Moderada: 64.89%
- - Baixa: 18.60%
- - Alta: 16.51%
+ - Moderada: 64.90%
+ - Alta: 16.53%
+ - Baixa: 18.57%
 
 Probabilidade de Interesse:
  - Moderado: 70.78%
- - Baixo: 15.34%
- - Alto: 13.89%
+ - Alto: 13.88%
+ - Baixo: 15.33%
 
 Previsão de persistência da direção:
  - Passo 1:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 49.86%
+   -> Probabilidade da Sequência: 49.90%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 2:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 24.86%
+   -> Probabilidade da Sequência: 24.90%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 3:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 12.40%
+   -> Probabilidade da Sequência: 12.43%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 4:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 6.18%
+   -> Probabilidade da Sequência: 6.20%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 5:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 3.08%
+   -> Probabilidade da Sequência: 3.09%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 6:
@@ -89,7 +89,7 @@ Previsão de persistência da direção:
  - Passo 10:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 0.09%
+   -> Probabilidade da Sequência: 0.10%
    -> Tempo Médio Acumulado: 0.00 minutos
 
 A 'Probabilidade da Sequência' indica a chance de transitar pela cadeia de regimes prevista, levando em consideração as probabilidades de cada transição intermediária.

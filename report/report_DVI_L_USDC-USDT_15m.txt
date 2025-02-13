@@ -22,44 +22,44 @@ Probabilidade de Direção:
  - Queda: 1.11%
 
 Probabilidade de Volatilidade:
- - Moderada: 84.91%
- - Alta: 9.26%
- - Baixa: 5.84%
+ - Moderada: 84.92%
+ - Alta: 9.25%
+ - Baixa: 5.83%
 
 Probabilidade de Interesse:
- - Moderado: 47.99%
+ - Moderado: 48.04%
+ - Baixo: 47.84%
  - Alto: 4.12%
- - Baixo: 47.89%
 
 Previsão de persistência da direção:
  - Passo 1:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 42.76%
+   -> Probabilidade da Sequência: 42.71%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 2:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 18.28%
+   -> Probabilidade da Sequência: 18.24%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 3:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 7.82%
+   -> Probabilidade da Sequência: 7.79%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 4:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 3.34%
+   -> Probabilidade da Sequência: 3.33%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 5:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 1.43%
+   -> Probabilidade da Sequência: 1.42%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 6:

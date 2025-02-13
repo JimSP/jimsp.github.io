@@ -17,49 +17,49 @@ Análise de Tempo no Regime (em minutos):
  - Este regime já ultrapassou a média histórica de duração!
 
 Probabilidade de Direção:
- - Alta: 0.20%
- - Neutra: 98.61%
- - Queda: 1.19%
+ - Alta: 0.39%
+ - Neutra: 98.25%
+ - Queda: 1.36%
 
 Probabilidade de Volatilidade:
- - Moderada: 51.39%
- - Alta: 3.97%
- - Baixa: 44.64%
+ - Moderada: 50.87%
+ - Alta: 3.69%
+ - Baixa: 45.44%
 
 Probabilidade de Interesse:
- - Moderado: 37.90%
- - Alto: 2.18%
- - Baixo: 59.92%
+ - Moderado: 38.06%
+ - Alto: 2.14%
+ - Baixo: 59.81%
 
 Previsão de persistência da direção:
  - Passo 1:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 36.51%
+   -> Probabilidade da Sequência: 36.70%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 2:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 13.33%
+   -> Probabilidade da Sequência: 13.47%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 3:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 4.87%
+   -> Probabilidade da Sequência: 4.94%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 4:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 1.78%
+   -> Probabilidade da Sequência: 1.81%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 5:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 0.65%
+   -> Probabilidade da Sequência: 0.67%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 6:

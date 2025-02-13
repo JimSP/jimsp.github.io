@@ -23,8 +23,8 @@ Probabilidade de Direção:
 
 Probabilidade de Volatilidade:
  - Moderada: 37.50%
- - Alta: 22.50%
  - Baixa: 40.00%
+ - Alta: 22.50%
 
 Probabilidade de Interesse:
  - Moderado: 40.00%

@@ -5,9 +5,9 @@
 
 Regime Atual:
 
- - Direção: Queda
- - Volatilidade: Moderada
- - Interesse: Moderado
+ - Direção: Neutra
+ - Volatilidade: Baixa
+ - Interesse: Baixo
  - Tempo: 75 minutos consecutivos
 
 Análise de Tempo no Regime (em minutos):
@@ -17,55 +17,67 @@ Análise de Tempo no Regime (em minutos):
  - Este regime já ultrapassou a média histórica de duração!
 
 Probabilidade de Direção:
- - Neutra: 45.00%
- - Alta: 1.18%
- - Queda: 53.82%
+ - Neutra: 93.62%
+ - Alta: 2.90%
+ - Queda: 3.48%
 
 Probabilidade de Volatilidade:
- - Moderada: 66.47%
- - Alta: 18.82%
- - Baixa: 14.71%
+ - Moderada: 50.58%
+ - Alta: 9.28%
+ - Baixa: 40.14%
 
 Probabilidade de Interesse:
- - Moderado: 67.65%
- - Alto: 17.94%
- - Baixo: 14.41%
+ - Moderado: 46.29%
+ - Alto: 5.34%
+ - Baixo: 48.38%
 
 Previsão de persistência da direção:
  - Passo 1:
-   -> Regime Atual: Queda
-   -> Próximo Regime: Queda
-   -> Probabilidade da Sequência: 28.24%
+   -> Regime Atual: Neutra
+   -> Próximo Regime: Neutra
+   -> Probabilidade da Sequência: 27.96%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 2:
-   -> Regime Atual: Queda
-   -> Próximo Regime: Queda
-   -> Probabilidade da Sequência: 7.97%
+   -> Regime Atual: Neutra
+   -> Próximo Regime: Neutra
+   -> Probabilidade da Sequência: 12.02%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 3:
-   -> Regime Atual: Queda
-   -> Próximo Regime: Queda
-   -> Probabilidade da Sequência: 2.25%
+   -> Regime Atual: Neutra
+   -> Próximo Regime: Neutra
+   -> Probabilidade da Sequência: 5.17%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 4:
-   -> Regime Atual: Queda
-   -> Próximo Regime: Queda
-   -> Probabilidade da Sequência: 0.64%
+   -> Regime Atual: Neutra
+   -> Próximo Regime: Neutra
+   -> Probabilidade da Sequência: 2.22%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 5:
-   -> Regime Atual: Queda
-   -> Próximo Regime: Queda
-   -> Probabilidade da Sequência: 0.18%
+   -> Regime Atual: Neutra
+   -> Próximo Regime: Neutra
+   -> Probabilidade da Sequência: 0.96%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 6:
-   -> Regime Atual: Queda
-   -> Próximo Regime: Queda
-   -> Probabilidade da Sequência: 0.05%
+   -> Regime Atual: Neutra
+   -> Próximo Regime: Neutra
+   -> Probabilidade da Sequência: 0.41%
+   -> Tempo Médio Acumulado: 0.00 minutos
+
+ - Passo 7:
+   -> Regime Atual: Neutra
+   -> Próximo Regime: Neutra
+   -> Probabilidade da Sequência: 0.18%
+   -> Tempo Médio Acumulado: 0.00 minutos
+
+ - Passo 8:
+   -> Regime Atual: Neutra
+   -> Próximo Regime: Neutra
+   -> Probabilidade da Sequência: 0.08%
    -> Tempo Médio Acumulado: 0.00 minutos
 
 A 'Probabilidade da Sequência' indica a chance de transitar pela cadeia de regimes prevista, levando em consideração as probabilidades de cada transição intermediária.

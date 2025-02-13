@@ -28,8 +28,8 @@ Probabilidade de Volatilidade:
 
 Probabilidade de Interesse:
  - Moderado: 48.92%
- - Alto: 5.52%
  - Baixo: 45.56%
+ - Alto: 5.52%
 
 Previsão de persistência da direção:
  - Passo 1:

@@ -4,16 +4,15 @@
 ================================================================================
 
 🔹 Sequência de Regimes Prováveis:
- - Regime Atual: Neutra_Baixa_Baixo, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 28.62%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 13.88%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 6.73%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 3.26%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 1.58%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 0.77%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 0.37%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 0.18%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 0.09%
+ - Regime Atual: Alta_Moderada_Moderado, Próximo Regime: Alta_Moderada_Moderado, Probabilidade Acumulada: 40.63%
+ - Regime Atual: Alta_Moderada_Moderado, Próximo Regime: Alta_Moderada_Moderado, Probabilidade Acumulada: 16.51%
+ - Regime Atual: Alta_Moderada_Moderado, Próximo Regime: Alta_Moderada_Moderado, Probabilidade Acumulada: 6.71%
+ - Regime Atual: Alta_Moderada_Moderado, Próximo Regime: Alta_Moderada_Moderado, Probabilidade Acumulada: 2.73%
+ - Regime Atual: Alta_Moderada_Moderado, Próximo Regime: Alta_Moderada_Moderado, Probabilidade Acumulada: 1.11%
+ - Regime Atual: Alta_Moderada_Moderado, Próximo Regime: Alta_Moderada_Moderado, Probabilidade Acumulada: 0.45%
+ - Regime Atual: Alta_Moderada_Moderado, Próximo Regime: Alta_Moderada_Moderado, Probabilidade Acumulada: 0.18%
+ - Regime Atual: Alta_Moderada_Moderado, Próximo Regime: Alta_Moderada_Moderado, Probabilidade Acumulada: 0.07%
 
 
-🔹 Último preço: 0.251200
+🔹 Último preço: 0.256900
 ================================================================================

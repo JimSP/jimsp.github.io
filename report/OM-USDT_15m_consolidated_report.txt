@@ -11,5 +11,5 @@
  - Regime Atual: Alta_Baixa_Baixo, Próximo Regime: Alta_Baixa_Baixo, Probabilidade Acumulada: 0.08%
 
 
-🔹 Último preço: 5.714100
+🔹 Último preço: 5.773600
 ================================================================================
