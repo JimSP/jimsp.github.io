@@ -13,23 +13,67 @@ function loadAllReports() {
     .then(r => r.json())
     .then(data => {
       const paths = listAllFiles(data.reports);
-      dash.innerHTML = ""; 
-
+      
       if (paths.length === 0) {
         dash.textContent = "Nenhum relatório encontrado.";
         return;
       }
-
-      paths.forEach(filePath => {
+      
+      // Cria um array de promessas para carregar todos os relatórios
+      const fetchPromises = paths.map(filePath =>
         fetch("frontend/json/" + filePath)
           .then(resp => resp.json())
           .then(jsonData => {
-            const card = buildCardResumo(filePath, jsonData);
-            dash.appendChild(card);
+            // Extrai a data do relatório
+            const reportDate = parseReportDate(jsonData, filePath);
+            return { filePath, jsonData, reportDate };
           })
           .catch(e => {
             console.error("Erro ao carregar:", filePath, e);
+            return null; // Filtra erros
+          })
+      );
+
+      Promise.all(fetchPromises).then(results => {
+        // Filtra os carregamentos que falharam
+        const reports = results.filter(item => item !== null);
+        // Ordena do mais recente para o mais antigo
+        reports.sort((a, b) => b.reportDate - a.reportDate);
+
+        // Agrupamento por ativo (símbolo)
+        const groupedReports = {};
+        reports.forEach(item => {
+          const asset = extractAssetName(item.filePath);
+          if (!groupedReports[asset]) {
+            groupedReports[asset] = [];
+          }
+          groupedReports[asset].push(item);
+        });
+
+        // Limpa o dashboard e renderiza os grupos
+        dash.innerHTML = "";
+        for (const asset in groupedReports) {
+          // Cria um cabeçalho para o grupo
+          const groupHeader = document.createElement("h2");
+          groupHeader.textContent = asset;
+          dash.appendChild(groupHeader);
+
+          // Cria um container para os cards deste ativo
+          const groupContainer = document.createElement("div");
+          groupContainer.classList.add("group-container");
+          groupContainer.style.display = "flex";
+          groupContainer.style.flexWrap = "wrap";
+          groupContainer.style.gap = "20px";
+          groupContainer.style.justifyContent = "center";
+
+          // Renderiza cada relatório do grupo
+          groupedReports[asset].forEach(item => {
+            const card = buildCardResumo(item.filePath, item.jsonData);
+            groupContainer.appendChild(card);
           });
+
+          dash.appendChild(groupContainer);
+        }
       });
     })
     .catch(err => {
@@ -68,6 +112,16 @@ function buildCardResumo(filePath, jsonData) {
 
   if (jsonData.relatorio_C?.data) {
     dataRelatorio = jsonData.relatorio_C.data;
+  }
+
+  // Adiciona a classe "recent" se o relatório for das últimas 24 horas
+  const now = new Date();
+  const reportDate = new Date(dataRelatorio);
+  if (!isNaN(reportDate)) { // Verifica se a data é válida
+    const diffHoras = (now - reportDate) / (1000 * 3600);
+    if (diffHoras <= 24) {
+      card.classList.add("recent");
+    }
   }
 
   // Define a cor do card com base na probabilidade dominante
