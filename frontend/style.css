@@ -56,6 +56,12 @@ header {
 .card.queda { background-color: rgba(255, 0, 0, 0.3); border-left: 5px solid #ff0000; }
 .card.neutra { background-color: rgba(128, 128, 128, 0.3); border-left: 5px solid #B6B6B6; }
 
+.card.recent {
+  border: 2px solid #FFD700; /* Borda dourada para destacar */
+  box-shadow: 0px 0px 15px #FFD700; /* Efeito de brilho */
+}
+
+
 /* Estilo para o modal */
 .modal {
   display: none;
