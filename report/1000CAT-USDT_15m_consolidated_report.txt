@@ -14,5 +14,5 @@
  - Regime Atual: Queda_Alta_Alto, Próximo Regime: Queda_Alta_Alto, Probabilidade Acumulada: 0.05%
 
 
-🔹 Último preço: 0.014680
+🔹 Último preço: 0.014620
 ================================================================================
