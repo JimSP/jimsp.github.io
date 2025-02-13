@@ -4,12 +4,15 @@
 ================================================================================
 
 🔹 Sequência de Regimes Prováveis:
- - Regime Atual: Alta_Baixa_Baixo, Próximo Regime: Alta_Baixa_Baixo, Probabilidade Acumulada: 23.91%
- - Regime Atual: Alta_Baixa_Baixo, Próximo Regime: Alta_Baixa_Baixo, Probabilidade Acumulada: 5.72%
- - Regime Atual: Alta_Baixa_Baixo, Próximo Regime: Alta_Baixa_Baixo, Probabilidade Acumulada: 1.37%
- - Regime Atual: Alta_Baixa_Baixo, Próximo Regime: Alta_Baixa_Baixo, Probabilidade Acumulada: 0.33%
- - Regime Atual: Alta_Baixa_Baixo, Próximo Regime: Alta_Baixa_Baixo, Probabilidade Acumulada: 0.08%
+ - Regime Atual: Neutra_Baixa_Baixo, Próximo Regime: Neutra_Baixa_Baixo, Probabilidade Acumulada: 37.81%
+ - Regime Atual: Neutra_Baixa_Baixo, Próximo Regime: Neutra_Baixa_Baixo, Probabilidade Acumulada: 14.30%
+ - Regime Atual: Neutra_Baixa_Baixo, Próximo Regime: Neutra_Baixa_Baixo, Probabilidade Acumulada: 5.40%
+ - Regime Atual: Neutra_Baixa_Baixo, Próximo Regime: Neutra_Baixa_Baixo, Probabilidade Acumulada: 2.04%
+ - Regime Atual: Neutra_Baixa_Baixo, Próximo Regime: Neutra_Baixa_Baixo, Probabilidade Acumulada: 0.77%
+ - Regime Atual: Neutra_Baixa_Baixo, Próximo Regime: Neutra_Baixa_Baixo, Probabilidade Acumulada: 0.29%
+ - Regime Atual: Neutra_Baixa_Baixo, Próximo Regime: Neutra_Baixa_Baixo, Probabilidade Acumulada: 0.11%
+ - Regime Atual: Neutra_Baixa_Baixo, Próximo Regime: Neutra_Baixa_Baixo, Probabilidade Acumulada: 0.04%
 
 
-🔹 Último preço: 5.773600
+🔹 Último preço: 5.716700
 ================================================================================

@@ -1,19 +1,15 @@
 #!/bin/bash
 
-sudo git pull
-
 # Definir a data para o commit
 DATA=$(date +"%Y-%m-%d %H:%M:%S")
 
-# Apagar os diretórios data e json com sudo
-sudo rm -rf /opt/jimsp.github.io/data
-sudo rm -rf /opt/jimsp.github.io/frontend/json
+# Navegar até o repositório Git
+cd /opt/jimsp.github.io
+
+sudo git pull
 
 # Executar o script DVIBatch.py
 sudo python3 /opt/jimsp.github.io/DVIBatch.py
-
-# Navegar até o repositório Git
-cd /opt/jimsp.github.io || exit
 
 # Adicionar mudanças ao Git
 sudo git add .

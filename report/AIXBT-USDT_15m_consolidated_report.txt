@@ -17,5 +17,5 @@
  - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 0.05%
 
 
-🔹 Último preço: 0.239700
+🔹 Último preço: 0.233000
 ================================================================================

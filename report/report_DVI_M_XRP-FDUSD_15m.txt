@@ -8,7 +8,7 @@ Regime Atual:
  - Direção: Neutra
  - Volatilidade: Moderada
  - Interesse: Moderado
- - Tempo: 600 minutos consecutivos
+ - Tempo: 300 minutos consecutivos
 
 Análise de Tempo no Regime (em minutos):
 
@@ -18,54 +18,54 @@ Análise de Tempo no Regime (em minutos):
 
 Probabilidade de Direção:
  - Neutra: 95.39%
- - Alta: 2.68%
- - Queda: 1.92%
+ - Alta: 2.69%
+ - Queda: 1.93%
 
 Probabilidade de Volatilidade:
- - Moderada: 67.87%
- - Alta: 13.65%
+ - Moderada: 67.82%
+ - Alta: 13.70%
  - Baixa: 18.48%
 
 Probabilidade de Interesse:
- - Moderado: 74.80%
- - Alto: 11.73%
- - Baixo: 13.47%
+ - Moderado: 74.96%
+ - Alto: 11.72%
+ - Baixo: 13.32%
 
 Previsão de persistência da direção:
  - Passo 1:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 54.38%
+   -> Probabilidade da Sequência: 54.40%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 2:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 29.57%
+   -> Probabilidade da Sequência: 29.59%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 3:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 16.08%
+   -> Probabilidade da Sequência: 16.09%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 4:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 8.74%
+   -> Probabilidade da Sequência: 8.75%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 5:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 4.75%
+   -> Probabilidade da Sequência: 4.76%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 6:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 2.58%
+   -> Probabilidade da Sequência: 2.59%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 7:
@@ -77,7 +77,7 @@ Previsão de persistência da direção:
  - Passo 8:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 0.76%
+   -> Probabilidade da Sequência: 0.77%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 9:

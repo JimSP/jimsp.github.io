@@ -17,55 +17,55 @@ Análise de Tempo no Regime (em minutos):
  - Este regime já ultrapassou a média histórica de duração!
 
 Probabilidade de Direção:
- - Neutra: 91.43%
- - Alta: 2.86%
- - Queda: 5.71%
+ - Neutra: 91.67%
+ - Alta: 2.78%
+ - Queda: 5.56%
 
 Probabilidade de Volatilidade:
- - Moderada: 71.43%
- - Baixa: 17.14%
- - Alta: 11.43%
+ - Moderada: 75.00%
+ - Baixa: 16.67%
+ - Alta: 8.33%
 
 Probabilidade de Interesse:
- - Moderado: 60.00%
- - Baixo: 34.29%
- - Alto: 5.71%
+ - Moderado: 61.11%
+ - Baixo: 33.33%
+ - Alto: 5.56%
 
 Previsão de persistência da direção:
  - Passo 1:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 48.57%
+   -> Probabilidade da Sequência: 52.78%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 2:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 19.65%
+   -> Probabilidade da Sequência: 20.95%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 3:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 7.95%
+   -> Probabilidade da Sequência: 8.32%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 4:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 3.22%
+   -> Probabilidade da Sequência: 3.30%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 5:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 1.30%
+   -> Probabilidade da Sequência: 1.31%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 6:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 0.53%
+   -> Probabilidade da Sequência: 0.52%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 7:
@@ -77,7 +77,7 @@ Previsão de persistência da direção:
  - Passo 8:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 0.09%
+   -> Probabilidade da Sequência: 0.08%
    -> Tempo Médio Acumulado: 0.00 minutos
 
 A 'Probabilidade da Sequência' indica a chance de transitar pela cadeia de regimes prevista, levando em consideração as probabilidades de cada transição intermediária.

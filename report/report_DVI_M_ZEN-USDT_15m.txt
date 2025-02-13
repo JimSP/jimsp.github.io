@@ -8,7 +8,7 @@ Regime Atual:
  - Direção: Neutra
  - Volatilidade: Moderada
  - Interesse: Moderado
- - Tempo: 600 minutos consecutivos
+ - Tempo: 300 minutos consecutivos
 
 Análise de Tempo no Regime (em minutos):
 
@@ -19,53 +19,53 @@ Análise de Tempo no Regime (em minutos):
 Probabilidade de Direção:
  - Neutra: 95.07%
  - Alta: 2.44%
- - Queda: 2.50%
+ - Queda: 2.49%
 
 Probabilidade de Volatilidade:
- - Moderada: 64.79%
- - Alta: 15.07%
- - Baixa: 20.15%
+ - Moderada: 64.81%
+ - Baixa: 20.13%
+ - Alta: 15.06%
 
 Probabilidade de Interesse:
- - Moderado: 65.52%
- - Alto: 15.41%
- - Baixo: 19.07%
+ - Moderado: 65.59%
+ - Alto: 15.29%
+ - Baixo: 19.12%
 
 Previsão de persistência da direção:
  - Passo 1:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 45.25%
+   -> Probabilidade da Sequência: 45.34%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 2:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 20.48%
+   -> Probabilidade da Sequência: 20.56%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 3:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 9.27%
+   -> Probabilidade da Sequência: 9.32%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 4:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 4.19%
+   -> Probabilidade da Sequência: 4.23%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 5:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 1.90%
+   -> Probabilidade da Sequência: 1.92%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 6:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 0.86%
+   -> Probabilidade da Sequência: 0.87%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 7:

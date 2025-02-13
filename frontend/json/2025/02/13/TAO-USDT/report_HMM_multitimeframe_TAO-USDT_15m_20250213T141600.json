@@ -1,0 +1,279 @@
+{
+    "relatorio_C": {
+        "data": "2025-02-13 14:16:00",
+        "regime_atual": {
+            "titulo_janela": "Curto Prazo",
+            "direcao": "Queda",
+            "volatilidade": "Moderada",
+            "interesse": "Moderado",
+            "tempo_consecutivos": "75 minutos consecutivos"
+        },
+        "analise_tempo": {
+            "duracao_media_historica": "0.00 minutos",
+            "duracao_maxima_historica": "0 minutos",
+            "mensagem": "Não há estatísticas de duração para este regime."
+        },
+        "probabilidade": {
+            "direcao": {
+                "Neutra": "52.00%",
+                "Queda": "47.69%",
+                "Alta": "0.31%"
+            },
+            "volatilidade": {
+                "Moderada": "53.26%",
+                "Baixa": "40.22%",
+                "Alta": "6.52%"
+            },
+            "interesse": {
+                "Moderado": "35.87%",
+                "Baixo": "58.70%",
+                "Alto": "5.43%"
+            }
+        },
+        "previsao_direcao": [
+            {
+                "passo": 1,
+                "regime_atual": "Queda",
+                "proximo_regime": "Queda",
+                "probabilidade_sequencia": "21.54%",
+                "tempo_medio_acumulado": "0.00 minutos"
+            },
+            {
+                "passo": 2,
+                "regime_atual": "Queda",
+                "proximo_regime": "Queda",
+                "probabilidade_sequencia": "4.64%",
+                "tempo_medio_acumulado": "0.00 minutos"
+            },
+            {
+                "passo": 3,
+                "regime_atual": "Queda",
+                "proximo_regime": "Queda",
+                "probabilidade_sequencia": "1.00%",
+                "tempo_medio_acumulado": "0.00 minutos"
+            },
+            {
+                "passo": 4,
+                "regime_atual": "Queda",
+                "proximo_regime": "Queda",
+                "probabilidade_sequencia": "0.22%",
+                "tempo_medio_acumulado": "0.00 minutos"
+            },
+            {
+                "passo": 5,
+                "regime_atual": "Queda",
+                "proximo_regime": "Queda",
+                "probabilidade_sequencia": "0.05%",
+                "tempo_medio_acumulado": "0.00 minutos"
+            }
+        ]
+    },
+    "relatorio_M": {
+        "data": "2025-02-13 14:16:00",
+        "regime_atual": {
+            "titulo_janela": "Médio Prazo",
+            "direcao": "Queda",
+            "volatilidade": "Moderada",
+            "interesse": "Moderado",
+            "tempo_consecutivos": "300 minutos consecutivos"
+        },
+        "analise_tempo": {
+            "duracao_media_historica": "0.00 minutos",
+            "duracao_maxima_historica": "0 minutos",
+            "mensagem": "Não há estatísticas de duração para este regime."
+        },
+        "probabilidade": {
+            "direcao": {
+                "Neutra": "26.29%",
+                "Queda": "73.71%",
+                "Alta": "0.00%"
+            },
+            "volatilidade": {
+                "Moderada": "53.26%",
+                "Baixa": "40.22%",
+                "Alta": "6.52%"
+            },
+            "interesse": {
+                "Moderado": "35.87%",
+                "Baixo": "58.70%",
+                "Alto": "5.43%"
+            }
+        },
+        "previsao_direcao": [
+            {
+                "passo": 1,
+                "regime_atual": "Queda",
+                "proximo_regime": "Queda",
+                "probabilidade_sequencia": "38.14%",
+                "tempo_medio_acumulado": "0.00 minutos"
+            },
+            {
+                "passo": 2,
+                "regime_atual": "Queda",
+                "proximo_regime": "Queda",
+                "probabilidade_sequencia": "14.55%",
+                "tempo_medio_acumulado": "0.00 minutos"
+            },
+            {
+                "passo": 3,
+                "regime_atual": "Queda",
+                "proximo_regime": "Queda",
+                "probabilidade_sequencia": "5.55%",
+                "tempo_medio_acumulado": "0.00 minutos"
+            },
+            {
+                "passo": 4,
+                "regime_atual": "Queda",
+                "proximo_regime": "Queda",
+                "probabilidade_sequencia": "2.12%",
+                "tempo_medio_acumulado": "0.00 minutos"
+            },
+            {
+                "passo": 5,
+                "regime_atual": "Queda",
+                "proximo_regime": "Queda",
+                "probabilidade_sequencia": "0.81%",
+                "tempo_medio_acumulado": "0.00 minutos"
+            },
+            {
+                "passo": 6,
+                "regime_atual": "Queda",
+                "proximo_regime": "Queda",
+                "probabilidade_sequencia": "0.31%",
+                "tempo_medio_acumulado": "0.00 minutos"
+            },
+            {
+                "passo": 7,
+                "regime_atual": "Queda",
+                "proximo_regime": "Queda",
+                "probabilidade_sequencia": "0.12%",
+                "tempo_medio_acumulado": "0.00 minutos"
+            },
+            {
+                "passo": 8,
+                "regime_atual": "Queda",
+                "proximo_regime": "Queda",
+                "probabilidade_sequencia": "0.04%",
+                "tempo_medio_acumulado": "0.00 minutos"
+            }
+        ]
+    },
+    "relatorio_L": {
+        "data": "2025-02-13 14:16:00",
+        "regime_atual": {
+            "titulo_janela": "Longo Prazo",
+            "direcao": "Queda",
+            "volatilidade": "Baixa",
+            "interesse": "Moderado",
+            "tempo_consecutivos": "0 minutos consecutivos"
+        },
+        "analise_tempo": {
+            "duracao_media_historica": "0.00 minutos",
+            "duracao_maxima_historica": "0 minutos",
+            "mensagem": "Não há estatísticas de duração para este regime."
+        },
+        "probabilidade": {
+            "direcao": {
+                "Neutra": "14.86%",
+                "Alta": "0.00%",
+                "Queda": "85.14%"
+            },
+            "volatilidade": {
+                "Moderada": "53.26%",
+                "Baixa": "40.22%",
+                "Alta": "6.52%"
+            },
+            "interesse": {
+                "Moderado": "35.87%",
+                "Baixo": "58.70%",
+                "Alto": "5.43%"
+            }
+        },
+        "previsao_direcao": [
+            {
+                "passo": 1,
+                "regime_atual": "Queda",
+                "proximo_regime": "Queda",
+                "probabilidade_sequencia": "37.84%",
+                "tempo_medio_acumulado": "0.00 minutos"
+            },
+            {
+                "passo": 2,
+                "regime_atual": "Queda",
+                "proximo_regime": "Queda",
+                "probabilidade_sequencia": "18.77%",
+                "tempo_medio_acumulado": "0.00 minutos"
+            },
+            {
+                "passo": 3,
+                "regime_atual": "Queda",
+                "proximo_regime": "Queda",
+                "probabilidade_sequencia": "9.31%",
+                "tempo_medio_acumulado": "0.00 minutos"
+            },
+            {
+                "passo": 4,
+                "regime_atual": "Queda",
+                "proximo_regime": "Queda",
+                "probabilidade_sequencia": "4.62%",
+                "tempo_medio_acumulado": "0.00 minutos"
+            },
+            {
+                "passo": 5,
+                "regime_atual": "Queda",
+                "proximo_regime": "Queda",
+                "probabilidade_sequencia": "2.29%",
+                "tempo_medio_acumulado": "0.00 minutos"
+            },
+            {
+                "passo": 6,
+                "regime_atual": "Queda",
+                "proximo_regime": "Queda",
+                "probabilidade_sequencia": "1.14%",
+                "tempo_medio_acumulado": "0.00 minutos"
+            },
+            {
+                "passo": 7,
+                "regime_atual": "Queda",
+                "proximo_regime": "Queda",
+                "probabilidade_sequencia": "0.56%",
+                "tempo_medio_acumulado": "0.00 minutos"
+            },
+            {
+                "passo": 8,
+                "regime_atual": "Queda",
+                "proximo_regime": "Queda",
+                "probabilidade_sequencia": "0.28%",
+                "tempo_medio_acumulado": "0.00 minutos"
+            },
+            {
+                "passo": 9,
+                "regime_atual": "Queda",
+                "proximo_regime": "Queda",
+                "probabilidade_sequencia": "0.14%",
+                "tempo_medio_acumulado": "0.00 minutos"
+            },
+            {
+                "passo": 10,
+                "regime_atual": "Queda",
+                "proximo_regime": "Queda",
+                "probabilidade_sequencia": "0.07%",
+                "tempo_medio_acumulado": "0.00 minutos"
+            }
+        ]
+    },
+    "gerenciamento_risco_global": {
+        "regime_global": {
+            "direcao_global": "Queda",
+            "volatilidade_global": "Moderada",
+            "interesse_global": "Moderado",
+            "prob_direcao_global": 0.7422
+        },
+        "risk_management": {
+            "recommended_action": "SELL",
+            "recommended_size": 1.0,
+            "entry_price": 369.8,
+            "expected_var": 1.2893717344208013
+        }
+    }
+}

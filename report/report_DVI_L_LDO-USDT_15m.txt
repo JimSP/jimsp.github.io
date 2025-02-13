@@ -8,7 +8,7 @@ Regime Atual:
  - Direção: Neutra
  - Volatilidade: Baixa
  - Interesse: Baixo
- - Tempo: 1800 minutos consecutivos
+ - Tempo: 900 minutos consecutivos
 
 Análise de Tempo no Regime (em minutos):
 
@@ -22,38 +22,38 @@ Probabilidade de Direção:
  - Queda: 1.08%
 
 Probabilidade de Volatilidade:
- - Moderada: 49.41%
- - Alta: 4.43%
- - Baixa: 46.16%
+ - Moderada: 49.35%
+ - Alta: 4.44%
+ - Baixa: 46.21%
 
 Probabilidade de Interesse:
- - Moderado: 42.38%
+ - Moderado: 42.42%
  - Alto: 3.35%
- - Baixo: 54.27%
+ - Baixo: 54.22%
 
 Previsão de persistência da direção:
  - Passo 1:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 34.05%
+   -> Probabilidade da Sequência: 34.09%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 2:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 11.60%
+   -> Probabilidade da Sequência: 11.62%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 3:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 3.95%
+   -> Probabilidade da Sequência: 3.96%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 4:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 1.34%
+   -> Probabilidade da Sequência: 1.35%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 5:

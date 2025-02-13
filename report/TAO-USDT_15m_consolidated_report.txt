@@ -4,17 +4,17 @@
 ================================================================================
 
 🔹 Sequência de Regimes Prováveis:
- - Regime Atual: Neutra_Moderada_Baixo, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 33.50%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 16.90%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 8.52%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 4.30%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 2.17%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 1.09%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 0.55%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 0.28%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 0.14%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 0.07%
+ - Regime Atual: Queda_Moderada_Moderado, Próximo Regime: Queda_Moderada_Moderado, Probabilidade Acumulada: 49.61%
+ - Regime Atual: Queda_Moderada_Moderado, Próximo Regime: Queda_Moderada_Moderado, Probabilidade Acumulada: 24.61%
+ - Regime Atual: Queda_Moderada_Moderado, Próximo Regime: Queda_Moderada_Moderado, Probabilidade Acumulada: 12.21%
+ - Regime Atual: Queda_Moderada_Moderado, Próximo Regime: Queda_Moderada_Moderado, Probabilidade Acumulada: 6.06%
+ - Regime Atual: Queda_Moderada_Moderado, Próximo Regime: Queda_Moderada_Moderado, Probabilidade Acumulada: 3.00%
+ - Regime Atual: Queda_Moderada_Moderado, Próximo Regime: Queda_Moderada_Moderado, Probabilidade Acumulada: 1.49%
+ - Regime Atual: Queda_Moderada_Moderado, Próximo Regime: Queda_Moderada_Moderado, Probabilidade Acumulada: 0.74%
+ - Regime Atual: Queda_Moderada_Moderado, Próximo Regime: Queda_Moderada_Moderado, Probabilidade Acumulada: 0.37%
+ - Regime Atual: Queda_Moderada_Moderado, Próximo Regime: Queda_Moderada_Moderado, Probabilidade Acumulada: 0.18%
+ - Regime Atual: Queda_Moderada_Moderado, Próximo Regime: Queda_Moderada_Moderado, Probabilidade Acumulada: 0.09%
 
 
-🔹 Último preço: 387.500000
+🔹 Último preço: 369.800000
 ================================================================================

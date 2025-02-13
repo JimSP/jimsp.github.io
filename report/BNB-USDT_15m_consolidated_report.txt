@@ -4,19 +4,19 @@
 ================================================================================
 
 🔹 Sequência de Regimes Prováveis:
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 53.79%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 28.93%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 15.56%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 8.37%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 4.50%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 2.42%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 1.30%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 0.70%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 0.38%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 0.20%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 0.11%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 0.06%
+ - Regime Atual: Alta_Alta_Alto, Próximo Regime: Alta_Alta_Alto, Probabilidade Acumulada: 55.17%
+ - Regime Atual: Alta_Alta_Alto, Próximo Regime: Alta_Alta_Alto, Probabilidade Acumulada: 30.44%
+ - Regime Atual: Alta_Alta_Alto, Próximo Regime: Alta_Alta_Alto, Probabilidade Acumulada: 16.79%
+ - Regime Atual: Alta_Alta_Alto, Próximo Regime: Alta_Alta_Alto, Probabilidade Acumulada: 9.27%
+ - Regime Atual: Alta_Alta_Alto, Próximo Regime: Alta_Alta_Alto, Probabilidade Acumulada: 5.11%
+ - Regime Atual: Alta_Alta_Alto, Próximo Regime: Alta_Alta_Alto, Probabilidade Acumulada: 2.82%
+ - Regime Atual: Alta_Alta_Alto, Próximo Regime: Alta_Alta_Alto, Probabilidade Acumulada: 1.56%
+ - Regime Atual: Alta_Alta_Alto, Próximo Regime: Alta_Alta_Alto, Probabilidade Acumulada: 0.86%
+ - Regime Atual: Alta_Alta_Alto, Próximo Regime: Alta_Alta_Alto, Probabilidade Acumulada: 0.47%
+ - Regime Atual: Alta_Alta_Alto, Próximo Regime: Alta_Alta_Alto, Probabilidade Acumulada: 0.26%
+ - Regime Atual: Alta_Alta_Alto, Próximo Regime: Alta_Alta_Alto, Probabilidade Acumulada: 0.14%
+ - Regime Atual: Alta_Alta_Alto, Próximo Regime: Alta_Alta_Alto, Probabilidade Acumulada: 0.08%
 
 
-🔹 Último preço: 708.530000
+🔹 Último preço: 724.460000
 ================================================================================
