@@ -1,0 +1,20 @@
+
+================================================================================
+                   RELATÓRIO OPERACIONAL DE GESTÃO DE RISCO                      
+================================================================================
+
+🔹 Sequência de Regimes Prováveis:
+ - Regime Atual: Queda_Alta_Alto, Próximo Regime: Queda_Alta_Alto, Probabilidade Acumulada: 48.00%
+ - Regime Atual: Queda_Alta_Alto, Próximo Regime: Queda_Alta_Alto, Probabilidade Acumulada: 23.04%
+ - Regime Atual: Queda_Alta_Alto, Próximo Regime: Queda_Alta_Alto, Probabilidade Acumulada: 11.06%
+ - Regime Atual: Queda_Alta_Alto, Próximo Regime: Queda_Alta_Alto, Probabilidade Acumulada: 5.31%
+ - Regime Atual: Queda_Alta_Alto, Próximo Regime: Queda_Alta_Alto, Probabilidade Acumulada: 2.55%
+ - Regime Atual: Queda_Alta_Alto, Próximo Regime: Queda_Alta_Alto, Probabilidade Acumulada: 1.22%
+ - Regime Atual: Queda_Alta_Alto, Próximo Regime: Queda_Alta_Alto, Probabilidade Acumulada: 0.59%
+ - Regime Atual: Queda_Alta_Alto, Próximo Regime: Queda_Alta_Alto, Probabilidade Acumulada: 0.28%
+ - Regime Atual: Queda_Alta_Alto, Próximo Regime: Queda_Alta_Alto, Probabilidade Acumulada: 0.14%
+ - Regime Atual: Queda_Alta_Alto, Próximo Regime: Queda_Alta_Alto, Probabilidade Acumulada: 0.06%
+
+
+🔹 Último preço: 1.695000
+================================================================================

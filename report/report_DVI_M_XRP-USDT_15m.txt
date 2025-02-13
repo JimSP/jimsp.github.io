@@ -17,61 +17,61 @@ Análise de Tempo no Regime (em minutos):
  - Este regime já ultrapassou a média histórica de duração!
 
 Probabilidade de Direção:
- - Neutra: 96.27%
+ - Neutra: 96.18%
  - Alta: 2.11%
- - Queda: 1.61%
+ - Queda: 1.71%
 
 Probabilidade de Volatilidade:
- - Moderada: 50.15%
- - Alta: 4.53%
- - Baixa: 45.32%
+ - Moderada: 49.95%
+ - Baixa: 45.23%
+ - Alta: 4.82%
 
 Probabilidade de Interesse:
- - Moderado: 39.58%
- - Alto: 2.01%
- - Baixo: 58.41%
+ - Moderado: 40.30%
+ - Alto: 2.11%
+ - Baixo: 57.59%
 
 Previsão de persistência da direção:
  - Passo 1:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 37.16%
+   -> Probabilidade da Sequência: 36.58%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 2:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 13.81%
+   -> Probabilidade da Sequência: 13.38%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 3:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 5.13%
+   -> Probabilidade da Sequência: 4.90%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 4:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 1.91%
+   -> Probabilidade da Sequência: 1.79%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 5:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 0.71%
+   -> Probabilidade da Sequência: 0.66%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 6:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 0.26%
+   -> Probabilidade da Sequência: 0.24%
    -> Tempo Médio Acumulado: 0.00 minutos
 
  - Passo 7:
    -> Regime Atual: Neutra
    -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 0.10%
+   -> Probabilidade da Sequência: 0.09%
    -> Tempo Médio Acumulado: 0.00 minutos
 
 A 'Probabilidade da Sequência' indica a chance de transitar pela cadeia de regimes prevista, levando em consideração as probabilidades de cada transição intermediária.

@@ -4,14 +4,18 @@
 ================================================================================
 
 🔹 Sequência de Regimes Prováveis:
- - Regime Atual: Queda_Moderada_Baixo, Próximo Regime: Queda_Baixa_Baixo, Probabilidade Acumulada: 30.00%
- - Regime Atual: Queda_Baixa_Baixo, Próximo Regime: Queda_Baixa_Baixo, Probabilidade Acumulada: 9.82%
- - Regime Atual: Queda_Baixa_Baixo, Próximo Regime: Queda_Baixa_Baixo, Probabilidade Acumulada: 3.21%
- - Regime Atual: Queda_Baixa_Baixo, Próximo Regime: Queda_Baixa_Baixo, Probabilidade Acumulada: 1.05%
- - Regime Atual: Queda_Baixa_Baixo, Próximo Regime: Queda_Baixa_Baixo, Probabilidade Acumulada: 0.34%
- - Regime Atual: Queda_Baixa_Baixo, Próximo Regime: Queda_Baixa_Baixo, Probabilidade Acumulada: 0.11%
- - Regime Atual: Queda_Baixa_Baixo, Próximo Regime: Queda_Baixa_Baixo, Probabilidade Acumulada: 0.04%
+ - Regime Atual: Neutra_Baixa_Baixo, Próximo Regime: Neutra_Baixa_Baixo, Probabilidade Acumulada: 51.51%
+ - Regime Atual: Neutra_Baixa_Baixo, Próximo Regime: Neutra_Baixa_Baixo, Probabilidade Acumulada: 26.54%
+ - Regime Atual: Neutra_Baixa_Baixo, Próximo Regime: Neutra_Baixa_Baixo, Probabilidade Acumulada: 13.67%
+ - Regime Atual: Neutra_Baixa_Baixo, Próximo Regime: Neutra_Baixa_Baixo, Probabilidade Acumulada: 7.04%
+ - Regime Atual: Neutra_Baixa_Baixo, Próximo Regime: Neutra_Baixa_Baixo, Probabilidade Acumulada: 3.63%
+ - Regime Atual: Neutra_Baixa_Baixo, Próximo Regime: Neutra_Baixa_Baixo, Probabilidade Acumulada: 1.87%
+ - Regime Atual: Neutra_Baixa_Baixo, Próximo Regime: Neutra_Baixa_Baixo, Probabilidade Acumulada: 0.96%
+ - Regime Atual: Neutra_Baixa_Baixo, Próximo Regime: Neutra_Baixa_Baixo, Probabilidade Acumulada: 0.50%
+ - Regime Atual: Neutra_Baixa_Baixo, Próximo Regime: Neutra_Baixa_Baixo, Probabilidade Acumulada: 0.26%
+ - Regime Atual: Neutra_Baixa_Baixo, Próximo Regime: Neutra_Baixa_Baixo, Probabilidade Acumulada: 0.13%
+ - Regime Atual: Neutra_Baixa_Baixo, Próximo Regime: Neutra_Baixa_Baixo, Probabilidade Acumulada: 0.07%
 
 
-🔹 Último preço: 96526.020000
+🔹 Último preço: 96317.960000
 ================================================================================
