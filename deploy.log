@@ -5087,3 +5087,15 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.12/dist-packages/pandas/io/parsers/base_parser.py", line 243, in _validate_parse_dates_presence
     raise ValueError(
 ValueError: Missing column provided to 'parse_dates': 'timestamp'
+Warning: commit message did not conform to UTF-8.
+You may want to amend it after fixing the message, or set the config
+variable i18n.commitEncoding to the encoding your project uses.
+[master be44141] Atualização automática - 2025-02-14 11:00:01
+ 6 files changed, 1855 insertions(+)
+ create mode 100644 frontend/json/2025/02/14/ADA-USDT/report_HMM_multitimeframe_ADA-USDT_15m_20250214T110311.json
+ create mode 100644 frontend/json/2025/02/14/HEI-USDT/report_HMM_multitimeframe_HEI-USDT_15m_20250214T110326.json
+ create mode 100644 frontend/json/2025/02/14/PEPE-USDT/report_HMM_multitimeframe_PEPE-USDT_15m_20250214T110301.json
+ create mode 100644 frontend/json/2025/02/14/TRX-USDT/report_HMM_multitimeframe_TRX-USDT_15m_20250214T110322.json
+ create mode 100644 frontend/json/2025/02/14/WIF-USDT/report_HMM_multitimeframe_WIF-USDT_15m_20250214T110316.json
+To https://github.com/JimSP/jimsp.github.io.git
+   d10e6aa..be44141  master -> master

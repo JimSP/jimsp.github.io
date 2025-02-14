@@ -3,6 +3,204 @@
     "reports": {
         "2025": {
             "02": {
+                "14": {
+                    "ADA-USDT": {
+                        "files": [
+                            "2025/02/14/ADA-USDT/report_HMM_multitimeframe_ADA-USDT_15m_20250214T110129.json",
+                            "2025/02/14/ADA-USDT/report_HMM_multitimeframe_ADA-USDT_15m_20250214T110311.json"
+                        ]
+                    },
+                    "ETH-USDT": {
+                        "files": [
+                            "2025/02/14/ETH-USDT/report_HMM_multitimeframe_ETH-USDT_15m_20250214T110049.json",
+                            "2025/02/14/ETH-USDT/report_HMM_multitimeframe_ETH-USDT_15m_20250214T105849.json"
+                        ]
+                    },
+                    "SOL-USDT": {
+                        "files": [
+                            "2025/02/14/SOL-USDT/report_HMM_multitimeframe_SOL-USDT_15m_20250214T105934.json",
+                            "2025/02/14/SOL-USDT/report_HMM_multitimeframe_SOL-USDT_15m_20250214T110145.json"
+                        ]
+                    },
+                    "ETH-FDUSD": {
+                        "files": [
+                            "2025/02/14/ETH-FDUSD/report_HMM_multitimeframe_ETH-FDUSD_15m_20250214T105857.json",
+                            "2025/02/14/ETH-FDUSD/report_HMM_multitimeframe_ETH-FDUSD_15m_20250214T110057.json"
+                        ]
+                    },
+                    "PEPE-USDT": {
+                        "files": [
+                            "2025/02/14/PEPE-USDT/report_HMM_multitimeframe_PEPE-USDT_15m_20250214T110301.json",
+                            "2025/02/14/PEPE-USDT/report_HMM_multitimeframe_PEPE-USDT_15m_20250214T112457.json",
+                            "2025/02/14/PEPE-USDT/report_HMM_multitimeframe_PEPE-USDT_15m_20250214T110118.json"
+                        ]
+                    },
+                    "CAKE-USDT": {
+                        "files": [
+                            "2025/02/14/CAKE-USDT/report_HMM_multitimeframe_CAKE-USDT_15m_20250214T110221.json",
+                            "2025/02/14/CAKE-USDT/report_HMM_multitimeframe_CAKE-USDT_15m_20250214T110013.json"
+                        ]
+                    },
+                    "XRP-USDT": {
+                        "files": [
+                            "2025/02/14/XRP-USDT/report_HMM_multitimeframe_XRP-USDT_15m_20250214T105912.json",
+                            "2025/02/14/XRP-USDT/report_HMM_multitimeframe_XRP-USDT_15m_20250214T110117.json"
+                        ]
+                    },
+                    "BONK-USDT": {
+                        "files": [
+                            "2025/02/14/BONK-USDT/report_HMM_multitimeframe_BONK-USDT_15m_20250214T112508.json"
+                        ]
+                    },
+                    "1000SATS-USDT": {
+                        "files": [
+                            "2025/02/14/1000SATS-USDT/report_HMM_multitimeframe_1000SATS-USDT_15m_20250214T112600.json"
+                        ]
+                    },
+                    "BTC-USDT": {
+                        "files": [
+                            "2025/02/14/BTC-USDT/report_HMM_multitimeframe_BTC-USDT_15m_20250214T110039.json",
+                            "2025/02/14/BTC-USDT/report_HMM_multitimeframe_BTC-USDT_15m_20250214T105841.json"
+                        ]
+                    },
+                    "USDC-USDT": {
+                        "files": [
+                            "2025/02/14/USDC-USDT/report_HMM_multitimeframe_USDC-USDT_15m_20250214T110126.json",
+                            "2025/02/14/USDC-USDT/report_HMM_multitimeframe_USDC-USDT_15m_20250214T105919.json"
+                        ]
+                    },
+                    "XRP-FDUSD": {
+                        "files": [
+                            "2025/02/14/XRP-FDUSD/report_HMM_multitimeframe_XRP-FDUSD_15m_20250214T110032.json",
+                            "2025/02/14/XRP-FDUSD/report_HMM_multitimeframe_XRP-FDUSD_15m_20250214T110232.json"
+                        ]
+                    },
+                    "BTTC-USDT": {
+                        "files": [
+                            "2025/02/14/BTTC-USDT/report_HMM_multitimeframe_BTTC-USDT_15m_20250214T112528.json"
+                        ]
+                    },
+                    "TRUMP-USDT": {
+                        "files": [
+                            "2025/02/14/TRUMP-USDT/report_HMM_multitimeframe_TRUMP-USDT_15m_20250214T110154.json",
+                            "2025/02/14/TRUMP-USDT/report_HMM_multitimeframe_TRUMP-USDT_15m_20250214T105940.json"
+                        ]
+                    },
+                    "TST-USDT": {
+                        "files": [
+                            "2025/02/14/TST-USDT/report_HMM_multitimeframe_TST-USDT_15m_20250214T110058.json",
+                            "2025/02/14/TST-USDT/report_HMM_multitimeframe_TST-USDT_15m_20250214T110247.json"
+                        ]
+                    },
+                    "SHIB-FDUSD": {
+                        "files": [
+                            "2025/02/14/SHIB-FDUSD/report_HMM_multitimeframe_SHIB-FDUSD_15m_20250214T112539.json"
+                        ]
+                    },
+                    "DOGE-USDT": {
+                        "files": [
+                            "2025/02/14/DOGE-USDT/report_HMM_multitimeframe_DOGE-USDT_15m_20250214T110002.json",
+                            "2025/02/14/DOGE-USDT/report_HMM_multitimeframe_DOGE-USDT_15m_20250214T110215.json"
+                        ]
+                    },
+                    "LUNC-USDT": {
+                        "files": [
+                            "2025/02/14/LUNC-USDT/report_HMM_multitimeframe_LUNC-USDT_15m_20250214T112550.json"
+                        ]
+                    },
+                    "SUI-USDT": {
+                        "files": [
+                            "2025/02/14/SUI-USDT/report_HMM_multitimeframe_SUI-USDT_15m_20250214T110023.json",
+                            "2025/02/14/SUI-USDT/report_HMM_multitimeframe_SUI-USDT_15m_20250214T110226.json"
+                        ]
+                    },
+                    "SHIB-USDT": {
+                        "files": [
+                            "2025/02/14/SHIB-USDT/report_HMM_multitimeframe_SHIB-USDT_15m_20250214T112458.json"
+                        ]
+                    },
+                    "PEPE-FDUSD": {
+                        "files": [
+                            "2025/02/14/PEPE-FDUSD/report_HMM_multitimeframe_PEPE-FDUSD_15m_20250214T112518.json"
+                        ]
+                    },
+                    "BTC-FDUSD": {
+                        "files": [
+                            "2025/02/14/BTC-FDUSD/report_HMM_multitimeframe_BTC-FDUSD_15m_20250214T110030.json",
+                            "2025/02/14/BTC-FDUSD/report_HMM_multitimeframe_BTC-FDUSD_15m_20250214T105834.json"
+                        ]
+                    },
+                    "BNX-USDT": {
+                        "files": [
+                            "2025/02/14/BNX-USDT/report_HMM_multitimeframe_BNX-USDT_15m_20250214T110237.json",
+                            "2025/02/14/BNX-USDT/report_HMM_multitimeframe_BNX-USDT_15m_20250214T110041.json"
+                        ]
+                    },
+                    "FLOKI-USDT": {
+                        "files": [
+                            "2025/02/14/FLOKI-USDT/report_HMM_multitimeframe_FLOKI-USDT_15m_20250214T112529.json"
+                        ]
+                    },
+                    "WIF-USDT": {
+                        "files": [
+                            "2025/02/14/WIF-USDT/report_HMM_multitimeframe_WIF-USDT_15m_20250214T110316.json",
+                            "2025/02/14/WIF-USDT/report_HMM_multitimeframe_WIF-USDT_15m_20250214T110138.json"
+                        ]
+                    },
+                    "FDUSD-USDT": {
+                        "files": [
+                            "2025/02/14/FDUSD-USDT/report_HMM_multitimeframe_FDUSD-USDT_15m_20250214T110202.json",
+                            "2025/02/14/FDUSD-USDT/report_HMM_multitimeframe_FDUSD-USDT_15m_20250214T105947.json"
+                        ]
+                    },
+                    "TRX-USDT": {
+                        "files": [
+                            "2025/02/14/TRX-USDT/report_HMM_multitimeframe_TRX-USDT_15m_20250214T110322.json",
+                            "2025/02/14/TRX-USDT/report_HMM_multitimeframe_TRX-USDT_15m_20250214T110147.json"
+                        ]
+                    },
+                    "HEI-USDT": {
+                        "files": [
+                            "2025/02/14/HEI-USDT/report_HMM_multitimeframe_HEI-USDT_15m_20250214T110326.json",
+                            "2025/02/14/HEI-USDT/report_HMM_multitimeframe_HEI-USDT_15m_20250214T110155.json"
+                        ]
+                    },
+                    "BNB-FDUSD": {
+                        "files": [
+                            "2025/02/14/BNB-FDUSD/report_HMM_multitimeframe_BNB-FDUSD_15m_20250214T110136.json",
+                            "2025/02/14/BNB-FDUSD/report_HMM_multitimeframe_BNB-FDUSD_15m_20250214T105927.json"
+                        ]
+                    },
+                    "BNB-USDT": {
+                        "files": [
+                            "2025/02/14/BNB-USDT/report_HMM_multitimeframe_BNB-USDT_15m_20250214T110107.json",
+                            "2025/02/14/BNB-USDT/report_HMM_multitimeframe_BNB-USDT_15m_20250214T105904.json"
+                        ]
+                    },
+                    "LTC-USDT": {
+                        "files": [
+                            "2025/02/14/LTC-USDT/report_HMM_multitimeframe_LTC-USDT_15m_20250214T110051.json",
+                            "2025/02/14/LTC-USDT/report_HMM_multitimeframe_LTC-USDT_15m_20250214T110243.json"
+                        ]
+                    },
+                    "NEIRO-USDT": {
+                        "files": [
+                            "2025/02/14/NEIRO-USDT/report_HMM_multitimeframe_NEIRO-USDT_15m_20250214T112540.json"
+                        ]
+                    },
+                    "DOGE-FDUSD": {
+                        "files": [
+                            "2025/02/14/DOGE-FDUSD/report_HMM_multitimeframe_DOGE-FDUSD_15m_20250214T110253.json",
+                            "2025/02/14/DOGE-FDUSD/report_HMM_multitimeframe_DOGE-FDUSD_15m_20250214T110108.json"
+                        ]
+                    },
+                    "SOL-FDUSD": {
+                        "files": [
+                            "2025/02/14/SOL-FDUSD/report_HMM_multitimeframe_SOL-FDUSD_15m_20250214T110209.json",
+                            "2025/02/14/SOL-FDUSD/report_HMM_multitimeframe_SOL-FDUSD_15m_20250214T105954.json"
+                        ]
+                    }
+                },
                 "13": {
                     "HBAR-USDT": {
                         "files": [
