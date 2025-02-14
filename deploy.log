@@ -3276,3 +3276,15 @@ Already up to date.
     """
     ^^^
 SyntaxError: (unicode error) 'utf-8' codec can't decode byte 0xea in position 6: invalid continuation byte
+Warning: commit message did not conform to UTF-8.
+You may want to amend it after fixing the message, or set the config
+variable i18n.commitEncoding to the encoding your project uses.
+[master 38ae2dd] Atualização automática - 2025-02-14 08:00:01
+ 1 file changed, 15 insertions(+)
+To https://github.com/JimSP/jimsp.github.io.git
+   c7f084d..38ae2dd  master -> master
+Already up to date.
+  File "/opt/jimsp.github.io/DVIBatch.py", line 80
+    """
+    ^^^
+SyntaxError: (unicode error) 'utf-8' codec can't decode byte 0xea in position 6: invalid continuation byte
