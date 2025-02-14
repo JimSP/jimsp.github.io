@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 /**
- * FunÁ„o para extrair a data do relatÛrio.
+ * Fun√ß√£o para extrair a data do relat√≥rio.
  * Tenta obter a data a partir do JSON ou, como fallback, extrair do nome do arquivo.
  */
 function parseReportDate(jsonData, filePath) {
@@ -31,12 +31,12 @@ function parseReportDate(jsonData, filePath) {
     );
     return new Date(dateStr);
   }
-  // Se n„o encontrar, retorna uma data padr„o (muito antiga)
+  // Se n√£o encontrar, retorna uma data padr√£o (muito antiga)
   return new Date(0);
 }
 
 /**
- * FunÁ„o recursiva para listar todos os arquivos presentes na ·rvore de diretÛrios.
+ * Fun√ß√£o recursiva para listar todos os arquivos presentes na √°rvore de diret√≥rios.
  */
 function listAllFiles(tree) {
   let results = [];
@@ -53,7 +53,7 @@ function listAllFiles(tree) {
 
 /**
  * Extrai o nome do ativo a partir do caminho do arquivo.
- * Considera que a estrutura È: ano/mes/dia/sÌmbolo/nome_arquivo.json
+ * Considera que a estrutura √©: ano/mes/dia/s√≠mbolo/nome_arquivo.json
  */
 function extractAssetName(filePath) {
   const parts = filePath.split("/");
@@ -61,7 +61,7 @@ function extractAssetName(filePath) {
 }
 
 /**
- * Cria um card resumido para cada relatÛrio, configurando cores, gr·ficos e eventos.
+ * Cria um card resumido para cada relat√≥rio, configurando cores, gr√°ficos e eventos.
  */
 function buildCardResumo(filePath, jsonData) {
   const card = document.createElement("div");
@@ -82,7 +82,7 @@ function buildCardResumo(filePath, jsonData) {
     dataRelatorio = jsonData.relatorio_C.data;
   }
 
-  // Adiciona a classe "recent" se o relatÛrio for das ˙ltimas 24 horas
+  // Adiciona a classe "recent" se o relat√≥rio for das √∫ltimas 24 horas
   const now = new Date();
   const reportDate = parseReportDate(jsonData, filePath);
   if (!isNaN(reportDate)) {
@@ -101,13 +101,13 @@ function buildCardResumo(filePath, jsonData) {
     card.classList.add("neutra");
   }
 
-  // Cria o cabeÁalho do card com o nome do ativo
+  // Cria o cabe√ßalho do card com o nome do ativo
   const header = document.createElement("div");
   header.classList.add("card-header");
   header.textContent = assetName;
   card.appendChild(header);
 
-  // Cria o canvas para o gr·fico utilizando Chart.js
+  // Cria o canvas para o gr√°fico utilizando Chart.js
   const chartCanvas = document.createElement("canvas");
   chartCanvas.width = 280;
   chartCanvas.height = 100;
@@ -115,7 +115,7 @@ function buildCardResumo(filePath, jsonData) {
 
   setTimeout(() => createChart(chartCanvas, probAl, probNeu, probQue), 200);
 
-  // Evento: ao clicar, abre o modal com detalhes do relatÛrio
+  // Evento: ao clicar, abre o modal com detalhes do relat√≥rio
   card.addEventListener("click", () => {
     openModal(assetName, dataRelatorio, probAl, probNeu, probQue, jsonData);
   });
@@ -124,7 +124,7 @@ function buildCardResumo(filePath, jsonData) {
 }
 
 /**
- * FunÁ„o que cria um gr·fico do tipo "doughnut" para exibir as probabilidades.
+ * Fun√ß√£o que cria um gr√°fico do tipo "doughnut" para exibir as probabilidades.
  */
 function createChart(canvas, probAl, probNeu, probQue) {
   new Chart(canvas, {
@@ -146,7 +146,7 @@ function createChart(canvas, probAl, probNeu, probQue) {
 }
 
 /**
- * Configura o modal de exibiÁ„o dos detalhes do relatÛrio.
+ * Configura o modal de exibi√ß√£o dos detalhes do relat√≥rio.
  */
 function setupModal() {
   const modal = document.createElement("div");
@@ -155,7 +155,7 @@ function setupModal() {
   modal.innerHTML = `
     <div class="modal-content">
       <span class="close">&times;</span>
-      <h2 id="modal-title">Detalhes do RelatÛrio</h2>
+      <h2 id="modal-title">Detalhes do Relat√≥rio</h2>
       <table id="modal-table"></table>
     </div>
   `;
@@ -166,7 +166,7 @@ function setupModal() {
     closeModal();
   });
 
-  // Fecha o modal ao clicar fora da ·rea de conte˙do
+  // Fecha o modal ao clicar fora da √°rea de conte√∫do
   window.addEventListener("click", (event) => {
     if (event.target === modal) {
       closeModal();
@@ -175,19 +175,19 @@ function setupModal() {
 }
 
 /**
- * Abre o modal exibindo os detalhes do relatÛrio.
+ * Abre o modal exibindo os detalhes do relat√≥rio.
  */
 function openModal(assetName, dataRelatorio, probAl, probNeu, probQue, jsonData) {
   const modal = document.getElementById("reportModal");
   if (!modal) {
-    console.error("Modal n„o encontrado!");
+    console.error("Modal n√£o encontrado!");
     return;
   }
 
-  document.getElementById("modal-title").textContent = `RelatÛrio de ${assetName}`;
+  document.getElementById("modal-title").textContent = `Relat√≥rio de ${assetName}`;
   const table = document.getElementById("modal-table");
   if (!table) {
-    console.error("Tabela n„o encontrada dentro do modal!");
+    console.error("Tabela n√£o encontrada dentro do modal!");
     return;
   }
 
@@ -198,7 +198,7 @@ function openModal(assetName, dataRelatorio, probAl, probNeu, probQue, jsonData)
     <tr><th>Queda</th><td>${probQue.toFixed(2)}%</td></tr>
   `;
 
-  // Verifica se h· informaÁıes de gerenciamento de risco e as adiciona
+  // Verifica se h√° informa√ß√µes de gerenciamento de risco e as adiciona
   if (jsonData.gerenciamento_risco_global) {
     const gr = jsonData.gerenciamento_risco_global;
     const regime = gr.regime_global;
@@ -206,13 +206,13 @@ function openModal(assetName, dataRelatorio, probAl, probNeu, probQue, jsonData)
 
     tableContent += `
       <tr><th colspan="2" style="background-color: #333;">Gerenciamento de Risco</th></tr>
-      <tr><th>DireÁ„o Global</th><td>${regime.direcao_global}</td></tr>
+      <tr><th>Dire√ß√£o Global</th><td>${regime.direcao_global}</td></tr>
       <tr><th>Volatilidade Global</th><td>${regime.volatilidade_global}</td></tr>
       <tr><th>Interesse Global</th><td>${regime.interesse_global}</td></tr>
-      <tr><th>Prob. DireÁ„o Global</th><td>${(regime.prob_direcao_global * 100).toFixed(2)}%</td></tr>
-      <tr><th>AÁ„o Recomendada</th><td>${risk.recommended_action}</td></tr>
+      <tr><th>Prob. Dire√ß√£o Global</th><td>${(regime.prob_direcao_global * 100).toFixed(2)}%</td></tr>
+      <tr><th>A√ß√£o Recomendada</th><td>${risk.recommended_action}</td></tr>
       <tr><th>Tamanho Recomendado</th><td>${risk.recommended_size}</td></tr>
-      <tr><th>PreÁo de Entrada</th><td>${risk.entry_price}</td></tr>
+      <tr><th>Pre√ßo de Entrada</th><td>${risk.entry_price}</td></tr>
       <tr><th>VAR Esperado</th><td>${risk.expected_var}</td></tr>
     `;
   }
@@ -232,25 +232,85 @@ function closeModal() {
 }
 
 /**
- * FunÁ„o principal para carregar, ordenar e agrupar os relatÛrios.
+ * Exibe o hist√≥rico completo dos relat√≥rios de um ativo.
+ * @param {string} asset - Nome do ativo.
+ * @param {Array} reports - Array de objetos { filePath, jsonData, reportDate } para o ativo.
+ */
+function showHistoricalReports(asset, reports) {
+  const modal = document.getElementById("reportModal");
+  if (!modal) {
+    console.error("Modal n√£o encontrado!");
+    return;
+  }
+
+  document.getElementById("modal-title").textContent = `Hist√≥rico de ${asset}`;
+
+  let tableContent = `
+    <tr>
+      <th>Data</th>
+      <th>Alta</th>
+      <th>Neutra</th>
+      <th>Queda</th>
+    </tr>
+  `;
+
+  reports.forEach(item => {
+    const data = item.jsonData.relatorio_C?.data || "Desconhecida";
+    const dirProb = item.jsonData.relatorio_C?.probabilidade?.direcao || {};
+    const alta = dirProb.Alta || "0";
+    const neutra = dirProb.Neutra || "0";
+    const queda = dirProb.Queda || "0";
+
+    tableContent += `
+      <tr>
+        <td>${data}</td>
+        <td>${alta}</td>
+        <td>${neutra}</td>
+        <td>${queda}</td>
+      </tr>
+    `;
+  });
+
+  const table = document.getElementById("modal-table");
+  table.innerHTML = tableContent;
+  modal.style.display = "flex";
+}
+
+/**
+ * Fun√ß√£o principal para carregar, ordenar e agrupar os relat√≥rios.
+ * Agora, para cada ativo, exibe-se apenas o relat√≥rio mais recente.
  */
 function loadAllReports() {
   const dash = document.getElementById("dashboard");
-  dash.innerHTML = '<div class="loading">?? Carregando relatÛrios...</div>';
+  dash.innerHTML = '<div class="loading">üîÑ Carregando relat√≥rios...</div>';
 
   fetch("frontend/json/main.json")
-    .then(response => response.json())
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`Falha na requisi√ß√£o: ${response.status} ${response.statusText}`);
+      }
+      return response.json();
+    })
     .then(data => {
+      if (!data.reports) {
+        throw new Error("Estrutura inv√°lida: 'reports' n√£o encontrado em main.json");
+      }
+      
       const paths = listAllFiles(data.reports);
       if (paths.length === 0) {
-        dash.textContent = "Nenhum relatÛrio encontrado.";
+        dash.textContent = "Nenhum relat√≥rio encontrado.";
         return;
       }
 
-      // Cria um array de promessas para carregar cada relatÛrio
+      // Cria um array de promessas para carregar cada relat√≥rio
       const fetchPromises = paths.map(filePath =>
         fetch("frontend/json/" + filePath)
-          .then(resp => resp.json())
+          .then(resp => {
+            if (!resp.ok) {
+              throw new Error(`Erro ao carregar ${filePath}: ${resp.status} ${resp.statusText}`);
+            }
+            return resp.json();
+          })
           .then(jsonData => {
             const reportDate = parseReportDate(jsonData, filePath);
             return { filePath, jsonData, reportDate };
@@ -263,10 +323,14 @@ function loadAllReports() {
 
       Promise.all(fetchPromises).then(results => {
         const reports = results.filter(item => item !== null);
-        // Ordena os relatÛrios do mais recente para o mais antigo
+        if (reports.length === 0) {
+          dash.textContent = "Nenhum relat√≥rio v√°lido encontrado.";
+          return;
+        }
+        // Ordena os relat√≥rios do mais recente para o mais antigo
         reports.sort((a, b) => b.reportDate - a.reportDate);
 
-        // Agrupa os relatÛrios por ativo (sÌmbolo)
+        // Agrupa os relat√≥rios por ativo (s√≠mbolo)
         const groupedReports = {};
         reports.forEach(item => {
           const asset = extractAssetName(item.filePath);
@@ -276,9 +340,11 @@ function loadAllReports() {
           groupedReports[asset].push(item);
         });
 
-        // Limpa o dashboard e renderiza os grupos
+        // Limpa o dashboard e renderiza os grupos (apenas o relat√≥rio mais recente de cada ativo)
         dash.innerHTML = "";
         for (const asset in groupedReports) {
+          const mostRecentReport = groupedReports[asset][0];
+
           const groupDiv = document.createElement("div");
           groupDiv.classList.add("group");
 
@@ -290,18 +356,26 @@ function loadAllReports() {
           const groupContainer = document.createElement("div");
           groupContainer.classList.add("group-container");
 
-          groupedReports[asset].forEach(item => {
-            const card = buildCardResumo(item.filePath, item.jsonData);
-            groupContainer.appendChild(card);
-          });
+          const card = buildCardResumo(mostRecentReport.filePath, mostRecentReport.jsonData);
+          groupContainer.appendChild(card);
 
           groupDiv.appendChild(groupContainer);
+
+          // Bot√£o para visualizar o hist√≥rico
+          const historyButton = document.createElement("button");
+          historyButton.textContent = "Ver hist√≥rico";
+          historyButton.classList.add("history-btn");
+          historyButton.addEventListener("click", () => {
+            showHistoricalReports(asset, groupedReports[asset]);
+          });
+          groupDiv.appendChild(historyButton);
+
           dash.appendChild(groupDiv);
         }
       });
     })
     .catch(err => {
       console.error("Erro ao carregar main.json:", err);
-      dash.textContent = "N„o foi possÌvel carregar main.json.";
+      dash.innerHTML = `<div class="error">Erro ao carregar os relat√≥rios. Confira o console para mais detalhes.</div>`;
     });
 }

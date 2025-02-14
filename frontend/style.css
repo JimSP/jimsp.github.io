@@ -14,14 +14,34 @@ header {
   box-shadow: 0px 0px 10px #00FFFF;
 }
 
+/* Dashboard e grupos */
 #dashboard {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 20px;
   justify-content: center;
   margin-top: 20px;
 }
 
+.group {
+  margin-bottom: 40px;
+}
+
+.group-title {
+  text-align: center;
+  margin: 0 0 20px;
+  font-size: 24px;
+  color: #FFD700;
+}
+
+.group-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Cards */
 .card {
   border: 2px solid #ccc;
   border-radius: 8px;
@@ -52,17 +72,27 @@ header {
   border-radius: 6px;
 }
 
-.card.alta { background-color: rgba(0, 255, 0, 0.3); border-left: 5px solid #00ff00; }
-.card.queda { background-color: rgba(255, 0, 0, 0.3); border-left: 5px solid #ff0000; }
-.card.neutra { background-color: rgba(128, 128, 128, 0.3); border-left: 5px solid #B6B6B6; }
-
-.card.recent {
-  border: 2px solid #FFD700; /* Borda dourada para destacar */
-  box-shadow: 0px 0px 15px #FFD700; /* Efeito de brilho */
+.card.alta { 
+  background-color: rgba(0, 255, 0, 0.3); 
+  border-left: 5px solid #00ff00; 
 }
 
+.card.queda { 
+  background-color: rgba(255, 0, 0, 0.3); 
+  border-left: 5px solid #ff0000; 
+}
 
-/* Estilo para o modal */
+.card.neutra { 
+  background-color: rgba(128, 128, 128, 0.3); 
+  border-left: 5px solid #B6B6B6; 
+}
+
+.card.recent {
+  border: 2px solid #FFD700;
+  box-shadow: 0px 0px 15px #FFD700;
+}
+
+/* Modal */
 .modal {
   display: none;
   position: fixed;
@@ -113,3 +143,19 @@ header {
   color: red;
 }
 
+.history-btn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #00FFFF;
+  border: none;
+  border-radius: 4px;
+  color: #0a0a0a;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.history-btn:hover {
+  background-color: #8A2BE2;
+  color: white;
+}
