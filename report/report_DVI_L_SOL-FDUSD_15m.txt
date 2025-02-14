@@ -1,77 +1,77 @@
 ================================================================================
-             DVI_L - Relatório de Regime Atual para SOL/FDUSD (15m)             
-   ANALISANDO O REGIME ATUAL - PERSPECTIVA DE PREÇO, VOLATILIDADE E INTERESSE   
+            DVI_L - RelatÃ³rio de Regime Atual para SOL/FDUSD (15m)             
+  ANALISANDO O REGIME ATUAL - PERSPECTIVA DE PREÃO, VOLATILIDADE E INTERESSE   
 ================================================================================
 
 Regime Atual:
 
- - Direção: Neutra
- - Volatilidade: Moderada
- - Interesse: Alto
+ - DireÃ§Ã£o: Neutra
+ - Volatilidade: Baixa
+ - Interesse: Baixo
  - Tempo: 900 minutos consecutivos
 
-Análise de Tempo no Regime (em minutos):
+AnÃ¡lise de Tempo no Regime (em minutos):
 
- - Duração Média Histórica: 0.00 minutos
- - Duração Máxima Histórica: 0 minutos
- - Este regime já ultrapassou a média histórica de duração!
+ - DuraÃ§Ã£o MÃ©dia HistÃ³rica: 0.00 minutos
+ - DuraÃ§Ã£o MÃ¡xima HistÃ³rica: 0 minutos
+ - Este regime jÃ¡ ultrapassou a mÃ©dia histÃ³rica de duraÃ§Ã£o!
 
-Probabilidade de Direção:
- - Neutra: 95.42%
- - Alta: 1.36%
- - Queda: 3.22%
+Probabilidade de DireÃ§Ã£o:
+ - Neutra: 97.76%
+ - Alta: 1.76%
+ - Queda: 0.47%
 
 Probabilidade de Volatilidade:
- - Moderada: 67.80%
- - Alta: 27.46%
- - Baixa: 4.75%
+ - Moderada: 51.06%
+ - Alta: 2.35%
+ - Baixa: 46.59%
 
 Probabilidade de Interesse:
- - Moderado: 39.66%
- - Alto: 59.66%
- - Baixo: 0.68%
+ - Moderado: 31.53%
+ - Alto: 0.59%
+ - Baixo: 67.88%
 
-Previsão de persistência da direção:
+PrevisÃ£o de persistÃªncia da direÃ§Ã£o:
  - Passo 1:
    -> Regime Atual: Neutra
-   -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 34.58%
-   -> Tempo Médio Acumulado: 0.00 minutos
+   -> PrÃ³ximo Regime: Neutra
+   -> Probabilidade da SequÃªncia: 37.18%
+   -> Tempo MÃ©dio Acumulado: 0.00 minutos
 
  - Passo 2:
    -> Regime Atual: Neutra
-   -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 11.96%
-   -> Tempo Médio Acumulado: 0.00 minutos
+   -> PrÃ³ximo Regime: Neutra
+   -> Probabilidade da SequÃªncia: 13.82%
+   -> Tempo MÃ©dio Acumulado: 0.00 minutos
 
  - Passo 3:
    -> Regime Atual: Neutra
-   -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 4.13%
-   -> Tempo Médio Acumulado: 0.00 minutos
+   -> PrÃ³ximo Regime: Neutra
+   -> Probabilidade da SequÃªncia: 5.14%
+   -> Tempo MÃ©dio Acumulado: 0.00 minutos
 
  - Passo 4:
    -> Regime Atual: Neutra
-   -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 1.43%
-   -> Tempo Médio Acumulado: 0.00 minutos
+   -> PrÃ³ximo Regime: Neutra
+   -> Probabilidade da SequÃªncia: 1.91%
+   -> Tempo MÃ©dio Acumulado: 0.00 minutos
 
  - Passo 5:
    -> Regime Atual: Neutra
-   -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 0.49%
-   -> Tempo Médio Acumulado: 0.00 minutos
+   -> PrÃ³ximo Regime: Neutra
+   -> Probabilidade da SequÃªncia: 0.71%
+   -> Tempo MÃ©dio Acumulado: 0.00 minutos
 
  - Passo 6:
    -> Regime Atual: Neutra
-   -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 0.17%
-   -> Tempo Médio Acumulado: 0.00 minutos
+   -> PrÃ³ximo Regime: Neutra
+   -> Probabilidade da SequÃªncia: 0.26%
+   -> Tempo MÃ©dio Acumulado: 0.00 minutos
 
  - Passo 7:
    -> Regime Atual: Neutra
-   -> Próximo Regime: Neutra
-   -> Probabilidade da Sequência: 0.06%
-   -> Tempo Médio Acumulado: 0.00 minutos
+   -> PrÃ³ximo Regime: Neutra
+   -> Probabilidade da SequÃªncia: 0.10%
+   -> Tempo MÃ©dio Acumulado: 0.00 minutos
 
-A 'Probabilidade da Sequência' indica a chance de transitar pela cadeia de regimes prevista, levando em consideração as probabilidades de cada transição intermediária.
+A 'Probabilidade da SequÃªncia' indica a chance de transitar pela cadeia de regimes prevista, levando em consideraÃ§Ã£o as probabilidades de cada transiÃ§Ã£o intermediÃ¡ria.

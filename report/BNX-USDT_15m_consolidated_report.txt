@@ -1,19 +1,17 @@
 
 ================================================================================
-                   RELATÓRIO OPERACIONAL DE GESTÃO DE RISCO                      
+                   RELATÃRIO OPERACIONAL DE GESTÃO DE RISCO                      
 ================================================================================
 
-🔹 Sequência de Regimes Prováveis:
- - Regime Atual: Neutra_Moderada_Baixo, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 34.34%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 16.49%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 7.92%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 3.80%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 1.82%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 0.88%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 0.42%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 0.20%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 0.10%
+ð¹ SequÃªncia de Regimes ProvÃ¡veis:
+ - Regime Atual: Queda_Baixa_Baixo, PrÃ³ximo Regime: Queda_Baixa_Baixo, Probabilidade Acumulada: 36.36%
+ - Regime Atual: Queda_Baixa_Baixo, PrÃ³ximo Regime: Queda_Baixa_Baixo, Probabilidade Acumulada: 13.22%
+ - Regime Atual: Queda_Baixa_Baixo, PrÃ³ximo Regime: Queda_Baixa_Baixo, Probabilidade Acumulada: 4.81%
+ - Regime Atual: Queda_Baixa_Baixo, PrÃ³ximo Regime: Queda_Baixa_Baixo, Probabilidade Acumulada: 1.75%
+ - Regime Atual: Queda_Baixa_Baixo, PrÃ³ximo Regime: Queda_Baixa_Baixo, Probabilidade Acumulada: 0.64%
+ - Regime Atual: Queda_Baixa_Baixo, PrÃ³ximo Regime: Queda_Baixa_Baixo, Probabilidade Acumulada: 0.23%
+ - Regime Atual: Queda_Baixa_Baixo, PrÃ³ximo Regime: Queda_Baixa_Baixo, Probabilidade Acumulada: 0.08%
 
 
-🔹 Último preço: 0.906300
+ð¹ Ãltimo preÃ§o: 0.927300
 ================================================================================

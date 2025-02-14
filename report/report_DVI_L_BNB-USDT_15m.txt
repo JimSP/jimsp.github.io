@@ -1,107 +1,77 @@
 ================================================================================
-             DVI_L - Relatório de Regime Atual para BNB/USDT (15m)              
-   ANALISANDO O REGIME ATUAL - PERSPECTIVA DE PREÇO, VOLATILIDADE E INTERESSE   
+             DVI_L - RelatÃ³rio de Regime Atual para BNB/USDT (15m)             
+  ANALISANDO O REGIME ATUAL - PERSPECTIVA DE PREÃO, VOLATILIDADE E INTERESSE   
 ================================================================================
 
 Regime Atual:
 
- - Direção: Alta
- - Volatilidade: Alta
- - Interesse: Alto
- - Tempo: 900 minutos consecutivos
+ - DireÃ§Ã£o: Neutra
+ - Volatilidade: Baixa
+ - Interesse: Baixo
+ - Tempo: 1800 minutos consecutivos
 
-Análise de Tempo no Regime (em minutos):
+AnÃ¡lise de Tempo no Regime (em minutos):
 
- - Duração Média Histórica: 0.00 minutos
- - Duração Máxima Histórica: 0 minutos
- - Este regime já ultrapassou a média histórica de duração!
+ - DuraÃ§Ã£o MÃ©dia HistÃ³rica: 0.00 minutos
+ - DuraÃ§Ã£o MÃ¡xima HistÃ³rica: 0 minutos
+ - Este regime jÃ¡ ultrapassou a mÃ©dia histÃ³rica de duraÃ§Ã£o!
 
-Probabilidade de Direção:
- - Neutra: 8.19%
- - Queda: 0.00%
- - Alta: 91.81%
+Probabilidade de DireÃ§Ã£o:
+ - Neutra: 98.61%
+ - Queda: 0.64%
+ - Alta: 0.75%
 
 Probabilidade de Volatilidade:
- - Moderada: 31.47%
- - Baixa: 2.16%
- - Alta: 66.38%
+ - Moderada: 48.66%
+ - Alta: 2.35%
+ - Baixa: 48.98%
 
 Probabilidade de Interesse:
- - Moderado: 18.10%
- - Alto: 81.47%
- - Baixo: 0.43%
+ - Moderado: 42.25%
+ - Alto: 2.03%
+ - Baixo: 55.72%
 
-Previsão de persistência da direção:
+PrevisÃ£o de persistÃªncia da direÃ§Ã£o:
  - Passo 1:
-   -> Regime Atual: Alta
-   -> Próximo Regime: Alta
-   -> Probabilidade da Sequência: 55.17%
-   -> Tempo Médio Acumulado: 0.00 minutos
+   -> Regime Atual: Neutra
+   -> PrÃ³ximo Regime: Neutra
+   -> Probabilidade da SequÃªncia: 35.83%
+   -> Tempo MÃ©dio Acumulado: 0.00 minutos
 
  - Passo 2:
-   -> Regime Atual: Alta
-   -> Próximo Regime: Alta
-   -> Probabilidade da Sequência: 30.44%
-   -> Tempo Médio Acumulado: 0.00 minutos
+   -> Regime Atual: Neutra
+   -> PrÃ³ximo Regime: Neutra
+   -> Probabilidade da SequÃªncia: 12.84%
+   -> Tempo MÃ©dio Acumulado: 0.00 minutos
 
  - Passo 3:
-   -> Regime Atual: Alta
-   -> Próximo Regime: Alta
-   -> Probabilidade da Sequência: 16.79%
-   -> Tempo Médio Acumulado: 0.00 minutos
+   -> Regime Atual: Neutra
+   -> PrÃ³ximo Regime: Neutra
+   -> Probabilidade da SequÃªncia: 4.60%
+   -> Tempo MÃ©dio Acumulado: 0.00 minutos
 
  - Passo 4:
-   -> Regime Atual: Alta
-   -> Próximo Regime: Alta
-   -> Probabilidade da Sequência: 9.27%
-   -> Tempo Médio Acumulado: 0.00 minutos
+   -> Regime Atual: Neutra
+   -> PrÃ³ximo Regime: Neutra
+   -> Probabilidade da SequÃªncia: 1.65%
+   -> Tempo MÃ©dio Acumulado: 0.00 minutos
 
  - Passo 5:
-   -> Regime Atual: Alta
-   -> Próximo Regime: Alta
-   -> Probabilidade da Sequência: 5.11%
-   -> Tempo Médio Acumulado: 0.00 minutos
+   -> Regime Atual: Neutra
+   -> PrÃ³ximo Regime: Neutra
+   -> Probabilidade da SequÃªncia: 0.59%
+   -> Tempo MÃ©dio Acumulado: 0.00 minutos
 
  - Passo 6:
-   -> Regime Atual: Alta
-   -> Próximo Regime: Alta
-   -> Probabilidade da Sequência: 2.82%
-   -> Tempo Médio Acumulado: 0.00 minutos
+   -> Regime Atual: Neutra
+   -> PrÃ³ximo Regime: Neutra
+   -> Probabilidade da SequÃªncia: 0.21%
+   -> Tempo MÃ©dio Acumulado: 0.00 minutos
 
  - Passo 7:
-   -> Regime Atual: Alta
-   -> Próximo Regime: Alta
-   -> Probabilidade da Sequência: 1.56%
-   -> Tempo Médio Acumulado: 0.00 minutos
+   -> Regime Atual: Neutra
+   -> PrÃ³ximo Regime: Neutra
+   -> Probabilidade da SequÃªncia: 0.08%
+   -> Tempo MÃ©dio Acumulado: 0.00 minutos
 
- - Passo 8:
-   -> Regime Atual: Alta
-   -> Próximo Regime: Alta
-   -> Probabilidade da Sequência: 0.86%
-   -> Tempo Médio Acumulado: 0.00 minutos
-
- - Passo 9:
-   -> Regime Atual: Alta
-   -> Próximo Regime: Alta
-   -> Probabilidade da Sequência: 0.47%
-   -> Tempo Médio Acumulado: 0.00 minutos
-
- - Passo 10:
-   -> Regime Atual: Alta
-   -> Próximo Regime: Alta
-   -> Probabilidade da Sequência: 0.26%
-   -> Tempo Médio Acumulado: 0.00 minutos
-
- - Passo 11:
-   -> Regime Atual: Alta
-   -> Próximo Regime: Alta
-   -> Probabilidade da Sequência: 0.14%
-   -> Tempo Médio Acumulado: 0.00 minutos
-
- - Passo 12:
-   -> Regime Atual: Alta
-   -> Próximo Regime: Alta
-   -> Probabilidade da Sequência: 0.08%
-   -> Tempo Médio Acumulado: 0.00 minutos
-
-A 'Probabilidade da Sequência' indica a chance de transitar pela cadeia de regimes prevista, levando em consideração as probabilidades de cada transição intermediária.
+A 'Probabilidade da SequÃªncia' indica a chance de transitar pela cadeia de regimes prevista, levando em consideraÃ§Ã£o as probabilidades de cada transiÃ§Ã£o intermediÃ¡ria.

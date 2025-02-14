@@ -1,17 +1,17 @@
 
 ================================================================================
-                   RELATÓRIO OPERACIONAL DE GESTÃO DE RISCO                      
+                   RELATÃRIO OPERACIONAL DE GESTÃO DE RISCO                      
 ================================================================================
 
-🔹 Sequência de Regimes Prováveis:
- - Regime Atual: Neutra_Moderada_Alto, Próximo Regime: Neutra_Moderada_Alto, Probabilidade Acumulada: 34.58%
- - Regime Atual: Neutra_Moderada_Alto, Próximo Regime: Neutra_Moderada_Alto, Probabilidade Acumulada: 11.96%
- - Regime Atual: Neutra_Moderada_Alto, Próximo Regime: Neutra_Moderada_Alto, Probabilidade Acumulada: 4.13%
- - Regime Atual: Neutra_Moderada_Alto, Próximo Regime: Neutra_Moderada_Alto, Probabilidade Acumulada: 1.43%
- - Regime Atual: Neutra_Moderada_Alto, Próximo Regime: Neutra_Moderada_Alto, Probabilidade Acumulada: 0.49%
- - Regime Atual: Neutra_Moderada_Alto, Próximo Regime: Neutra_Moderada_Alto, Probabilidade Acumulada: 0.17%
- - Regime Atual: Neutra_Moderada_Alto, Próximo Regime: Neutra_Moderada_Alto, Probabilidade Acumulada: 0.06%
+ð¹ SequÃªncia de Regimes ProvÃ¡veis:
+ - Regime Atual: Neutra_Baixa_Baixo, PrÃ³ximo Regime: Neutra_Baixa_Baixo, Probabilidade Acumulada: 37.18%
+ - Regime Atual: Neutra_Baixa_Baixo, PrÃ³ximo Regime: Neutra_Baixa_Baixo, Probabilidade Acumulada: 13.82%
+ - Regime Atual: Neutra_Baixa_Baixo, PrÃ³ximo Regime: Neutra_Baixa_Baixo, Probabilidade Acumulada: 5.14%
+ - Regime Atual: Neutra_Baixa_Baixo, PrÃ³ximo Regime: Neutra_Baixa_Baixo, Probabilidade Acumulada: 1.91%
+ - Regime Atual: Neutra_Baixa_Baixo, PrÃ³ximo Regime: Neutra_Baixa_Baixo, Probabilidade Acumulada: 0.71%
+ - Regime Atual: Neutra_Baixa_Baixo, PrÃ³ximo Regime: Neutra_Baixa_Baixo, Probabilidade Acumulada: 0.26%
+ - Regime Atual: Neutra_Baixa_Baixo, PrÃ³ximo Regime: Neutra_Baixa_Baixo, Probabilidade Acumulada: 0.10%
 
 
-🔹 Último preço: 191.280000
+ð¹ Ãltimo preÃ§o: 201.370000
 ================================================================================

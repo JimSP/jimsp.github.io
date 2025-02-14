@@ -1,23 +1,22 @@
 
 ================================================================================
-                   RELATÓRIO OPERACIONAL DE GESTÃO DE RISCO                      
+                   RELATÃRIO OPERACIONAL DE GESTÃO DE RISCO                      
 ================================================================================
 
-🔹 Sequência de Regimes Prováveis:
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 56.49%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 31.91%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 18.02%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 10.18%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 5.75%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 3.25%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 1.83%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 1.04%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 0.59%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 0.33%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 0.19%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 0.11%
- - Regime Atual: Neutra_Moderada_Moderado, Próximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 0.06%
+ð¹ SequÃªncia de Regimes ProvÃ¡veis:
+ - Regime Atual: Neutra_Baixa_Baixo, PrÃ³ximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 36.59%
+ - Regime Atual: Neutra_Moderada_Moderado, PrÃ³ximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 20.64%
+ - Regime Atual: Neutra_Moderada_Moderado, PrÃ³ximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 11.64%
+ - Regime Atual: Neutra_Moderada_Moderado, PrÃ³ximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 6.57%
+ - Regime Atual: Neutra_Moderada_Moderado, PrÃ³ximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 3.70%
+ - Regime Atual: Neutra_Moderada_Moderado, PrÃ³ximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 2.09%
+ - Regime Atual: Neutra_Moderada_Moderado, PrÃ³ximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 1.18%
+ - Regime Atual: Neutra_Moderada_Moderado, PrÃ³ximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 0.66%
+ - Regime Atual: Neutra_Moderada_Moderado, PrÃ³ximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 0.37%
+ - Regime Atual: Neutra_Moderada_Moderado, PrÃ³ximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 0.21%
+ - Regime Atual: Neutra_Moderada_Moderado, PrÃ³ximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 0.12%
+ - Regime Atual: Neutra_Moderada_Moderado, PrÃ³ximo Regime: Neutra_Moderada_Moderado, Probabilidade Acumulada: 0.07%
 
 
-🔹 Último preço: 0.236100
+ð¹ Ãltimo preÃ§o: 0.231400
 ================================================================================

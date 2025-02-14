@@ -11,7 +11,7 @@ import datetime
 from datetime import timedelta
 import json
 
-# ------------------- CONFIGURAÇÕES GLOBAIS -------------------
+# ------------------- CONFIGURAÃÃES GLOBAIS -------------------
 TOP_VOLUME = 50
 TIMEFRAME = "15m"
 TOTAL_CANDLES = 10000
@@ -29,18 +29,18 @@ os.makedirs("data", exist_ok=True)
 os.makedirs("report", exist_ok=True)
 os.makedirs("frontend/json", exist_ok=True)
 
-# ------------------- DECORADOR DE MEDIÇÃO DE TEMPO -------------------
+# ------------------- DECORADOR DE MEDIÃÃO DE TEMPO -------------------
 def measure_time(func):
     def wrapper(*args, **kwargs):
         start = time.time()
         result = func(*args, **kwargs)
         end = time.time()
         elapsed = end - start
-        logger.info(f"Função {func.__name__} executada em {elapsed:.2f}s")
+        logger.info(f"FunÃ§Ã£o {func.__name__} executada em {elapsed:.2f}s")
         return result
     return wrapper
 
-# ------------------- FUNÇÕES DE DOWNLOAD / CARGA DE DADOS -------------------
+# ------------------- FUNÃÃES DE DOWNLOAD / CARGA DE DADOS -------------------
 @measure_time
 def get_top_symbols(limit: int = 10) -> list[str]:
     exchange = ccxt.binance()
@@ -78,8 +78,8 @@ def fetch_ohlcv_data_chunks(symbol: str, timeframe: str, total_candles: int) -> 
 
 def load_or_fetch_data(symbol: str, timeframe: str, total_candles: int) -> pd.DataFrame:
     """
-    L� o CSV se existir e faz atualiza��o incremental na Binance, ou
-    cria do zero se n�o existir.
+    Lê o CSV se existir e faz atualização incremental na Binance, ou
+    cria do zero se não existir.
     """
     filename = f"data/{symbol.replace('/', '-')}_{timeframe}TOHCLV.csv"
     
@@ -88,54 +88,54 @@ def load_or_fetch_data(symbol: str, timeframe: str, total_candles: int) -> pd.Da
         df_local = pd.read_csv(filename, parse_dates=["timestamp"])
         df_local.set_index("timestamp", inplace=True)
         
-        # Pega o �ltimo timestamp local
+        # Pega o último timestamp local
         last_local_ts = df_local.index.max()
-        logger.info(f"�ltimo timestamp local: {last_local_ts}")
+        logger.info(f"Último timestamp local: {last_local_ts}")
         
-        # Converte para milissegundos (padr�o da ccxt)
+        # Converte para milissegundos (padrão da ccxt)
         since = int(last_local_ts.timestamp() * 1000) + 1
         
-        # Busca s� candles ap�s esse �ltimo timestamp
+        # Busca só candles após esse último timestamp
         df_new = fetch_ohlcv_incremental(symbol, timeframe, since, total_candles)
         
         if not df_new.empty:
-            # Concatena, remove poss�veis duplicatas e ordena por data
+            # Concatena, remove possíveis duplicatas e ordena por data
             df_concat = pd.concat([df_local, df_new])
             df_concat = df_concat[~df_concat.index.duplicated(keep="last")]
             df_concat = df_concat.sort_index()
             
             # Corta se quiser limitar o total de candles em disco
-            # Exemplo: manter somente os �ltimos 'TOTAL_CANDLES' candles
+            # Exemplo: manter somente os últimos 'TOTAL_CANDLES' candles
             if len(df_concat) > total_candles:
                 df_concat = df_concat.iloc[-total_candles:]
             
             # Salva novamente em CSV
             df_concat.to_csv(filename, index=True)
-            logger.info(f"Atualiza��o incremental realizada e salva em {filename}.")
+            logger.info(f"Atualização incremental realizada e salva em {filename}.")
             return df_concat
         else:
             logger.info("Nenhum dado novo retornado da API. Mantendo CSV local.")
             return df_local
         
     else:
-        logger.info(f"Arquivo {filename} n�o encontrado. Consultando a API ...")
-        # Se n�o existir CSV, baixa tudo de uma vez
+        logger.info(f"Arquivo {filename} não encontrado. Consultando a API ...")
+        # Se não existir CSV, baixa tudo de uma vez
         df = fetch_ohlcv_data_chunks(symbol, timeframe, total_candles)
         df.to_csv(filename, index=False)
         logger.info(f"Dados salvos em {filename}.")
-        # Recarrega j� em formato com �ndice
+        # Recarrega já em formato com índice
         df = pd.read_csv(filename, parse_dates=["timestamp"])
         df.set_index("timestamp", inplace=True)
         return df
 
 def fetch_ohlcv_incremental(symbol: str, timeframe: str, since: int, total_candles: int) -> pd.DataFrame:
     """
-    Busca dados OHLCV a partir de 'since' (em ms), retornando at� 'total_candles'.
+    Busca dados OHLCV a partir de 'since' (em ms), retornando até 'total_candles'.
     Usa a API ccxt.binance() para obter incrementos de candles.
     """
     exchange = ccxt.binance()
     all_ohlcv = []
-    # Cada chamada retorna no m�ximo 1000 candles, ent�o repetimos se necess�rio
+    # Cada chamada retorna no máximo 1000 candles, então repetimos se necessário
     while True:
         ohlcv = exchange.fetch_ohlcv(symbol, timeframe, since=since, limit=1000)
         if not ohlcv:
@@ -145,7 +145,7 @@ def fetch_ohlcv_incremental(symbol: str, timeframe: str, since: int, total_candl
         # Atualiza o 'since' para continuar de onde parou
         since = ohlcv[-1][0] + 1
         
-        # Opcional: se j� baixou total_candles, parar
+        # Opcional: se já baixou total_candles, parar
         if len(all_ohlcv) >= total_candles:
             break
         
@@ -167,7 +167,7 @@ def calculate_dvi(df, window_c=5, window_m=20, window_l=60):
         # 1) direction
         direction = series['close'].fillna(method='ffill').diff().rolling(window).sum()
 
-        # Substituindo NaN por 0 caso n�o haja dados suficientes
+        # Substituindo NaN por 0 caso não haja dados suficientes
         if direction.isna().all():
             direction = direction.fillna(0)
 
@@ -271,7 +271,7 @@ def calculate_dvi(df, window_c=5, window_m=20, window_l=60):
         "threshold_int": {"C": thr_int_c, "M": thr_int_m, "L": thr_int_l}
     }
 
-# ------------------- FUNÇÃO AUXILIAR: CALCULA A VARIAÇÃO DE PREÇO -------------------
+# ------------------- FUNÃÃO AUXILIAR: CALCULA A VARIAÃÃO DE PREÃO -------------------
 @measure_time
 def calculate_price_variation(df):
     df["pct_change_5"] = df["close"].pct_change(periods=5) * 100
@@ -279,7 +279,7 @@ def calculate_price_variation(df):
     df["pct_change_60"] = df["close"].pct_change(periods=60) * 100
     return df
 
-# ------------------- FUNÇÃO: CALCULA A DURAÇÃO DO REGIME ATUAL -------------------
+# ------------------- FUNÃÃO: CALCULA A DURAÃÃO DO REGIME ATUAL -------------------
 @measure_time
 def calculate_regime_duration(df, current_regime, period):
     count = 0
@@ -290,18 +290,18 @@ def calculate_regime_duration(df, current_regime, period):
             break
     return count
 
-# ------------------- FUNÇÕES DE MATRIZ DE TRANSIÇÃO -------------------
+# ------------------- FUNÃÃES DE MATRIZ DE TRANSIÃÃO -------------------
 @measure_time
 def generate_transition_matrix(series):
     transitions = pd.DataFrame({
         'Estado Atual': series[:-1].values,
-        'Próximo Estado': series[1:].values
+        'PrÃ³ximo Estado': series[1:].values
     })
     transition_counts = pd.crosstab(
         index=transitions['Estado Atual'],
-        columns=transitions['Próximo Estado'],
+        columns=transitions['PrÃ³ximo Estado'],
         rownames=['Estado Atual'],
-        colnames=['Próximo Estado']
+        colnames=['PrÃ³ximo Estado']
     )
     unique_states = series.unique()
     transition_counts = transition_counts.reindex(index=unique_states, columns=unique_states, fill_value=0)
@@ -312,7 +312,7 @@ def normalize_transition_matrix(transition_matrix):
     probabilities = transition_matrix.div(transition_matrix.sum(axis=1), axis=0).fillna(0)
     return probabilities
 
-# ------------------- FUNÇÃO: CALCULA ESTATÍSTICAS DE DURAÇÃO -------------------
+# ------------------- FUNÃÃO: CALCULA ESTATÃSTICAS DE DURAÃÃO -------------------
 @measure_time
 def calculate_state_durations(series):
     durations = []
@@ -322,16 +322,16 @@ def calculate_state_durations(series):
         if series.iloc[i] == current_state:
             duration += 1
         else:
-            durations.append({"Estado": current_state, "Duração": duration})
+            durations.append({"Estado": current_state, "DuraÃ§Ã£o": duration})
             current_state = series.iloc[i]
             duration = 1
-    durations.append({"Estado": current_state, "Duração": duration})
+    durations.append({"Estado": current_state, "DuraÃ§Ã£o": duration})
     duration_df = pd.DataFrame(durations)
-    stats = duration_df.groupby("Estado")["Duração"].agg(["mean", "max", "count"]).reset_index()
-    stats.rename(columns={"mean": "Duração Média", "max": "Duração Máxima", "count": "Ocorrências"}, inplace=True)
+    stats = duration_df.groupby("Estado")["DuraÃ§Ã£o"].agg(["mean", "max", "count"]).reset_index()
+    stats.rename(columns={"mean": "DuraÃ§Ã£o MÃ©dia", "max": "DuraÃ§Ã£o MÃ¡xima", "count": "OcorrÃªncias"}, inplace=True)
     return duration_df, stats
 
-# ------------------- FUNÇÃO: ANALISA TEMPO DO REGIME (para o relatório) -------------------
+# ------------------- FUNÃÃO: ANALISA TEMPO DO REGIME (para o relatÃ³rio) -------------------
 @measure_time
 def get_time_analysis_for_regime(current_regime, count, duration_stats, timeframe_minutes):
     row = duration_stats[duration_stats["Estado"] == current_regime]
@@ -341,16 +341,16 @@ def get_time_analysis_for_regime(current_regime, count, duration_stats, timefram
             "duration_max": 0,
             "occurrences": 0,
             "time_remaining_estimate": None,
-            "message": "Não há estatísticas de duração para este regime."
+            "message": "NÃ£o hÃ¡ estatÃ­sticas de duraÃ§Ã£o para este regime."
         }
-    mean_dur = row["Duração Média"].values[0] * timeframe_minutes
-    max_dur = row["Duração Máxima"].values[0] * timeframe_minutes
-    occ = row["Ocorrências"].values[0]
+    mean_dur = row["DuraÃ§Ã£o MÃ©dia"].values[0] * timeframe_minutes
+    max_dur = row["DuraÃ§Ã£o MÃ¡xima"].values[0] * timeframe_minutes
+    occ = row["OcorrÃªncias"].values[0]
     time_remaining_est = mean_dur - (count * timeframe_minutes)
     if time_remaining_est > 0:
-        message = f"Estimativa de Tempo Restante (baseado na média): ~{time_remaining_est:.2f} minutos"
+        message = f"Estimativa de Tempo Restante (baseado na mÃ©dia): ~{time_remaining_est:.2f} minutos"
     else:
-        message = "Este regime já ultrapassou a média histórica de duração!"
+        message = "Este regime jÃ¡ ultrapassou a mÃ©dia histÃ³rica de duraÃ§Ã£o!"
     return {
         "duration_mean": mean_dur,
         "duration_max": max_dur,
@@ -359,7 +359,7 @@ def get_time_analysis_for_regime(current_regime, count, duration_stats, timefram
         "message": message
     }
 
-# ------------------- FUNÇÃO: PREVER PRÓXIMOS REGIMES (MESMA DIREÇÃO) -------------------
+# ------------------- FUNÃÃO: PREVER PRÃXIMOS REGIMES (MESMA DIREÃÃO) -------------------
 @measure_time
 def predict_next_regimes_with_same_direction(current_regime, probability_matrix, duration_stats, timeframe_minutes=15):
     current_direction = current_regime.split("_")[0]
@@ -368,24 +368,24 @@ def predict_next_regimes_with_same_direction(current_regime, probability_matrix,
     total_time = 0
     while True:
         if current_regime not in probability_matrix.index:
-            print(f"Regime {current_regime} ausente no índice. Encerrando.")
+            print(f"Regime {current_regime} ausente no Ã­ndice. Encerrando.")
             break
         transitions = probability_matrix.loc[current_regime]
         same_direction_transitions = transitions[transitions.index.str.startswith(current_direction)]
         if same_direction_transitions.empty:
-            print("Nenhuma transição encontrada para a mesma direção. Encerrando.")
+            print("Nenhuma transiÃ§Ã£o encontrada para a mesma direÃ§Ã£o. Encerrando.")
             break
         next_regime = same_direction_transitions.idxmax()
         next_probability = same_direction_transitions[next_regime]
         next_direction = next_regime.split("_")[0]
         if next_direction != current_direction:
-            print(f"A direção mudou de {current_direction} para {next_direction}, encerrando.")
+            print(f"A direÃ§Ã£o mudou de {current_direction} para {next_direction}, encerrando.")
             break
         
-        # soma do tempo médio
+        # soma do tempo mÃ©dio
         row = duration_stats[duration_stats["Estado"] == next_regime]
         if not row.empty:
-            avg_dur = row["Duração Média"].values[0]
+            avg_dur = row["DuraÃ§Ã£o MÃ©dia"].values[0]
             next_duration = avg_dur * timeframe_minutes
         else:
             next_duration = 0
@@ -405,7 +405,7 @@ def predict_next_regimes_with_same_direction(current_regime, probability_matrix,
         current_regime = next_regime
     return sequence
 
-# ------------------- FUNÇÃO: SUMARIZA PROB. (DIR, VOL, INTER) -------------------
+# ------------------- FUNÃÃO: SUMARIZA PROB. (DIR, VOL, INTER) -------------------
 def summarize_transition_probabilities(probability_series):
     dir_counter = collections.defaultdict(float)
     vol_counter = collections.defaultdict(float)
@@ -420,7 +420,7 @@ def summarize_transition_probabilities(probability_series):
         int_counter[i] += prob
     return dict(dir_counter), dict(vol_counter), dict(int_counter)
 
-# ------------------- RELATÓRIOS TXT -------------------
+# ------------------- RELATÃRIOS TXT -------------------
 @measure_time
 def build_user_friendly_report(
         tag,
@@ -438,11 +438,11 @@ def build_user_friendly_report(
     report_lines = []
     dvi = current_regime.split("_")
     report_lines.append("="*80)
-    report_lines.append(f"{tag} - Relatório de Regime Atual para {symbol} ({timeframe})".center(80))
-    report_lines.append("ANALISANDO O REGIME ATUAL - PERSPECTIVA DE PREÇO, VOLATILIDADE E INTERESSE".center(80))
+    report_lines.append(f"{tag} - RelatÃ³rio de Regime Atual para {symbol} ({timeframe})".center(80))
+    report_lines.append("ANALISANDO O REGIME ATUAL - PERSPECTIVA DE PREÃO, VOLATILIDADE E INTERESSE".center(80))
     report_lines.append("="*80 + "\n")
     report_lines.append("Regime Atual:\n")
-    report_lines.append(f" - Direção: {dvi[0]}")
+    report_lines.append(f" - DireÃ§Ã£o: {dvi[0]}")
     report_lines.append(f" - Volatilidade: {dvi[1]}")
     report_lines.append(f" - Interesse: {dvi[2]}")
     report_lines.append(f" - Tempo: {count * timeframe_minutes} minutos consecutivos\n")
@@ -450,19 +450,19 @@ def build_user_friendly_report(
     if duration_stats is not None:
         time_info = get_time_analysis_for_regime(current_regime, count, duration_stats, timeframe_minutes)
         if time_info:
-            report_lines.append("Análise de Tempo no Regime (em minutos):\n")
-            report_lines.append(f" - Duração Média Histórica: {time_info['duration_mean']:.2f} minutos")
-            report_lines.append(f" - Duração Máxima Histórica: {time_info['duration_max']} minutos")
+            report_lines.append("AnÃ¡lise de Tempo no Regime (em minutos):\n")
+            report_lines.append(f" - DuraÃ§Ã£o MÃ©dia HistÃ³rica: {time_info['duration_mean']:.2f} minutos")
+            report_lines.append(f" - DuraÃ§Ã£o MÃ¡xima HistÃ³rica: {time_info['duration_max']} minutos")
             rem = time_info.get("time_remaining_estimate")
             if rem is not None and rem > 0:
-                report_lines.append(f" - Estimativa de Tempo Restante (baseado na média): ~{rem:.2f} minutos")
+                report_lines.append(f" - Estimativa de Tempo Restante (baseado na mÃ©dia): ~{rem:.2f} minutos")
             else:
-                report_lines.append(" - Este regime já ultrapassou a média histórica de duração!")
+                report_lines.append(" - Este regime jÃ¡ ultrapassou a mÃ©dia histÃ³rica de duraÃ§Ã£o!")
             report_lines.append("")
         else:
-            report_lines.append("Não há estatísticas de duração para este regime.\n")
+            report_lines.append("NÃ£o hÃ¡ estatÃ­sticas de duraÃ§Ã£o para este regime.\n")
     
-    report_lines.append("Probabilidade de Direção:")
+    report_lines.append("Probabilidade de DireÃ§Ã£o:")
     for d, p in dir_probs.items():
         report_lines.append(f" - {d}: {p:.2%}")
     
@@ -475,30 +475,30 @@ def build_user_friendly_report(
         report_lines.append(f" - {i}: {p:.2%}")
     
     if len(predicted_sequence) > 0:
-        report_lines.append("\nPrevisão de persistência da direção:")
+        report_lines.append("\nPrevisÃ£o de persistÃªncia da direÃ§Ã£o:")
         for step in predicted_sequence:
             report_lines.append(f" - Passo {step['passo']}:")
             report_lines.append(f"   -> Regime Atual: {step['regime_atual'].split('_')[0]}")
-            report_lines.append(f"   -> Próximo Regime: {step['proximo_regime'].split('_')[0]}")
-            report_lines.append(f"   -> Probabilidade da Sequência: {step['probabilidade_sequencia']:.2%}")
-            report_lines.append(f"   -> Tempo Médio Acumulado: {step['tempo_medio_acumulado']:.2f} minutos\n")
+            report_lines.append(f"   -> PrÃ³ximo Regime: {step['proximo_regime'].split('_')[0]}")
+            report_lines.append(f"   -> Probabilidade da SequÃªncia: {step['probabilidade_sequencia']:.2%}")
+            report_lines.append(f"   -> Tempo MÃ©dio Acumulado: {step['tempo_medio_acumulado']:.2f} minutos\n")
         
-        report_lines.append("A 'Probabilidade da Sequência' indica a chance de transitar pela cadeia de regimes prevista, "
-                            "levando em consideração as probabilidades de cada transição intermediária.\n")
+        report_lines.append("A 'Probabilidade da SequÃªncia' indica a chance de transitar pela cadeia de regimes prevista, "
+                            "levando em consideraÃ§Ã£o as probabilidades de cada transiÃ§Ã£o intermediÃ¡ria.\n")
     
     return "\n".join(report_lines)
 
 def get_global_regime(relatorio_c, relatorio_m, relatorio_l, 
                       weight_c=0.2, weight_m=0.3, weight_l=0.5):
     """
-    Combina as direções, volatilidades e interesses (short/med/long)
-    gerando um único 'regime_global' e a probabilidade global de continuação
-    da direção escolhida.
+    Combina as direÃ§Ãµes, volatilidades e interesses (short/med/long)
+    gerando um Ãºnico 'regime_global' e a probabilidade global de continuaÃ§Ã£o
+    da direÃ§Ã£o escolhida.
 
     Arguments:
-      - relatorio_c, relatorio_m, relatorio_l: dicts com as informações dos 3 períodos
+      - relatorio_c, relatorio_m, relatorio_l: dicts com as informaÃ§Ãµes dos 3 perÃ­odos
          (cada um tem "regime_atual", "probabilidade" etc.)
-      - weight_c, weight_m, weight_l: pesos atribuídos a cada horizonte (somam 1.0)
+      - weight_c, weight_m, weight_l: pesos atribuÃ­dos a cada horizonte (somam 1.0)
 
     Return:
       {
@@ -509,7 +509,7 @@ def get_global_regime(relatorio_c, relatorio_m, relatorio_l,
       }
     """
 
-    # 1) DIREÇÃO
+    # 1) DIREÃÃO
     dir_c = relatorio_c["regime_atual"]["direcao"]   # "Alta", "Queda", "Neutra"
     dir_m = relatorio_m["regime_atual"]["direcao"]
     dir_l = relatorio_l["regime_atual"]["direcao"]
@@ -517,13 +517,13 @@ def get_global_regime(relatorio_c, relatorio_m, relatorio_l,
 
     from collections import Counter
     counter_dir = Counter(dirs)
-    # Pega a direção mais comum diretamente
+    # Pega a direÃ§Ã£o mais comum diretamente
     dir_mais_comum = counter_dir.most_common(1)[0][0]  # Ex. "Alta", "Queda" ou "Neutra"
 
     # Verifica se houve empate
     empate = False
     values_list = list(counter_dir.values())
-    # Se houver 3 direções diferentes ou se as 2 primeiras contagens forem iguais,
+    # Se houver 3 direÃ§Ãµes diferentes ou se as 2 primeiras contagens forem iguais,
     # consideramos empate
     if len(counter_dir) == 3 or (len(values_list) >= 2 and values_list[0] == values_list[1]):
         empate = True
@@ -578,7 +578,7 @@ def get_global_regime(relatorio_c, relatorio_m, relatorio_l,
     max_int = max([int_order[int_c], int_order[int_m], int_order[int_l]])
     interesse_global = [k for k, v in int_order.items() if v == max_int][0]
 
-    # 4) Probabilidade da direção global (média ponderada das janelas)
+    # 4) Probabilidade da direÃ§Ã£o global (mÃ©dia ponderada das janelas)
     def get_prob(report, direction):
         prob_dict = report["probabilidade"]["direcao"]
         return float(prob_dict.get(direction, "0.00%").replace("%", "")) / 100.0
@@ -599,7 +599,7 @@ def get_risk_management_global(regime_global: dict,
                                dvi_thresholds: dict,
                                short_direction: str = None,
                                short_prob: float = 0.0) -> dict:
-    # Verifica se há override do curto prazo
+    # Verifica se hÃ¡ override do curto prazo
     if regime_global["direcao_global"] == "Neutra" and short_direction in ["Alta", "Queda"] and short_prob > 0.5:
         if short_direction == "Alta":
             recommended_action = "BUY"
@@ -617,13 +617,13 @@ def get_risk_management_global(regime_global: dict,
         recommended_size = 1.0
     
     if short_direction in ["Alta", "Queda"] and short_prob > 0.5:
-        # Override: usamos a indicação do curto prazo
+        # Override: usamos a indicaÃ§Ã£o do curto prazo
         if short_direction == "Alta":
             recommended_action = "BUY"
         else:
             recommended_action = "SELL"
 
-    # Usamos o threshold superior da volatilidade do curto prazo para definir a variação esperada
+    # Usamos o threshold superior da volatilidade do curto prazo para definir a variaÃ§Ã£o esperada
     expected_var = dvi_thresholds["threshold_vol"]["C"][1]  # Ex: 0.07 para 7%
 
     return {
@@ -647,7 +647,7 @@ def generate_report(tag,
     count = calculate_regime_duration(df, current_regime, period)
     
     if current_regime not in probability_matrix.index:
-        logger.warning(f"O regime {current_regime} não está no índice da probability_matrix para {symbol}. Pulando TXT.")
+        logger.warning(f"O regime {current_regime} nÃ£o estÃ¡ no Ã­ndice da probability_matrix para {symbol}. Pulando TXT.")
         return
     
     transitions_from_current = probability_matrix.loc[current_regime]
@@ -677,10 +677,10 @@ def generate_report(tag,
     report_filename = f"report/report_{tag}_{symbol.replace('/', '-')}_{timeframe}.txt"
     with open(report_filename, "w", encoding="utf-8") as f:
         f.write(report_str)
-    logger.info(f"Relatório para {symbol} salvo em '{report_filename}'.")
+    logger.info(f"RelatÃ³rio para {symbol} salvo em '{report_filename}'.")
 
 # --------------------------------------------------------------------------------------
-# RELATÓRIO CONSOLIDADO
+# RELATÃRIO CONSOLIDADO
 def evaluate_regime_sequence(prob_matrix, current_regime, min_probability=0.01, max_steps=10):
     sequence = []
     total_probability = 1.0
@@ -691,18 +691,18 @@ def evaluate_regime_sequence(prob_matrix, current_regime, min_probability=0.01, 
             break
         visited_states.add(current_regime)
         if current_regime not in prob_matrix.index:
-            print(f"Regime {current_regime} não encontrado na matriz, encerrando.")
+            print(f"Regime {current_regime} nÃ£o encontrado na matriz, encerrando.")
             break
         transitions = prob_matrix.loc[current_regime]
         if transitions.max() < min_probability:
-            print(f"Probabilidade máxima muito baixa ({transitions.max():.4f}), encerrando.")
+            print(f"Probabilidade mÃ¡xima muito baixa ({transitions.max():.4f}), encerrando.")
             break
         next_regime = transitions.idxmax()
         next_probability = transitions[next_regime]
         current_direction = current_regime.split("_")[0]
         next_direction = next_regime.split("_")[0]
         if next_direction != current_direction:
-            print(f"Mudança de direção detectada ({current_direction} → {next_direction}), encerrando.")
+            print(f"MudanÃ§a de direÃ§Ã£o detectada ({current_direction} â {next_direction}), encerrando.")
             break
         total_probability *= next_probability
         sequence.append({
@@ -720,26 +720,26 @@ def evaluate_regime_sequence(prob_matrix, current_regime, min_probability=0.01, 
 
 def generate_consolidated_report(sequence, df):
     if df.empty:
-        return "DataFrame vazio. Sem dados para relatório consolidado."
+        return "DataFrame vazio. Sem dados para relatÃ³rio consolidado."
     last_price = df["close"].iloc[-1]
     report = f"""
 ================================================================================
-                   RELATÓRIO OPERACIONAL DE GESTÃO DE RISCO                      
+                   RELATÃRIO OPERACIONAL DE GESTÃO DE RISCO                      
 ================================================================================
 
-🔹 Sequência de Regimes Prováveis:
+ð¹ SequÃªncia de Regimes ProvÃ¡veis:
 """
     for step in sequence:
-        report += f" - Regime Atual: {step['regime_atual']}, Próximo Regime: {step['proximo_regime']}, Probabilidade Acumulada: {step['probabilidade_sequencia']:.2%}\n"
+        report += f" - Regime Atual: {step['regime_atual']}, PrÃ³ximo Regime: {step['proximo_regime']}, Probabilidade Acumulada: {step['probabilidade_sequencia']:.2%}\n"
     report += f"""
 
-🔹 Último preço: {last_price:.6f}
+ð¹ Ãltimo preÃ§o: {last_price:.6f}
 ================================================================================
 """
     return report
 
 # --------------------------------------------------------------------------------------
-# GERAÇÃO DE JSON EM SEÇÕES (C, M, L)
+# GERAÃÃO DE JSON EM SEÃÃES (C, M, L)
 def build_json_section(df, data_info, label_janela):
     probability_matrix = data_info["prob_matrix"]
     duration_stats = data_info["duration_stats"]
@@ -807,7 +807,7 @@ def build_json_section(df, data_info, label_janela):
     
     from datetime import datetime
     section = {
-        # Campo novo com a data/hora atual (ou outro formato que você preferir):
+        # Campo novo com a data/hora atual (ou outro formato que vocÃª preferir):
         "data": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
 
         "regime_atual": regime_atual,
@@ -819,7 +819,7 @@ def build_json_section(df, data_info, label_janela):
 
 def generate_json_multiperiod(df, c_data, m_data, l_data):
     relatorio_c = build_json_section(df, c_data, "Curto Prazo")
-    relatorio_m = build_json_section(df, m_data, "Médio Prazo")
+    relatorio_m = build_json_section(df, m_data, "MÃ©dio Prazo")
     relatorio_l = build_json_section(df, l_data, "Longo Prazo")
     final_dict = {
         "relatorio_C": relatorio_c,
@@ -828,7 +828,7 @@ def generate_json_multiperiod(df, c_data, m_data, l_data):
     }
     return final_dict
 
-# ------------------- FUNÇÃO PARA ATUALIZAR CATÁLOGO (main.json) -------------------
+# ------------------- FUNÃÃO PARA ATUALIZAR CATÃLOGO (main.json) -------------------
 @measure_time
 def build_tree(root, exclude_dirs=[], exclude_files=[]):
     tree = {}
@@ -849,8 +849,8 @@ def build_tree(root, exclude_dirs=[], exclude_files=[]):
         if filenames:
             file_list = []
             for f in filenames:
-                # Se rel_path estiver vazio, é só f
-                # senão, 'rel_path/f'
+                # Se rel_path estiver vazio, Ã© sÃ³ f
+                # senÃ£o, 'rel_path/f'
                 full_rel_path = f if rel_path == "" else f"{rel_path}/{f}"
                 file_list.append(full_rel_path)
             subtree["files"] = file_list
@@ -859,7 +859,7 @@ def build_tree(root, exclude_dirs=[], exclude_files=[]):
 
 @measure_time
 def update_main_json():
-    # Agora apontamos para a pasta real de saída
+    # Agora apontamos para a pasta real de saÃ­da
     reports_tree = build_tree("frontend/json", exclude_dirs=["catalog"], exclude_files=["main.json"])
     catalog_tree = build_tree(os.path.join("frontend/json", "catalog"))
     
@@ -874,7 +874,7 @@ def update_main_json():
     logger.info(f"Main JSON directory structure updated: {main_json_path}")
 
 # --------------------------------------------------------------------------------------
-# FUNÇÃO PRINCIPAL
+# FUNÃÃO PRINCIPAL
 def main():
     top_symbols = get_top_symbols(limit=TOP_VOLUME)
     for symbol in top_symbols:
@@ -888,7 +888,7 @@ def main():
         
         df, encoder_c, encoder_m, encoder_l, risk_management = calculate_dvi(df)
         if df.empty:
-            logger.warning(f"Dado após calculate_dvi vazio para {symbol}. Pulando.")
+            logger.warning(f"Dado apÃ³s calculate_dvi vazio para {symbol}. Pulando.")
             continue
         
         df['DVI_target'] = df['DVI_C'].astype(str) + "_" + df['DVI_M'].astype(str) + "_" + df['DVI_L'].astype(str)
@@ -920,7 +920,7 @@ def main():
             directions = df[tag].str.split("_", expand=True)[0]
             _, duration_stats = calculate_state_durations(directions)
             
-            # Gera Relatório TXT
+            # Gera RelatÃ³rio TXT
             generate_report(
                 tag=tag,
                 period=period,
@@ -934,7 +934,7 @@ def main():
                 duration_df=None
             )
             
-            # Gera relatório consolidado
+            # Gera relatÃ³rio consolidado
             current_regime = df["DVI_C"].iloc[-1]
             df = calculate_price_variation(df)
             sequence = predict_next_regimes_with_same_direction(
@@ -946,9 +946,9 @@ def main():
             consolidated_report = generate_consolidated_report(sequence, df)
             with open(f"report/{symbol.replace('/', '-')}_{TIMEFRAME}_consolidated_report.txt", "w", encoding="utf-8") as cf:
                 cf.write(consolidated_report)
-            logger.info("Relatório operacional consolidado gerado com sucesso.")
+            logger.info("RelatÃ³rio operacional consolidado gerado com sucesso.")
             
-            # Armazena para geração JSON
+            # Armazena para geraÃ§Ã£o JSON
             if tag == "DVI_C":
                 c_data = {
                     "prob_matrix": probability_matrix,
@@ -990,23 +990,23 @@ def main():
                     "risk_management": global_risk
             }
 
-        # Extraímos a direção e probabilidade do relatório do curto prazo:
+        # ExtraÃ­mos a direÃ§Ã£o e probabilidade do relatÃ³rio do curto prazo:
         short_dir = final_json["relatorio_C"]["regime_atual"]["direcao"]  # Ex.: "Alta", "Queda", "Neutra"
         short_probs = final_json["relatorio_C"]["probabilidade"]["direcao"]  # Ex.: {"Alta": "5.80%", "Neutra": "88.41%", "Queda": "5.80%"}
         short_prob_value = float(short_probs.get(short_dir, "0.00%").replace("%", "")) / 100.0
 
-        # Extraímos a direção global:
+        # ExtraÃ­mos a direÃ§Ã£o global:
         global_dir = regime_global["direcao_global"]
         # Pegamos os valores atuais de recommended_action e recommended_size
         global_risk_action = final_json["gerenciamento_risco_global"]["risk_management"]["recommended_action"]
         global_risk_size = final_json["gerenciamento_risco_global"]["risk_management"]["recommended_size"]
 
-        # Se o relatório do curto prazo indicar um sinal forte (por exemplo, probabilidade > 50%)
-        # e essa direção for diferente do regime global, aplicamos o override
+        # Se o relatÃ³rio do curto prazo indicar um sinal forte (por exemplo, probabilidade > 50%)
+        # e essa direÃ§Ã£o for diferente do regime global, aplicamos o override
         if short_dir in ["Alta", "Queda"] and short_prob_value > 0.50:
             if short_dir == "Alta" and global_dir != "Alta":
                 new_action = "BUY"
-                new_size = 0.3  # Exemplo: posição reduzida
+                new_size = 0.3  # Exemplo: posiÃ§Ã£o reduzida
                 # Definindo stop e take-profit para uma entrada de compra com sinal de curto prazo
             elif short_dir == "Queda" and global_dir != "Queda":
                 new_action = "SELL"
@@ -1027,10 +1027,10 @@ def main():
                 
         with open(json_filename, "w", encoding="utf-8") as f:
             json.dump(final_json, f, indent=4, ensure_ascii=False)
-        logger.info(f"Relatório JSON gerado para {symbol}: {json_filename}")
+        logger.info(f"RelatÃ³rio JSON gerado para {symbol}: {json_filename}")
 
     update_main_json()
 
-# ------------------- EXECUÇÃO DO SCRIPT -------------------
+# ------------------- EXECUÃÃO DO SCRIPT -------------------
 if __name__ == "__main__":
     main()
