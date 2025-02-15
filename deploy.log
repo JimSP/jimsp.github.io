@@ -15385,3 +15385,648 @@ Probabilidade acumulada muito baixa, encerrando.
 Probabilidade acumulada muito baixa, encerrando.
 Probabilidade acumulada muito baixa, encerrando.
 Probabilidade acumulada muito baixa, encerrando.
+Warning: commit message did not conform to UTF-8.
+You may want to amend it after fixing the message, or set the config
+variable i18n.commitEncoding to the encoding your project uses.
+[master 5649c34] Atualização automática - 2025-02-15 03:00:01
+ 12 files changed, 3687 insertions(+), 1 deletion(-)
+ create mode 100644 frontend/json/2025/02/15/1000SATS-USDT/report_HMM_multitimeframe_1000SATS-USDT_15m_20250215T030016.json
+ create mode 100644 frontend/json/2025/02/15/BONK-USDT/report_HMM_multitimeframe_BONK-USDT_15m_20250215T030013.json
+ create mode 100644 frontend/json/2025/02/15/BTTC-USDT/report_HMM_multitimeframe_BTTC-USDT_15m_20250215T030014.json
+ create mode 100644 frontend/json/2025/02/15/FLOKI-USDT/report_HMM_multitimeframe_FLOKI-USDT_15m_20250215T030015.json
+ create mode 100644 frontend/json/2025/02/15/LUNC-USDT/report_HMM_multitimeframe_LUNC-USDT_15m_20250215T030018.json
+ create mode 100644 frontend/json/2025/02/15/NEIRO-USDT/report_HMM_multitimeframe_NEIRO-USDT_15m_20250215T030017.json
+ create mode 100644 frontend/json/2025/02/15/PEPE-FDUSD/report_HMM_multitimeframe_PEPE-FDUSD_15m_20250215T030014.json
+ create mode 100644 frontend/json/2025/02/15/PEPE-USDT/report_HMM_multitimeframe_PEPE-USDT_15m_20250215T030012.json
+ create mode 100644 frontend/json/2025/02/15/SHIB-FDUSD/report_HMM_multitimeframe_SHIB-FDUSD_15m_20250215T030017.json
+ create mode 100644 frontend/json/2025/02/15/SHIB-USDT/report_HMM_multitimeframe_SHIB-USDT_15m_20250215T030013.json
+To https://github.com/JimSP/jimsp.github.io.git
+   3fe7aeb..5649c34  master -> master
+Already up to date.
+2025-02-15 04:00:10,615 - __main__ - INFO - Função get_top_symbols executada em 5.01s
+2025-02-15 04:00:10,615 - __main__ - INFO - Arquivo data/PEPE-USDT_15mTOHCLV.csv encontrado. Carregando dados do CSV ...
+2025-02-15 04:00:10,635 - __main__ - INFO - Função load_or_fetch_data executada em 0.02s
+2025-02-15 04:00:11,005 - __main__ - INFO - Função calculate_dvi executada em 0.17s
+2025-02-15 04:00:11,035 - __main__ - INFO - Função generate_transition_matrix executada em 0.02s
+2025-02-15 04:00:11,036 - __main__ - INFO - Função normalize_transition_matrix executada em 0.00s
+2025-02-15 04:00:11,343 - __main__ - INFO - Função calculate_state_durations executada em 0.14s
+2025-02-15 04:00:11,343 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:11,391 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.05s
+2025-02-15 04:00:11,391 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:11,391 - __main__ - INFO - Função build_user_friendly_report executada em 0.00s
+2025-02-15 04:00:11,392 - __main__ - INFO - Relatório para PEPE/USDT salvo em 'report/report_DVI_C_PEPE-USDT_15m.txt'.
+2025-02-15 04:00:11,397 - __main__ - INFO - Função calculate_price_variation executada em 0.01s
+2025-02-15 04:00:11,405 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+2025-02-15 04:00:11,405 - __main__ - INFO - Relatório operacional consolidado gerado com sucesso.
+2025-02-15 04:00:11,423 - __main__ - INFO - Função generate_transition_matrix executada em 0.02s
+2025-02-15 04:00:11,424 - __main__ - INFO - Função normalize_transition_matrix executada em 0.00s
+2025-02-15 04:00:11,603 - __main__ - INFO - Função calculate_state_durations executada em 0.17s
+2025-02-15 04:00:11,603 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:11,608 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.00s
+2025-02-15 04:00:11,609 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:11,609 - __main__ - INFO - Função build_user_friendly_report executada em 0.00s
+2025-02-15 04:00:11,609 - __main__ - INFO - Relatório para PEPE/USDT salvo em 'report/report_DVI_M_PEPE-USDT_15m.txt'.
+2025-02-15 04:00:11,612 - __main__ - INFO - Função calculate_price_variation executada em 0.00s
+2025-02-15 04:00:11,617 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.00s
+2025-02-15 04:00:11,617 - __main__ - INFO - Relatório operacional consolidado gerado com sucesso.
+2025-02-15 04:00:11,630 - __main__ - INFO - Função generate_transition_matrix executada em 0.01s
+2025-02-15 04:00:11,631 - __main__ - INFO - Função normalize_transition_matrix executada em 0.00s
+2025-02-15 04:00:11,817 - __main__ - INFO - Função calculate_state_durations executada em 0.12s
+2025-02-15 04:00:11,818 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:11,823 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.00s
+2025-02-15 04:00:11,823 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:11,823 - __main__ - INFO - Função build_user_friendly_report executada em 0.00s
+2025-02-15 04:00:11,823 - __main__ - INFO - Relatório para PEPE/USDT salvo em 'report/report_DVI_L_PEPE-USDT_15m.txt'.
+2025-02-15 04:00:11,826 - __main__ - INFO - Função calculate_price_variation executada em 0.00s
+2025-02-15 04:00:11,831 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.00s
+2025-02-15 04:00:11,831 - __main__ - INFO - Relatório operacional consolidado gerado com sucesso.
+2025-02-15 04:00:11,831 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:11,832 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:11,837 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.00s
+/opt/jimsp.github.io/DVIBatch.py:688: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "data": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
+2025-02-15 04:00:11,837 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:11,838 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:11,896 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.06s
+/opt/jimsp.github.io/DVIBatch.py:688: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "data": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
+2025-02-15 04:00:11,896 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:11,896 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:11,901 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+/opt/jimsp.github.io/DVIBatch.py:688: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "data": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
+/opt/jimsp.github.io/DVIBatch.py:898: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now = datetime.datetime.utcnow()
+2025-02-15 04:00:11,903 - __main__ - INFO - Relatório JSON gerado para PEPE/USDT: frontend/json/2025/02/15/PEPE-USDT/report_HMM_multitimeframe_PEPE-USDT_15m_20250215T040011.json
+2025-02-15 04:00:11,903 - __main__ - INFO - Arquivo data/SHIB-USDT_15mTOHCLV.csv encontrado. Carregando dados do CSV ...
+2025-02-15 04:00:11,920 - __main__ - INFO - Função load_or_fetch_data executada em 0.02s
+2025-02-15 04:00:12,290 - __main__ - INFO - Função calculate_dvi executada em 0.17s
+2025-02-15 04:00:12,318 - __main__ - INFO - Função generate_transition_matrix executada em 0.01s
+2025-02-15 04:00:12,319 - __main__ - INFO - Função normalize_transition_matrix executada em 0.00s
+2025-02-15 04:00:12,508 - __main__ - INFO - Função calculate_state_durations executada em 0.18s
+2025-02-15 04:00:12,508 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:12,518 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+2025-02-15 04:00:12,519 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:12,519 - __main__ - INFO - Função build_user_friendly_report executada em 0.00s
+2025-02-15 04:00:12,519 - __main__ - INFO - Relatório para SHIB/USDT salvo em 'report/report_DVI_C_SHIB-USDT_15m.txt'.
+2025-02-15 04:00:12,522 - __main__ - INFO - Função calculate_price_variation executada em 0.00s
+2025-02-15 04:00:12,528 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+2025-02-15 04:00:12,529 - __main__ - INFO - Relatório operacional consolidado gerado com sucesso.
+2025-02-15 04:00:12,542 - __main__ - INFO - Função generate_transition_matrix executada em 0.01s
+2025-02-15 04:00:12,589 - __main__ - INFO - Função normalize_transition_matrix executada em 0.00s
+2025-02-15 04:00:12,727 - __main__ - INFO - Função calculate_state_durations executada em 0.12s
+2025-02-15 04:00:12,727 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:12,734 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+2025-02-15 04:00:12,735 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:12,735 - __main__ - INFO - Função build_user_friendly_report executada em 0.00s
+2025-02-15 04:00:12,735 - __main__ - INFO - Relatório para SHIB/USDT salvo em 'report/report_DVI_M_SHIB-USDT_15m.txt'.
+2025-02-15 04:00:12,738 - __main__ - INFO - Função calculate_price_variation executada em 0.00s
+2025-02-15 04:00:12,800 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.06s
+2025-02-15 04:00:12,801 - __main__ - INFO - Relatório operacional consolidado gerado com sucesso.
+2025-02-15 04:00:12,818 - __main__ - INFO - Função generate_transition_matrix executada em 0.02s
+2025-02-15 04:00:12,819 - __main__ - INFO - Função normalize_transition_matrix executada em 0.00s
+2025-02-15 04:00:13,001 - __main__ - INFO - Função calculate_state_durations executada em 0.17s
+2025-02-15 04:00:13,002 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:13,010 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+2025-02-15 04:00:13,011 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:13,011 - __main__ - INFO - Função build_user_friendly_report executada em 0.00s
+2025-02-15 04:00:13,011 - __main__ - INFO - Relatório para SHIB/USDT salvo em 'report/report_DVI_L_SHIB-USDT_15m.txt'.
+2025-02-15 04:00:13,014 - __main__ - INFO - Função calculate_price_variation executada em 0.00s
+2025-02-15 04:00:13,022 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+2025-02-15 04:00:13,022 - __main__ - INFO - Relatório operacional consolidado gerado com sucesso.
+2025-02-15 04:00:13,022 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:13,023 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:13,030 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+/opt/jimsp.github.io/DVIBatch.py:688: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "data": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
+2025-02-15 04:00:13,030 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:13,030 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:13,037 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+/opt/jimsp.github.io/DVIBatch.py:688: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "data": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
+2025-02-15 04:00:13,038 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:13,038 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:13,094 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.06s
+/opt/jimsp.github.io/DVIBatch.py:688: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "data": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
+/opt/jimsp.github.io/DVIBatch.py:898: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now = datetime.datetime.utcnow()
+2025-02-15 04:00:13,095 - __main__ - INFO - Relatório JSON gerado para SHIB/USDT: frontend/json/2025/02/15/SHIB-USDT/report_HMM_multitimeframe_SHIB-USDT_15m_20250215T040013.json
+2025-02-15 04:00:13,096 - __main__ - INFO - Arquivo data/BONK-USDT_15mTOHCLV.csv encontrado. Carregando dados do CSV ...
+2025-02-15 04:00:13,101 - __main__ - INFO - Função load_or_fetch_data executada em 0.01s
+2025-02-15 04:00:13,197 - __main__ - INFO - Função calculate_dvi executada em 0.08s
+2025-02-15 04:00:13,213 - __main__ - INFO - Função generate_transition_matrix executada em 0.01s
+2025-02-15 04:00:13,214 - __main__ - INFO - Função normalize_transition_matrix executada em 0.00s
+2025-02-15 04:00:13,226 - __main__ - INFO - Função calculate_state_durations executada em 0.01s
+2025-02-15 04:00:13,227 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:13,228 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.00s
+2025-02-15 04:00:13,228 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:13,228 - __main__ - INFO - Função build_user_friendly_report executada em 0.00s
+2025-02-15 04:00:13,229 - __main__ - INFO - Relatório para BONK/USDT salvo em 'report/report_DVI_C_BONK-USDT_15m.txt'.
+2025-02-15 04:00:13,232 - __main__ - INFO - Função calculate_price_variation executada em 0.00s
+2025-02-15 04:00:13,232 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.00s
+2025-02-15 04:00:13,233 - __main__ - INFO - Relatório operacional consolidado gerado com sucesso.
+2025-02-15 04:00:13,291 - __main__ - INFO - Função generate_transition_matrix executada em 0.06s
+2025-02-15 04:00:13,292 - __main__ - INFO - Função normalize_transition_matrix executada em 0.00s
+2025-02-15 04:00:13,306 - __main__ - INFO - Função calculate_state_durations executada em 0.01s
+2025-02-15 04:00:13,306 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:13,307 - __main__ - WARNING - O regime Alta_Baixa_Alto não está no índice da probability_matrix para BONK/USDT. Pulando TXT.
+2025-02-15 04:00:13,310 - __main__ - INFO - Função calculate_price_variation executada em 0.00s
+2025-02-15 04:00:13,310 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.00s
+2025-02-15 04:00:13,310 - __main__ - INFO - Relatório operacional consolidado gerado com sucesso.
+2025-02-15 04:00:13,321 - __main__ - INFO - Função generate_transition_matrix executada em 0.01s
+2025-02-15 04:00:13,322 - __main__ - INFO - Função normalize_transition_matrix executada em 0.00s
+2025-02-15 04:00:13,334 - __main__ - INFO - Função calculate_state_durations executada em 0.01s
+2025-02-15 04:00:13,334 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:13,334 - __main__ - WARNING - O regime Alta_Baixa_Alto não está no índice da probability_matrix para BONK/USDT. Pulando TXT.
+2025-02-15 04:00:13,336 - __main__ - INFO - Função calculate_price_variation executada em 0.00s
+2025-02-15 04:00:13,336 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.00s
+2025-02-15 04:00:13,337 - __main__ - INFO - Relatório operacional consolidado gerado com sucesso.
+2025-02-15 04:00:13,337 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:13,337 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:13,338 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.00s
+/opt/jimsp.github.io/DVIBatch.py:688: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "data": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
+2025-02-15 04:00:13,338 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:13,339 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:13,391 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.05s
+/opt/jimsp.github.io/DVIBatch.py:688: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "data": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
+2025-02-15 04:00:13,391 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:13,392 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:13,405 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+/opt/jimsp.github.io/DVIBatch.py:688: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "data": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
+/opt/jimsp.github.io/DVIBatch.py:898: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now = datetime.datetime.utcnow()
+2025-02-15 04:00:13,407 - __main__ - INFO - Relatório JSON gerado para BONK/USDT: frontend/json/2025/02/15/BONK-USDT/report_HMM_multitimeframe_BONK-USDT_15m_20250215T040013.json
+2025-02-15 04:00:13,407 - __main__ - INFO - Arquivo data/BTTC-USDT_15mTOHCLV.csv encontrado. Carregando dados do CSV ...
+2025-02-15 04:00:13,414 - __main__ - INFO - Função load_or_fetch_data executada em 0.01s
+2025-02-15 04:00:13,502 - __main__ - INFO - Função calculate_dvi executada em 0.08s
+2025-02-15 04:00:13,516 - __main__ - INFO - Função generate_transition_matrix executada em 0.01s
+2025-02-15 04:00:13,517 - __main__ - INFO - Função normalize_transition_matrix executada em 0.00s
+2025-02-15 04:00:13,530 - __main__ - INFO - Função calculate_state_durations executada em 0.01s
+2025-02-15 04:00:13,531 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:13,537 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+2025-02-15 04:00:13,537 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:13,537 - __main__ - INFO - Função build_user_friendly_report executada em 0.00s
+2025-02-15 04:00:13,537 - __main__ - INFO - Relatório para BTTC/USDT salvo em 'report/report_DVI_C_BTTC-USDT_15m.txt'.
+2025-02-15 04:00:13,590 - __main__ - INFO - Função calculate_price_variation executada em 0.05s
+2025-02-15 04:00:13,596 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+2025-02-15 04:00:13,596 - __main__ - INFO - Relatório operacional consolidado gerado com sucesso.
+2025-02-15 04:00:13,607 - __main__ - INFO - Função generate_transition_matrix executada em 0.01s
+2025-02-15 04:00:13,608 - __main__ - INFO - Função normalize_transition_matrix executada em 0.00s
+2025-02-15 04:00:13,621 - __main__ - INFO - Função calculate_state_durations executada em 0.01s
+2025-02-15 04:00:13,621 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:13,627 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+2025-02-15 04:00:13,627 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:13,627 - __main__ - INFO - Função build_user_friendly_report executada em 0.00s
+2025-02-15 04:00:13,627 - __main__ - INFO - Relatório para BTTC/USDT salvo em 'report/report_DVI_M_BTTC-USDT_15m.txt'.
+2025-02-15 04:00:13,630 - __main__ - INFO - Função calculate_price_variation executada em 0.00s
+2025-02-15 04:00:13,635 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+2025-02-15 04:00:13,636 - __main__ - INFO - Relatório operacional consolidado gerado com sucesso.
+2025-02-15 04:00:13,698 - __main__ - INFO - Função generate_transition_matrix executada em 0.06s
+2025-02-15 04:00:13,700 - __main__ - INFO - Função normalize_transition_matrix executada em 0.00s
+2025-02-15 04:00:13,716 - __main__ - INFO - Função calculate_state_durations executada em 0.01s
+2025-02-15 04:00:13,716 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:13,728 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+2025-02-15 04:00:13,729 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:13,729 - __main__ - INFO - Função build_user_friendly_report executada em 0.00s
+2025-02-15 04:00:13,729 - __main__ - INFO - Relatório para BTTC/USDT salvo em 'report/report_DVI_L_BTTC-USDT_15m.txt'.
+2025-02-15 04:00:13,732 - __main__ - INFO - Função calculate_price_variation executada em 0.00s
+2025-02-15 04:00:13,741 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+2025-02-15 04:00:13,742 - __main__ - INFO - Relatório operacional consolidado gerado com sucesso.
+2025-02-15 04:00:13,742 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:13,742 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:13,797 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.05s
+/opt/jimsp.github.io/DVIBatch.py:688: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "data": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
+2025-02-15 04:00:13,798 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:13,798 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:13,804 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+/opt/jimsp.github.io/DVIBatch.py:688: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "data": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
+2025-02-15 04:00:13,805 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:13,805 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:13,815 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+/opt/jimsp.github.io/DVIBatch.py:688: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "data": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
+/opt/jimsp.github.io/DVIBatch.py:898: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now = datetime.datetime.utcnow()
+2025-02-15 04:00:13,817 - __main__ - INFO - Relatório JSON gerado para BTTC/USDT: frontend/json/2025/02/15/BTTC-USDT/report_HMM_multitimeframe_BTTC-USDT_15m_20250215T040013.json
+2025-02-15 04:00:13,817 - __main__ - INFO - Arquivo data/PEPE-FDUSD_15mTOHCLV.csv encontrado. Carregando dados do CSV ...
+2025-02-15 04:00:13,822 - __main__ - INFO - Função load_or_fetch_data executada em 0.01s
+2025-02-15 04:00:13,922 - __main__ - INFO - Função calculate_dvi executada em 0.09s
+2025-02-15 04:00:13,936 - __main__ - INFO - Função generate_transition_matrix executada em 0.01s
+2025-02-15 04:00:13,937 - __main__ - INFO - Função normalize_transition_matrix executada em 0.00s
+2025-02-15 04:00:13,948 - __main__ - INFO - Função calculate_state_durations executada em 0.01s
+2025-02-15 04:00:13,949 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:13,996 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.05s
+2025-02-15 04:00:13,997 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:13,997 - __main__ - INFO - Função build_user_friendly_report executada em 0.00s
+2025-02-15 04:00:13,999 - __main__ - INFO - Relatório para PEPE/FDUSD salvo em 'report/report_DVI_C_PEPE-FDUSD_15m.txt'.
+2025-02-15 04:00:14,003 - __main__ - INFO - Função calculate_price_variation executada em 0.00s
+2025-02-15 04:00:14,011 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+2025-02-15 04:00:14,011 - __main__ - INFO - Relatório operacional consolidado gerado com sucesso.
+2025-02-15 04:00:14,024 - __main__ - INFO - Função generate_transition_matrix executada em 0.01s
+2025-02-15 04:00:14,025 - __main__ - INFO - Função normalize_transition_matrix executada em 0.00s
+2025-02-15 04:00:14,037 - __main__ - INFO - Função calculate_state_durations executada em 0.01s
+2025-02-15 04:00:14,037 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:14,091 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.05s
+2025-02-15 04:00:14,092 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:14,092 - __main__ - INFO - Função build_user_friendly_report executada em 0.00s
+2025-02-15 04:00:14,092 - __main__ - INFO - Relatório para PEPE/FDUSD salvo em 'report/report_DVI_M_PEPE-FDUSD_15m.txt'.
+2025-02-15 04:00:14,094 - __main__ - INFO - Função calculate_price_variation executada em 0.00s
+2025-02-15 04:00:14,102 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+2025-02-15 04:00:14,102 - __main__ - INFO - Relatório operacional consolidado gerado com sucesso.
+2025-02-15 04:00:14,112 - __main__ - INFO - Função generate_transition_matrix executada em 0.01s
+2025-02-15 04:00:14,113 - __main__ - INFO - Função normalize_transition_matrix executada em 0.00s
+2025-02-15 04:00:14,125 - __main__ - INFO - Função calculate_state_durations executada em 0.01s
+2025-02-15 04:00:14,125 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:14,132 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+2025-02-15 04:00:14,132 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:14,132 - __main__ - INFO - Função build_user_friendly_report executada em 0.00s
+2025-02-15 04:00:14,132 - __main__ - INFO - Relatório para PEPE/FDUSD salvo em 'report/report_DVI_L_PEPE-FDUSD_15m.txt'.
+2025-02-15 04:00:14,135 - __main__ - INFO - Função calculate_price_variation executada em 0.00s
+2025-02-15 04:00:14,194 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.06s
+2025-02-15 04:00:14,195 - __main__ - INFO - Relatório operacional consolidado gerado com sucesso.
+2025-02-15 04:00:14,195 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:14,195 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:14,202 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+/opt/jimsp.github.io/DVIBatch.py:688: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "data": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
+2025-02-15 04:00:14,203 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:14,203 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:14,210 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+/opt/jimsp.github.io/DVIBatch.py:688: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "data": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
+2025-02-15 04:00:14,210 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:14,210 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:14,220 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+/opt/jimsp.github.io/DVIBatch.py:688: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "data": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
+/opt/jimsp.github.io/DVIBatch.py:898: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now = datetime.datetime.utcnow()
+2025-02-15 04:00:14,221 - __main__ - INFO - Relatório JSON gerado para PEPE/FDUSD: frontend/json/2025/02/15/PEPE-FDUSD/report_HMM_multitimeframe_PEPE-FDUSD_15m_20250215T040014.json
+2025-02-15 04:00:14,221 - __main__ - INFO - Arquivo data/FLOKI-USDT_15mTOHCLV.csv encontrado. Carregando dados do CSV ...
+2025-02-15 04:00:14,237 - __main__ - INFO - Função load_or_fetch_data executada em 0.02s
+2025-02-15 04:00:14,604 - __main__ - INFO - Função calculate_dvi executada em 0.17s
+2025-02-15 04:00:14,629 - __main__ - INFO - Função generate_transition_matrix executada em 0.01s
+2025-02-15 04:00:14,630 - __main__ - INFO - Função normalize_transition_matrix executada em 0.00s
+2025-02-15 04:00:14,822 - __main__ - INFO - Função calculate_state_durations executada em 0.13s
+2025-02-15 04:00:14,822 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:14,827 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.00s
+2025-02-15 04:00:14,828 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:14,828 - __main__ - INFO - Função build_user_friendly_report executada em 0.00s
+2025-02-15 04:00:14,828 - __main__ - INFO - Relatório para FLOKI/USDT salvo em 'report/report_DVI_C_FLOKI-USDT_15m.txt'.
+2025-02-15 04:00:14,834 - __main__ - INFO - Função calculate_price_variation executada em 0.01s
+2025-02-15 04:00:14,839 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.00s
+2025-02-15 04:00:14,839 - __main__ - INFO - Relatório operacional consolidado gerado com sucesso.
+2025-02-15 04:00:14,907 - __main__ - INFO - Função generate_transition_matrix executada em 0.07s
+2025-02-15 04:00:14,908 - __main__ - INFO - Função normalize_transition_matrix executada em 0.00s
+2025-02-15 04:00:15,091 - __main__ - INFO - Função calculate_state_durations executada em 0.17s
+2025-02-15 04:00:15,092 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:15,101 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+2025-02-15 04:00:15,102 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:15,102 - __main__ - INFO - Função build_user_friendly_report executada em 0.00s
+2025-02-15 04:00:15,102 - __main__ - INFO - Relatório para FLOKI/USDT salvo em 'report/report_DVI_M_FLOKI-USDT_15m.txt'.
+2025-02-15 04:00:15,120 - __main__ - INFO - Função calculate_price_variation executada em 0.02s
+2025-02-15 04:00:15,126 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+2025-02-15 04:00:15,127 - __main__ - INFO - Relatório operacional consolidado gerado com sucesso.
+2025-02-15 04:00:15,139 - __main__ - INFO - Função generate_transition_matrix executada em 0.01s
+2025-02-15 04:00:15,140 - __main__ - INFO - Função normalize_transition_matrix executada em 0.00s
+2025-02-15 04:00:15,441 - __main__ - INFO - Função calculate_state_durations executada em 0.12s
+2025-02-15 04:00:15,442 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:15,492 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.05s
+2025-02-15 04:00:15,493 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:15,493 - __main__ - INFO - Função build_user_friendly_report executada em 0.00s
+2025-02-15 04:00:15,495 - __main__ - INFO - Relatório para FLOKI/USDT salvo em 'report/report_DVI_L_FLOKI-USDT_15m.txt'.
+2025-02-15 04:00:15,501 - __main__ - INFO - Função calculate_price_variation executada em 0.01s
+2025-02-15 04:00:15,507 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+2025-02-15 04:00:15,508 - __main__ - INFO - Relatório operacional consolidado gerado com sucesso.
+2025-02-15 04:00:15,511 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:15,512 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:15,518 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+/opt/jimsp.github.io/DVIBatch.py:688: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "data": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
+2025-02-15 04:00:15,519 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:15,519 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:15,527 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+/opt/jimsp.github.io/DVIBatch.py:688: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "data": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
+2025-02-15 04:00:15,527 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:15,527 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:15,533 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+/opt/jimsp.github.io/DVIBatch.py:688: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "data": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
+/opt/jimsp.github.io/DVIBatch.py:898: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now = datetime.datetime.utcnow()
+2025-02-15 04:00:15,535 - __main__ - INFO - Relatório JSON gerado para FLOKI/USDT: frontend/json/2025/02/15/FLOKI-USDT/report_HMM_multitimeframe_FLOKI-USDT_15m_20250215T040015.json
+2025-02-15 04:00:15,535 - __main__ - INFO - Arquivo data/1000SATS-USDT_15mTOHCLV.csv encontrado. Carregando dados do CSV ...
+2025-02-15 04:00:15,540 - __main__ - INFO - Função load_or_fetch_data executada em 0.01s
+2025-02-15 04:00:15,637 - __main__ - INFO - Função calculate_dvi executada em 0.04s
+2025-02-15 04:00:15,702 - __main__ - INFO - Função generate_transition_matrix executada em 0.06s
+2025-02-15 04:00:15,703 - __main__ - INFO - Função normalize_transition_matrix executada em 0.00s
+2025-02-15 04:00:15,723 - __main__ - INFO - Função calculate_state_durations executada em 0.01s
+2025-02-15 04:00:15,723 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:15,730 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+2025-02-15 04:00:15,731 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:15,731 - __main__ - INFO - Função build_user_friendly_report executada em 0.00s
+2025-02-15 04:00:15,732 - __main__ - INFO - Relatório para 1000SATS/USDT salvo em 'report/report_DVI_C_1000SATS-USDT_15m.txt'.
+2025-02-15 04:00:15,737 - __main__ - INFO - Função calculate_price_variation executada em 0.01s
+2025-02-15 04:00:15,742 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+2025-02-15 04:00:15,743 - __main__ - INFO - Relatório operacional consolidado gerado com sucesso.
+2025-02-15 04:00:15,797 - __main__ - INFO - Função generate_transition_matrix executada em 0.05s
+2025-02-15 04:00:15,798 - __main__ - INFO - Função normalize_transition_matrix executada em 0.00s
+2025-02-15 04:00:15,811 - __main__ - INFO - Função calculate_state_durations executada em 0.01s
+2025-02-15 04:00:15,812 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:15,818 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+2025-02-15 04:00:15,819 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:15,819 - __main__ - INFO - Função build_user_friendly_report executada em 0.00s
+2025-02-15 04:00:15,820 - __main__ - INFO - Relatório para 1000SATS/USDT salvo em 'report/report_DVI_M_1000SATS-USDT_15m.txt'.
+2025-02-15 04:00:15,825 - __main__ - INFO - Função calculate_price_variation executada em 0.01s
+2025-02-15 04:00:15,830 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+2025-02-15 04:00:15,831 - __main__ - INFO - Relatório operacional consolidado gerado com sucesso.
+2025-02-15 04:00:15,890 - __main__ - INFO - Função generate_transition_matrix executada em 0.06s
+2025-02-15 04:00:15,892 - __main__ - INFO - Função normalize_transition_matrix executada em 0.00s
+2025-02-15 04:00:15,904 - __main__ - INFO - Função calculate_state_durations executada em 0.01s
+2025-02-15 04:00:15,904 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:15,911 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+2025-02-15 04:00:15,911 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:15,911 - __main__ - INFO - Função build_user_friendly_report executada em 0.00s
+2025-02-15 04:00:15,911 - __main__ - INFO - Relatório para 1000SATS/USDT salvo em 'report/report_DVI_L_1000SATS-USDT_15m.txt'.
+2025-02-15 04:00:15,914 - __main__ - INFO - Função calculate_price_variation executada em 0.00s
+2025-02-15 04:00:15,920 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+2025-02-15 04:00:15,920 - __main__ - INFO - Relatório operacional consolidado gerado com sucesso.
+2025-02-15 04:00:15,920 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:15,921 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:15,926 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+/opt/jimsp.github.io/DVIBatch.py:688: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "data": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
+2025-02-15 04:00:15,927 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:15,927 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:15,933 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+/opt/jimsp.github.io/DVIBatch.py:688: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "data": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
+2025-02-15 04:00:15,933 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:15,933 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:15,938 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.00s
+/opt/jimsp.github.io/DVIBatch.py:688: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "data": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
+/opt/jimsp.github.io/DVIBatch.py:898: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now = datetime.datetime.utcnow()
+2025-02-15 04:00:15,991 - __main__ - INFO - Relatório JSON gerado para 1000SATS/USDT: frontend/json/2025/02/15/1000SATS-USDT/report_HMM_multitimeframe_1000SATS-USDT_15m_20250215T040015.json
+2025-02-15 04:00:15,991 - __main__ - INFO - Arquivo data/NEIRO-USDT_15mTOHCLV.csv encontrado. Carregando dados do CSV ...
+2025-02-15 04:00:16,015 - __main__ - INFO - Função load_or_fetch_data executada em 0.02s
+2025-02-15 04:00:16,336 - __main__ - INFO - Função calculate_dvi executada em 0.13s
+2025-02-15 04:00:16,410 - __main__ - INFO - Função generate_transition_matrix executada em 0.02s
+2025-02-15 04:00:16,412 - __main__ - INFO - Função normalize_transition_matrix executada em 0.00s
+2025-02-15 04:00:16,602 - __main__ - INFO - Função calculate_state_durations executada em 0.18s
+2025-02-15 04:00:16,602 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:16,613 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+2025-02-15 04:00:16,613 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:16,614 - __main__ - INFO - Função build_user_friendly_report executada em 0.00s
+2025-02-15 04:00:16,614 - __main__ - INFO - Relatório para NEIRO/USDT salvo em 'report/report_DVI_C_NEIRO-USDT_15m.txt'.
+2025-02-15 04:00:16,618 - __main__ - INFO - Função calculate_price_variation executada em 0.00s
+2025-02-15 04:00:16,624 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+2025-02-15 04:00:16,624 - __main__ - INFO - Relatório operacional consolidado gerado com sucesso.
+2025-02-15 04:00:16,637 - __main__ - INFO - Função generate_transition_matrix executada em 0.01s
+2025-02-15 04:00:16,638 - __main__ - INFO - Função normalize_transition_matrix executada em 0.00s
+2025-02-15 04:00:16,821 - __main__ - INFO - Função calculate_state_durations executada em 0.12s
+2025-02-15 04:00:16,821 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:16,830 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+2025-02-15 04:00:16,831 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:16,831 - __main__ - INFO - Função build_user_friendly_report executada em 0.00s
+2025-02-15 04:00:16,831 - __main__ - INFO - Relatório para NEIRO/USDT salvo em 'report/report_DVI_M_NEIRO-USDT_15m.txt'.
+2025-02-15 04:00:16,834 - __main__ - INFO - Função calculate_price_variation executada em 0.00s
+2025-02-15 04:00:16,891 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.06s
+2025-02-15 04:00:16,891 - __main__ - INFO - Relatório operacional consolidado gerado com sucesso.
+2025-02-15 04:00:16,905 - __main__ - INFO - Função generate_transition_matrix executada em 0.01s
+2025-02-15 04:00:16,907 - __main__ - INFO - Função normalize_transition_matrix executada em 0.00s
+2025-02-15 04:00:17,092 - __main__ - INFO - Função calculate_state_durations executada em 0.17s
+2025-02-15 04:00:17,093 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:17,104 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+2025-02-15 04:00:17,104 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:17,105 - __main__ - INFO - Função build_user_friendly_report executada em 0.00s
+2025-02-15 04:00:17,105 - __main__ - INFO - Relatório para NEIRO/USDT salvo em 'report/report_DVI_L_NEIRO-USDT_15m.txt'.
+2025-02-15 04:00:17,109 - __main__ - INFO - Função calculate_price_variation executada em 0.00s
+2025-02-15 04:00:17,118 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+2025-02-15 04:00:17,119 - __main__ - INFO - Relatório operacional consolidado gerado com sucesso.
+2025-02-15 04:00:17,119 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:17,119 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:17,125 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+/opt/jimsp.github.io/DVIBatch.py:688: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "data": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
+2025-02-15 04:00:17,126 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:17,126 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:17,133 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+/opt/jimsp.github.io/DVIBatch.py:688: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "data": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
+2025-02-15 04:00:17,133 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:17,134 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:17,190 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.06s
+/opt/jimsp.github.io/DVIBatch.py:688: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "data": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
+/opt/jimsp.github.io/DVIBatch.py:898: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now = datetime.datetime.utcnow()
+2025-02-15 04:00:17,192 - __main__ - INFO - Relatório JSON gerado para NEIRO/USDT: frontend/json/2025/02/15/NEIRO-USDT/report_HMM_multitimeframe_NEIRO-USDT_15m_20250215T040017.json
+2025-02-15 04:00:17,192 - __main__ - INFO - Arquivo data/SHIB-FDUSD_15mTOHCLV.csv encontrado. Carregando dados do CSV ...
+2025-02-15 04:00:17,197 - __main__ - INFO - Função load_or_fetch_data executada em 0.01s
+2025-02-15 04:00:17,294 - __main__ - INFO - Função calculate_dvi executada em 0.08s
+2025-02-15 04:00:17,315 - __main__ - INFO - Função generate_transition_matrix executada em 0.02s
+2025-02-15 04:00:17,316 - __main__ - INFO - Função normalize_transition_matrix executada em 0.00s
+2025-02-15 04:00:17,330 - __main__ - INFO - Função calculate_state_durations executada em 0.01s
+2025-02-15 04:00:17,330 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:17,336 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+2025-02-15 04:00:17,337 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:17,337 - __main__ - INFO - Função build_user_friendly_report executada em 0.00s
+2025-02-15 04:00:17,337 - __main__ - INFO - Relatório para SHIB/FDUSD salvo em 'report/report_DVI_C_SHIB-FDUSD_15m.txt'.
+2025-02-15 04:00:17,340 - __main__ - INFO - Função calculate_price_variation executada em 0.00s
+2025-02-15 04:00:17,391 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.05s
+2025-02-15 04:00:17,391 - __main__ - INFO - Relatório operacional consolidado gerado com sucesso.
+2025-02-15 04:00:17,402 - __main__ - INFO - Função generate_transition_matrix executada em 0.01s
+2025-02-15 04:00:17,403 - __main__ - INFO - Função normalize_transition_matrix executada em 0.00s
+2025-02-15 04:00:17,414 - __main__ - INFO - Função calculate_state_durations executada em 0.01s
+2025-02-15 04:00:17,414 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:17,421 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+2025-02-15 04:00:17,421 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:17,421 - __main__ - INFO - Função build_user_friendly_report executada em 0.00s
+2025-02-15 04:00:17,421 - __main__ - INFO - Relatório para SHIB/FDUSD salvo em 'report/report_DVI_M_SHIB-FDUSD_15m.txt'.
+2025-02-15 04:00:17,424 - __main__ - INFO - Função calculate_price_variation executada em 0.00s
+2025-02-15 04:00:17,430 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+2025-02-15 04:00:17,431 - __main__ - INFO - Relatório operacional consolidado gerado com sucesso.
+2025-02-15 04:00:17,490 - __main__ - INFO - Função generate_transition_matrix executada em 0.06s
+2025-02-15 04:00:17,491 - __main__ - INFO - Função normalize_transition_matrix executada em 0.00s
+2025-02-15 04:00:17,503 - __main__ - INFO - Função calculate_state_durations executada em 0.01s
+2025-02-15 04:00:17,503 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:17,509 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+2025-02-15 04:00:17,510 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:17,510 - __main__ - INFO - Função build_user_friendly_report executada em 0.00s
+2025-02-15 04:00:17,510 - __main__ - INFO - Relatório para SHIB/FDUSD salvo em 'report/report_DVI_L_SHIB-FDUSD_15m.txt'.
+2025-02-15 04:00:17,513 - __main__ - INFO - Função calculate_price_variation executada em 0.00s
+2025-02-15 04:00:17,519 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+2025-02-15 04:00:17,519 - __main__ - INFO - Relatório operacional consolidado gerado com sucesso.
+2025-02-15 04:00:17,519 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:17,520 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:17,525 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+/opt/jimsp.github.io/DVIBatch.py:688: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "data": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
+2025-02-15 04:00:17,526 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:17,526 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:17,532 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+/opt/jimsp.github.io/DVIBatch.py:688: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "data": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
+2025-02-15 04:00:17,532 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:17,533 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:17,539 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+/opt/jimsp.github.io/DVIBatch.py:688: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "data": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
+/opt/jimsp.github.io/DVIBatch.py:898: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now = datetime.datetime.utcnow()
+2025-02-15 04:00:17,540 - __main__ - INFO - Relatório JSON gerado para SHIB/FDUSD: frontend/json/2025/02/15/SHIB-FDUSD/report_HMM_multitimeframe_SHIB-FDUSD_15m_20250215T040017.json
+2025-02-15 04:00:17,540 - __main__ - INFO - Arquivo data/LUNC-USDT_15mTOHCLV.csv encontrado. Carregando dados do CSV ...
+2025-02-15 04:00:17,594 - __main__ - INFO - Função load_or_fetch_data executada em 0.05s
+2025-02-15 04:00:17,692 - __main__ - INFO - Função calculate_dvi executada em 0.09s
+2025-02-15 04:00:17,708 - __main__ - INFO - Função generate_transition_matrix executada em 0.01s
+2025-02-15 04:00:17,709 - __main__ - INFO - Função normalize_transition_matrix executada em 0.00s
+2025-02-15 04:00:17,721 - __main__ - INFO - Função calculate_state_durations executada em 0.01s
+2025-02-15 04:00:17,721 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:17,727 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+2025-02-15 04:00:17,727 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:17,728 - __main__ - INFO - Função build_user_friendly_report executada em 0.00s
+2025-02-15 04:00:17,728 - __main__ - INFO - Relatório para LUNC/USDT salvo em 'report/report_DVI_C_LUNC-USDT_15m.txt'.
+2025-02-15 04:00:17,731 - __main__ - INFO - Função calculate_price_variation executada em 0.00s
+2025-02-15 04:00:17,737 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+2025-02-15 04:00:17,737 - __main__ - INFO - Relatório operacional consolidado gerado com sucesso.
+2025-02-15 04:00:17,801 - __main__ - INFO - Função generate_transition_matrix executada em 0.06s
+2025-02-15 04:00:17,802 - __main__ - INFO - Função normalize_transition_matrix executada em 0.00s
+2025-02-15 04:00:17,815 - __main__ - INFO - Função calculate_state_durations executada em 0.01s
+2025-02-15 04:00:17,815 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:17,822 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+2025-02-15 04:00:17,823 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:17,823 - __main__ - INFO - Função build_user_friendly_report executada em 0.00s
+2025-02-15 04:00:17,823 - __main__ - INFO - Relatório para LUNC/USDT salvo em 'report/report_DVI_M_LUNC-USDT_15m.txt'.
+2025-02-15 04:00:17,826 - __main__ - INFO - Função calculate_price_variation executada em 0.00s
+2025-02-15 04:00:17,833 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+2025-02-15 04:00:17,833 - __main__ - INFO - Relatório operacional consolidado gerado com sucesso.
+2025-02-15 04:00:17,889 - __main__ - INFO - Função generate_transition_matrix executada em 0.06s
+2025-02-15 04:00:17,891 - __main__ - INFO - Função normalize_transition_matrix executada em 0.00s
+2025-02-15 04:00:17,905 - __main__ - INFO - Função calculate_state_durations executada em 0.01s
+2025-02-15 04:00:17,905 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:17,913 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+2025-02-15 04:00:17,914 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:17,914 - __main__ - INFO - Função build_user_friendly_report executada em 0.00s
+2025-02-15 04:00:17,914 - __main__ - INFO - Relatório para LUNC/USDT salvo em 'report/report_DVI_L_LUNC-USDT_15m.txt'.
+2025-02-15 04:00:17,917 - __main__ - INFO - Função calculate_price_variation executada em 0.00s
+2025-02-15 04:00:17,924 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+2025-02-15 04:00:17,925 - __main__ - INFO - Relatório operacional consolidado gerado com sucesso.
+2025-02-15 04:00:17,925 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:17,925 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:17,931 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+/opt/jimsp.github.io/DVIBatch.py:688: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "data": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
+2025-02-15 04:00:17,932 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:17,932 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:17,938 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.01s
+/opt/jimsp.github.io/DVIBatch.py:688: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "data": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
+2025-02-15 04:00:17,938 - __main__ - INFO - Função calculate_regime_duration executada em 0.00s
+2025-02-15 04:00:17,939 - __main__ - INFO - Função get_time_analysis_for_regime executada em 0.00s
+2025-02-15 04:00:17,995 - __main__ - INFO - Função predict_next_regimes_with_same_direction executada em 0.06s
+/opt/jimsp.github.io/DVIBatch.py:688: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "data": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
+/opt/jimsp.github.io/DVIBatch.py:898: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now = datetime.datetime.utcnow()
+2025-02-15 04:00:17,996 - __main__ - INFO - Relatório JSON gerado para LUNC/USDT: frontend/json/2025/02/15/LUNC-USDT/report_HMM_multitimeframe_LUNC-USDT_15m_20250215T040017.json
+2025-02-15 04:00:18,002 - __main__ - INFO - Função build_tree executada em 0.01s
+2025-02-15 04:00:18,002 - __main__ - INFO - Função build_tree executada em 0.00s
+2025-02-15 04:00:18,003 - __main__ - INFO - Main JSON directory structure updated: frontend/json/main.json
+2025-02-15 04:00:18,004 - __main__ - INFO - Função update_main_json executada em 0.01s
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Regime Alta_Baixa_Alto ausente no índice. Encerrando.
+Regime Alta_Baixa_Alto ausente no índice. Encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
+Probabilidade acumulada muito baixa, encerrando.
