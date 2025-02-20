@@ -761,7 +761,7 @@ def main():
             continue
         
         filename = f"{symbol.replace('/', '-')}_{TIMEFRAME}TOHCLV.csv"
-        df.to_csv(os.path.join("data", filename))
+        df.tail(10000).to_csv(os.path.join("data", filename))
         
         df, encoder_c, encoder_m, encoder_l, risk_management = calculate_dvi(df)
         if df.empty:
