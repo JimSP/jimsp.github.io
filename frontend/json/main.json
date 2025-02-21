@@ -1765,6 +1765,58 @@
                         ]
                     }
                 },
+                "21": {
+                    "PEPE-USDT": {
+                        "files": [
+                            "2025/02/21/PEPE-USDT/report_HMM_multitimeframe_PEPE-USDT_15m_20250221T000013.json"
+                        ]
+                    },
+                    "BONK-USDT": {
+                        "files": [
+                            "2025/02/21/BONK-USDT/report_HMM_multitimeframe_BONK-USDT_15m_20250221T000016.json"
+                        ]
+                    },
+                    "1000SATS-USDT": {
+                        "files": [
+                            "2025/02/21/1000SATS-USDT/report_HMM_multitimeframe_1000SATS-USDT_15m_20250221T000017.json"
+                        ]
+                    },
+                    "BTTC-USDT": {
+                        "files": [
+                            "2025/02/21/BTTC-USDT/report_HMM_multitimeframe_BTTC-USDT_15m_20250221T000015.json"
+                        ]
+                    },
+                    "LUNC-USDT": {
+                        "files": [
+                            "2025/02/21/LUNC-USDT/report_HMM_multitimeframe_LUNC-USDT_15m_20250221T000018.json"
+                        ]
+                    },
+                    "SHIB-USDT": {
+                        "files": [
+                            "2025/02/21/SHIB-USDT/report_HMM_multitimeframe_SHIB-USDT_15m_20250221T000014.json"
+                        ]
+                    },
+                    "PEPE-FDUSD": {
+                        "files": [
+                            "2025/02/21/PEPE-FDUSD/report_HMM_multitimeframe_PEPE-FDUSD_15m_20250221T000017.json"
+                        ]
+                    },
+                    "FLOKI-USDT": {
+                        "files": [
+                            "2025/02/21/FLOKI-USDT/report_HMM_multitimeframe_FLOKI-USDT_15m_20250221T000016.json"
+                        ]
+                    },
+                    "XEC-USDT": {
+                        "files": [
+                            "2025/02/21/XEC-USDT/report_HMM_multitimeframe_XEC-USDT_15m_20250221T000019.json"
+                        ]
+                    },
+                    "NEIRO-USDT": {
+                        "files": [
+                            "2025/02/21/NEIRO-USDT/report_HMM_multitimeframe_NEIRO-USDT_15m_20250221T000019.json"
+                        ]
+                    }
+                },
                 "16": {
                     "PEPE-USDT": {
                         "files": [
