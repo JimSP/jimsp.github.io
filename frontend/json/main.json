@@ -2625,12 +2625,14 @@
                             "2025/02/27/PEPE-USDT/report_HMM_multitimeframe_PEPE-USDT_15m_20250227T010014.json",
                             "2025/02/27/PEPE-USDT/report_HMM_multitimeframe_PEPE-USDT_15m_20250227T000012.json",
                             "2025/02/27/PEPE-USDT/report_HMM_multitimeframe_PEPE-USDT_15m_20250227T060011.json",
+                            "2025/02/27/PEPE-USDT/report_HMM_multitimeframe_PEPE-USDT_15m_20250227T180011.json",
                             "2025/02/27/PEPE-USDT/report_HMM_multitimeframe_PEPE-USDT_15m_20250227T080013.json"
                         ]
                     },
                     "BONK-USDT": {
                         "files": [
                             "2025/02/27/BONK-USDT/report_HMM_multitimeframe_BONK-USDT_15m_20250227T160012.json",
+                            "2025/02/27/BONK-USDT/report_HMM_multitimeframe_BONK-USDT_15m_20250227T180013.json",
                             "2025/02/27/BONK-USDT/report_HMM_multitimeframe_BONK-USDT_15m_20250227T010016.json",
                             "2025/02/27/BONK-USDT/report_HMM_multitimeframe_BONK-USDT_15m_20250227T130014.json",
                             "2025/02/27/BONK-USDT/report_HMM_multitimeframe_BONK-USDT_15m_20250227T110014.json",
@@ -2652,6 +2654,7 @@
                     },
                     "1000SATS-USDT": {
                         "files": [
+                            "2025/02/27/1000SATS-USDT/report_HMM_multitimeframe_1000SATS-USDT_15m_20250227T180015.json",
                             "2025/02/27/1000SATS-USDT/report_HMM_multitimeframe_1000SATS-USDT_15m_20250227T050016.json",
                             "2025/02/27/1000SATS-USDT/report_HMM_multitimeframe_1000SATS-USDT_15m_20250227T100014.json",
                             "2025/02/27/1000SATS-USDT/report_HMM_multitimeframe_1000SATS-USDT_15m_20250227T090016.json",
@@ -2684,6 +2687,7 @@
                             "2025/02/27/BTTC-USDT/report_HMM_multitimeframe_BTTC-USDT_15m_20250227T020014.json",
                             "2025/02/27/BTTC-USDT/report_HMM_multitimeframe_BTTC-USDT_15m_20250227T080014.json",
                             "2025/02/27/BTTC-USDT/report_HMM_multitimeframe_BTTC-USDT_15m_20250227T010016.json",
+                            "2025/02/27/BTTC-USDT/report_HMM_multitimeframe_BTTC-USDT_15m_20250227T180013.json",
                             "2025/02/27/BTTC-USDT/report_HMM_multitimeframe_BTTC-USDT_15m_20250227T120015.json",
                             "2025/02/27/BTTC-USDT/report_HMM_multitimeframe_BTTC-USDT_15m_20250227T130014.json",
                             "2025/02/27/BTTC-USDT/report_HMM_multitimeframe_BTTC-USDT_15m_20250227T070014.json",
@@ -2710,6 +2714,7 @@
                             "2025/02/27/SHIB-FDUSD/report_HMM_multitimeframe_SHIB-FDUSD_15m_20250227T170017.json",
                             "2025/02/27/SHIB-FDUSD/report_HMM_multitimeframe_SHIB-FDUSD_15m_20250227T040017.json",
                             "2025/02/27/SHIB-FDUSD/report_HMM_multitimeframe_SHIB-FDUSD_15m_20250227T010020.json",
+                            "2025/02/27/SHIB-FDUSD/report_HMM_multitimeframe_SHIB-FDUSD_15m_20250227T180017.json",
                             "2025/02/27/SHIB-FDUSD/report_HMM_multitimeframe_SHIB-FDUSD_15m_20250227T120019.json",
                             "2025/02/27/SHIB-FDUSD/report_HMM_multitimeframe_SHIB-FDUSD_15m_20250227T160016.json",
                             "2025/02/27/SHIB-FDUSD/report_HMM_multitimeframe_SHIB-FDUSD_15m_20250227T030018.json",
@@ -2747,7 +2752,8 @@
                             "2025/02/27/SHIB-USDT/report_HMM_multitimeframe_SHIB-USDT_15m_20250227T040013.json",
                             "2025/02/27/SHIB-USDT/report_HMM_multitimeframe_SHIB-USDT_15m_20250227T070013.json",
                             "2025/02/27/SHIB-USDT/report_HMM_multitimeframe_SHIB-USDT_15m_20250227T000013.json",
-                            "2025/02/27/SHIB-USDT/report_HMM_multitimeframe_SHIB-USDT_15m_20250227T060012.json"
+                            "2025/02/27/SHIB-USDT/report_HMM_multitimeframe_SHIB-USDT_15m_20250227T060012.json",
+                            "2025/02/27/SHIB-USDT/report_HMM_multitimeframe_SHIB-USDT_15m_20250227T180012.json"
                         ]
                     },
                     "PEPE-FDUSD": {
@@ -2762,6 +2768,7 @@
                             "2025/02/27/PEPE-FDUSD/report_HMM_multitimeframe_PEPE-FDUSD_15m_20250227T160013.json",
                             "2025/02/27/PEPE-FDUSD/report_HMM_multitimeframe_PEPE-FDUSD_15m_20250227T110014.json",
                             "2025/02/27/PEPE-FDUSD/report_HMM_multitimeframe_PEPE-FDUSD_15m_20250227T170013.json",
+                            "2025/02/27/PEPE-FDUSD/report_HMM_multitimeframe_PEPE-FDUSD_15m_20250227T180014.json",
                             "2025/02/27/PEPE-FDUSD/report_HMM_multitimeframe_PEPE-FDUSD_15m_20250227T090014.json",
                             "2025/02/27/PEPE-FDUSD/report_HMM_multitimeframe_PEPE-FDUSD_15m_20250227T060013.json",
                             "2025/02/27/PEPE-FDUSD/report_HMM_multitimeframe_PEPE-FDUSD_15m_20250227T120016.json",
@@ -2776,6 +2783,7 @@
                         "files": [
                             "2025/02/27/FLOKI-USDT/report_HMM_multitimeframe_FLOKI-USDT_15m_20250227T000015.json",
                             "2025/02/27/FLOKI-USDT/report_HMM_multitimeframe_FLOKI-USDT_15m_20250227T070015.json",
+                            "2025/02/27/FLOKI-USDT/report_HMM_multitimeframe_FLOKI-USDT_15m_20250227T180015.json",
                             "2025/02/27/FLOKI-USDT/report_HMM_multitimeframe_FLOKI-USDT_15m_20250227T010017.json",
                             "2025/02/27/FLOKI-USDT/report_HMM_multitimeframe_FLOKI-USDT_15m_20250227T170015.json",
                             "2025/02/27/FLOKI-USDT/report_HMM_multitimeframe_FLOKI-USDT_15m_20250227T060014.json",
@@ -2797,6 +2805,7 @@
                     "XEC-USDT": {
                         "files": [
                             "2025/02/27/XEC-USDT/report_HMM_multitimeframe_XEC-USDT_15m_20250227T120019.json",
+                            "2025/02/27/XEC-USDT/report_HMM_multitimeframe_XEC-USDT_15m_20250227T180017.json",
                             "2025/02/27/XEC-USDT/report_HMM_multitimeframe_XEC-USDT_15m_20250227T100016.json",
                             "2025/02/27/XEC-USDT/report_HMM_multitimeframe_XEC-USDT_15m_20250227T080018.json",
                             "2025/02/27/XEC-USDT/report_HMM_multitimeframe_XEC-USDT_15m_20250227T160016.json",
@@ -2823,6 +2832,7 @@
                             "2025/02/27/NEIRO-USDT/report_HMM_multitimeframe_NEIRO-USDT_15m_20250227T120018.json",
                             "2025/02/27/NEIRO-USDT/report_HMM_multitimeframe_NEIRO-USDT_15m_20250227T060016.json",
                             "2025/02/27/NEIRO-USDT/report_HMM_multitimeframe_NEIRO-USDT_15m_20250227T140017.json",
+                            "2025/02/27/NEIRO-USDT/report_HMM_multitimeframe_NEIRO-USDT_15m_20250227T180016.json",
                             "2025/02/27/NEIRO-USDT/report_HMM_multitimeframe_NEIRO-USDT_15m_20250227T040017.json",
                             "2025/02/27/NEIRO-USDT/report_HMM_multitimeframe_NEIRO-USDT_15m_20250227T150021.json",
                             "2025/02/27/NEIRO-USDT/report_HMM_multitimeframe_NEIRO-USDT_15m_20250227T090017.json",
