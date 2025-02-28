@@ -1,0 +1,237 @@
+{
+    "relatorio_C": {
+        "data": "2025-02-28 20:00:13",
+        "regime_atual": {
+            "titulo_janela": "Curto Prazo",
+            "direcao": "Alta",
+            "volatilidade": "Baixa",
+            "interesse": "Alto",
+            "tempo_consecutivos": "75 minutos consecutivos"
+        },
+        "analise_tempo": {
+            "duracao_media_historica": "0.00 minutos",
+            "duracao_maxima_historica": "0 minutos",
+            "mensagem": "Não há estatísticas de duração para este regime."
+        },
+        "probabilidade": {
+            "direcao": {
+                "Neutra": "0.00%",
+                "Queda": "0.00%",
+                "Alta": "0.00%"
+            },
+            "volatilidade": {
+                "Moderada": "53.26%",
+                "Baixa": "40.22%",
+                "Alta": "6.52%"
+            },
+            "interesse": {
+                "Moderado": "35.87%",
+                "Baixo": "58.70%",
+                "Alto": "5.43%"
+            }
+        },
+        "previsao_direcao": [
+            {
+                "passo": 1,
+                "regime_atual": "Alta",
+                "proximo_regime": "Alta",
+                "probabilidade_sequencia": "0.00%",
+                "tempo_medio_acumulado": "0.00 minutos"
+            }
+        ]
+    },
+    "relatorio_M": {
+        "data": "2025-02-28 20:00:13",
+        "regime_atual": {
+            "titulo_janela": "Médio Prazo",
+            "direcao": "Alta",
+            "volatilidade": "Moderada",
+            "interesse": "Alto",
+            "tempo_consecutivos": "0 minutos consecutivos"
+        },
+        "analise_tempo": {
+            "duracao_media_historica": "0.00 minutos",
+            "duracao_maxima_historica": "0 minutos",
+            "mensagem": "Não há estatísticas de duração para este regime."
+        },
+        "probabilidade": {
+            "direcao": {
+                "Queda": "0.00%",
+                "Neutra": "30.00%",
+                "Alta": "70.00%"
+            },
+            "volatilidade": {
+                "Moderada": "53.26%",
+                "Baixa": "40.22%",
+                "Alta": "6.52%"
+            },
+            "interesse": {
+                "Moderado": "35.87%",
+                "Baixo": "58.70%",
+                "Alto": "5.43%"
+            }
+        },
+        "previsao_direcao": [
+            {
+                "passo": 1,
+                "regime_atual": "Alta",
+                "proximo_regime": "Alta",
+                "probabilidade_sequencia": "30.00%",
+                "tempo_medio_acumulado": "0.00 minutos"
+            },
+            {
+                "passo": 2,
+                "regime_atual": "Alta",
+                "proximo_regime": "Alta",
+                "probabilidade_sequencia": "7.20%",
+                "tempo_medio_acumulado": "0.00 minutos"
+            },
+            {
+                "passo": 3,
+                "regime_atual": "Alta",
+                "proximo_regime": "Alta",
+                "probabilidade_sequencia": "1.73%",
+                "tempo_medio_acumulado": "0.00 minutos"
+            },
+            {
+                "passo": 4,
+                "regime_atual": "Alta",
+                "proximo_regime": "Alta",
+                "probabilidade_sequencia": "0.41%",
+                "tempo_medio_acumulado": "0.00 minutos"
+            },
+            {
+                "passo": 5,
+                "regime_atual": "Alta",
+                "proximo_regime": "Alta",
+                "probabilidade_sequencia": "0.10%",
+                "tempo_medio_acumulado": "0.00 minutos"
+            }
+        ]
+    },
+    "relatorio_L": {
+        "data": "2025-02-28 20:00:13",
+        "regime_atual": {
+            "titulo_janela": "Longo Prazo",
+            "direcao": "Alta",
+            "volatilidade": "Moderada",
+            "interesse": "Alto",
+            "tempo_consecutivos": "0 minutos consecutivos"
+        },
+        "analise_tempo": {
+            "duracao_media_historica": "0.00 minutos",
+            "duracao_maxima_historica": "0 minutos",
+            "mensagem": "Não há estatísticas de duração para este regime."
+        },
+        "probabilidade": {
+            "direcao": {
+                "Neutra": "25.00%",
+                "Queda": "0.00%",
+                "Alta": "75.00%"
+            },
+            "volatilidade": {
+                "Moderada": "53.26%",
+                "Baixa": "40.22%",
+                "Alta": "6.52%"
+            },
+            "interesse": {
+                "Moderado": "35.87%",
+                "Baixo": "58.70%",
+                "Alto": "5.43%"
+            }
+        },
+        "previsao_direcao": [
+            {
+                "passo": 1,
+                "regime_atual": "Alta",
+                "proximo_regime": "Alta",
+                "probabilidade_sequencia": "25.00%",
+                "tempo_medio_acumulado": "0.00 minutos"
+            },
+            {
+                "passo": 2,
+                "regime_atual": "Alta",
+                "proximo_regime": "Alta",
+                "probabilidade_sequencia": "13.89%",
+                "tempo_medio_acumulado": "0.00 minutos"
+            },
+            {
+                "passo": 3,
+                "regime_atual": "Alta",
+                "proximo_regime": "Alta",
+                "probabilidade_sequencia": "7.72%",
+                "tempo_medio_acumulado": "0.00 minutos"
+            },
+            {
+                "passo": 4,
+                "regime_atual": "Alta",
+                "proximo_regime": "Alta",
+                "probabilidade_sequencia": "4.29%",
+                "tempo_medio_acumulado": "0.00 minutos"
+            },
+            {
+                "passo": 5,
+                "regime_atual": "Alta",
+                "proximo_regime": "Alta",
+                "probabilidade_sequencia": "2.38%",
+                "tempo_medio_acumulado": "0.00 minutos"
+            },
+            {
+                "passo": 6,
+                "regime_atual": "Alta",
+                "proximo_regime": "Alta",
+                "probabilidade_sequencia": "1.32%",
+                "tempo_medio_acumulado": "0.00 minutos"
+            },
+            {
+                "passo": 7,
+                "regime_atual": "Alta",
+                "proximo_regime": "Alta",
+                "probabilidade_sequencia": "0.74%",
+                "tempo_medio_acumulado": "0.00 minutos"
+            },
+            {
+                "passo": 8,
+                "regime_atual": "Alta",
+                "proximo_regime": "Alta",
+                "probabilidade_sequencia": "0.41%",
+                "tempo_medio_acumulado": "0.00 minutos"
+            },
+            {
+                "passo": 9,
+                "regime_atual": "Alta",
+                "proximo_regime": "Alta",
+                "probabilidade_sequencia": "0.23%",
+                "tempo_medio_acumulado": "0.00 minutos"
+            },
+            {
+                "passo": 10,
+                "regime_atual": "Alta",
+                "proximo_regime": "Alta",
+                "probabilidade_sequencia": "0.13%",
+                "tempo_medio_acumulado": "0.00 minutos"
+            },
+            {
+                "passo": 11,
+                "regime_atual": "Alta",
+                "proximo_regime": "Alta",
+                "probabilidade_sequencia": "0.07%",
+                "tempo_medio_acumulado": "0.00 minutos"
+            }
+        ]
+    },
+    "gerenciamento_risco_global": {
+        "regime_global": {
+            "direcao_global": "Alta",
+            "volatilidade_global": "Moderada",
+            "interesse_global": "Alto",
+            "prob_direcao_global": 0.585
+        },
+        "risk_management": {
+            "recommended_action": "BUY",
+            "recommended_size": 1.0,
+            "entry_price": 1.919e-05,
+            "expected_var": 1.268957631198849
+        }
+    }
+}
