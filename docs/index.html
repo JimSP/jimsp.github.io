@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,6 +19,19 @@
       --shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
       --font-mono: 'Roboto Mono', monospace;
       --font-display: 'Playfair Display', serif;
+      --code-background: #f4f4f4; /* Light theme code background */
+    }
+    [data-theme="dark"] {
+      --primary-color: #8776FF;
+      --secondary-color: #6A44F2;
+      --accent-color: #9F7AEA;
+      --text-color: #F1F5F9;
+      --text-light: #CBD5E1;
+      --background-color: #1A1B26;
+      --background-secondary: #24283B;
+      --card-background: #282D3E;
+      --border-color: #3F4865;
+      --code-background: #333333; /* Dark theme code background */
     }
     body {
       font-family: var(--font-mono);
@@ -31,6 +44,7 @@
     header {
       text-align: center;
       padding: 4rem 2rem;
+      position: relative;
     }
     .logo-title {
       font-size: 3.5rem;
@@ -39,6 +53,18 @@
       background-clip: text;
       color: transparent;
       margin-bottom: 1rem;
+    }
+    .theme-toggle {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: var(--border-radius);
+      background-color: var(--primary-color);
+      color: #fff;
+      cursor: pointer;
+      font-size: 0.9rem;
     }
     section {
       max-width: 1200px;
@@ -66,7 +92,7 @@
     }
     code {
       font-family: var(--font-mono);
-      background: #f4f4f4;
+      background: var(--code-background);
       padding: 0.2rem 0.4rem;
       border-radius: 4px;
     }
@@ -92,11 +118,26 @@
       color: var(--text-light);
     }
   </style>
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+      }
+    })();
+    function toggleTheme() {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    }
+  </script>
 </head>
 <body>
   <header>
     <h1 class="logo-title">ene3xt.ai API Documentation</h1>
     <p>Developer Guide – POST Endpoint (v1.0)</p>
+    <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
   </header>
 
   <section>
@@ -150,9 +191,9 @@
         <ul>
           <li>List of business rules. Each rule must include:
             <ul>
-              <li><code>ruleName</code> (e.g., <code>"CalcularDesconto${entityName}"</code>)</li>
+              <li><code>ruleName</code> (e.g., <code>"CalcularDescontoProduto"</code>)</li>
               <li><code>description</code> (e.g., <code>"calculate discount for products"</code>)</li>
-              <li><code>ruleInput</code> (e.g., <code>"${packageName}.domains.${entityName}Domain"</code>)</li>
+              <li><code>ruleInput</code> (e.g., <code>"br.com.myapp.domains.ProdutoDomain"</code>)</li>
               <li><code>ruleOutput</code> (e.g., <code>"java.lang.Double"</code> or <code>"java.lang.Void"</code>)</li>
               <li><code>llmGeneratedLogic</code> – Instruction for generating the rule’s code snippet.</li>
               <li><code>javaFunctionalInterface</code> and <code>javaFuncionalIntefaceMethodName</code> – Define the functional interface and its method name.</li>
@@ -162,7 +203,7 @@
       </li>
       <li><strong>domainDescriptor</strong> and <strong>dtoDescriptor</strong>:
         <ul>
-          <li>Define the domain and DTO attributes, respectively (including validations like maximum length).</li>
+          <li>Define the domain and DTO attributes, respectively (including validations such as maximum length).</li>
         </ul>
       </li>
     </ul>
@@ -175,7 +216,7 @@
       <li><strong>templates (TemplateDTO):</strong>
         <ul>
           <li><em>Required Fields:</em> <code>name</code> and <code>content</code>.</li>
-          <li><em>Example:</em> A test template (e.g., <code>"templates/entity_test.ftl"</code>) with its FreeMarker content.</li>
+          <li><em>Example:</em> A custom test template, e.g., <code>"templates/entity_test.ftl"</code> with its FreeMarker content.</li>
         </ul>
       </li>
       <li><strong>standardTemplates (TemplateDescriptor):</strong>
@@ -185,13 +226,14 @@
       </li>
       <li><strong>rulesTemplates (TemplateDescriptor):</strong>
         <ul>
-          <li><em>Required:</em> At least one template for business rules (e.g., <code>"rule_port.ftl"</code>). These must include "rule" in the name.</li>
+          <li><em>Required:</em> At least one business rule template, e.g., <code>"rule_port.ftl"</code>. These must include "rule" in the name.</li>
         </ul>
       </li>
     </ul>
 
     <h3>Example Payload</h3>
     <pre>
+{
   "entityDescriptor": {
     "packageName": "br.com.myapp",
     "entityName": "Produto",
@@ -200,16 +242,16 @@
       "tableName": "produtos",
       "attributes": [
         {"name": "id", "type": "java.lang.Long", "primaryKey": true, "required": null, "maxLength": null, "generatedValue": true, "columnDefinition": null},
-        {"name": "nome", "type": "java.lang.String", "primaryKey": null, "required": true, "maxLength": null, "generatedValue": null, "columnDefinition": "VARCHAR(100)"},
-        {"name": "descricao", "type": "java.lang.String", "primaryKey": null, "required": true, "maxLength": null, "generatedValue": null, "columnDefinition": null},
-        {"name": "preco", "type": "java.lang.Double", "primaryKey": null, "required": true, "maxLength": null, "generatedValue": null, "columnDefinition": null}
+        {"name": "nome", "type": "java.lang.String", "primaryKey": false, "required": true, "maxLength": null, "generatedValue": false, "columnDefinition": "VARCHAR(100)"},
+        {"name": "descricao", "type": "java.lang.String", "primaryKey": false, "required": true, "maxLength": null, "generatedValue": false, "columnDefinition": null},
+        {"name": "preco", "type": "java.lang.Double", "primaryKey": false, "required": true, "maxLength": null, "generatedValue": false, "columnDefinition": null}
       ]
     },
     "rulesDescriptor": [
       {
-        "ruleName": "CalcularDesconto${entityName}",
+        "ruleName": "CalcularDescontoProduto",
         "description": "calculate discount for products",
-        "ruleInput": "${packageName}.domains.${entityName}Domain",
+        "ruleInput": "br.com.myapp.domains.ProdutoDomain",
         "ruleAdditionalInput": null,
         "ruleOutput": "java.lang.Double",
         "llmGeneratedLogic": "Implement discount logic for method applyDiscount: apply a 10% discount if price > 100. Return only the code snippet.",
@@ -217,9 +259,9 @@
         "javaFuncionalIntefaceMethodName": "apply"
       },
       {
-        "ruleName": "Despachar${entityName}",
+        "ruleName": "DespacharProduto",
         "description": "dispatch products for delivery",
-        "ruleInput": "${packageName}.domains.${entityName}Domain",
+        "ruleInput": "br.com.myapp.domains.ProdutoDomain",
         "ruleAdditionalInput": null,
         "ruleOutput": "java.lang.Void",
         "llmGeneratedLogic": "System.out.println(domain)",
@@ -227,44 +269,43 @@
         "javaFuncionalIntefaceMethodName": "accept"
       }
     ],
-    "attributesMap": null,
     "domainDescriptor": {
       "attributes": [
-        {"name": "id", "type": "java.lang.Long", "primaryKey": null, "required": null, "maxLength": null, "generatedValue": null, "columnDefinition": null},
-        {"name": "nome", "type": "java.lang.String", "primaryKey": null, "required": null, "maxLength": null, "generatedValue": null, "columnDefinition": null},
-        {"name": "descricao", "type": "java.lang.String", "primaryKey": null, "required": null, "maxLength": null, "generatedValue": null, "columnDefinition": null},
-        {"name": "preco", "type": "java.lang.Double", "primaryKey": null, "required": null, "maxLength": null, "generatedValue": null, "columnDefinition": null}
+        {"name": "id", "type": "java.lang.Long"},
+        {"name": "nome", "type": "java.lang.String"},
+        {"name": "descricao", "type": "java.lang.String"},
+        {"name": "preco", "type": "java.lang.Double"}
       ]
     },
     "dtoDescriptor": {
       "attributes": [
-        {"name": "id", "type": "java.lang.Long", "primaryKey": null, "required": null, "maxLength": null, "generatedValue": null, "columnDefinition": null},
-        {"name": "nome", "type": "java.lang.String", "primaryKey": null, "required": true, "maxLength": 100, "generatedValue": null, "columnDefinition": null},
-        {"name": "descricao", "type": "java.lang.String", "primaryKey": null, "required": true, "maxLength": null, "generatedValue": null, "columnDefinition": null},
-        {"name": "preco", "type": "java.lang.Double", "primaryKey": null, "required": null, "maxLength": null, "generatedValue": null, "columnDefinition": null}
+        {"name": "id", "type": "java.lang.Long"},
+        {"name": "nome", "type": "java.lang.String", "required": true, "maxLength": 100},
+        {"name": "descricao", "type": "java.lang.String", "required": true},
+        {"name": "preco", "type": "java.lang.Double"}
       ]
     }
   },
   "templates": [
     {
       "name": "templates/entity_test.ftl",
-      "content": "<#import \"testValueModule.ftl\" as testValues>\n\npackage ${packageName}.entities;\n\nimport org.junit.jupiter.api.Test;\nimport static org.junit.jupiter.api.Assertions.*;\n\nclass ${entityName}EntityTest {\n    @Test\n    void test${entityName}EntityGettersAndSetters() {\n        final ${entityName}Entity entity = new ${entityName}Entity();\n        <#list jpaDescriptor.attributes as attribute>\n        final ${attribute.type} ${attribute.name}Value = <@testValues.generateTestValue attribute.type />;\n        entity.set${attribute.name?cap_first}(${attribute.name}Value);\n        assertEquals(${attribute.name}Value, entity.get${attribute.name?cap_first}());\n        </#list>\n    }\n}\n"
+      "content": "<#import \"testValueModule.ftl\" as testValues>\n\npackage br.com.myapp.entities;\n\nimport org.junit.jupiter.api.Test;\nimport static org.junit.jupiter.api.Assertions.*;\n\nclass ProdutoEntityTest {\n  @Test\n  void testProdutoEntityGettersAndSetters() {\n    final ProdutoEntity entity = new ProdutoEntity();\n    <#list jpaDescriptor.attributes as attribute>\n      final ${attribute.type} ${attribute.name}Value = <@testValues.generateTestValue attribute.type />;\n      entity.set${attribute.name?cap_first}(${attribute.name}Value);\n      assertEquals(${attribute.name}Value, entity.get${attribute.name?cap_first}());\n    </#list>\n  }\n}\n"
     },
     {
       "name": "templates/dto.ftl",
-      "content": "package ${packageName}.dtos;\n\nimport com.fasterxml.jackson.annotation.JsonProperty;\nimport com.fasterxml.jackson.databind.annotation.JsonDeserialize;\n\nimport lombok.AccessLevel;\nimport lombok.Builder;\nimport lombok.Value;\n\nimport jakarta.validation.constraints.*;\n\n@Value\n@Builder(access = AccessLevel.PUBLIC, toBuilder = true)\n@JsonDeserialize(builder = ${entityName}DTO.${entityName}DTOBuilder.class)\npublic class ${entityName}DTO {\n    <#if dtoDescriptor?? && dtoDescriptor.attributes?? && (dtoDescriptor.attributes?size > 0)>\n        <#list dtoDescriptor.attributes as attribute>\n            <#if attribute.required?? && attribute.required>\n            @NotNull(message = \"${attribute.name} is required\")\n            </#if>\n            <#if attribute.maxLength??>\n            @Size(max = ${attribute.maxLength}, message = \"${attribute.name} cannot exceed ${attribute.maxLength} characters\")\n            </#if>\n            @JsonProperty\n            ${attribute.type} ${attribute.name};\n        </#list>\n    </#if>\n}\n"
+      "content": "package br.com.myapp.dtos;\n\nimport com.fasterxml.jackson.annotation.JsonProperty;\nimport com.fasterxml.jackson.databind.annotation.JsonDeserialize;\n\nimport lombok.AccessLevel;\nimport lombok.Builder;\nimport lombok.Value;\n\nimport jakarta.validation.constraints.*;\n\n@Value\n@Builder(access = AccessLevel.PUBLIC, toBuilder = true)\n@JsonDeserialize(builder = ProdutoDTO.ProdutoDTOBuilder.class)\npublic class ProdutoDTO {\n  <#list dtoDescriptor.attributes as attribute>\n    <#if attribute.required>\n      @NotNull(message = \"${attribute.name} is required\")\n    </#if>\n    <#if attribute.maxLength>\n      @Size(max = ${attribute.maxLength}, message = \"${attribute.name} cannot exceed ${attribute.maxLength} characters\")\n    </#if>\n    @JsonProperty\n    ${attribute.type} ${attribute.name};\n  </#list>\n}\n"
     }
   ],
   "standardTemplates": [
     {
       "templateName": "application.ftl",
-      "outputPathPattern": "generated/src/main/java/${packageName}/${entityName}Application.java",
+      "outputPathPattern": "generated/src/main/java/br/com/myapp/ProdutoApplication.java",
       "dataModelKey": "domain",
       "additionalData": {"author": "Alexandre M S Lima", "date": "2024-10-26"}
     },
     {
       "templateName": "entity.ftl",
-      "outputPathPattern": "generated/src/main/java/${packageName}/entities/${entityName}Entity.java",
+      "outputPathPattern": "generated/src/main/java/br/com/myapp/entities/ProdutoEntity.java",
       "dataModelKey": "jpa",
       "additionalData": {"author": "Alexandre M S Lima", "date": "2024-10-26"}
     }
@@ -272,7 +313,7 @@
   "rulesTemplates": [
     {
       "templateName": "rule_port.ftl",
-      "outputPathPattern": "generated/src/main/java/${packageName}/rules/${ruleName}RulePort.java",
+      "outputPathPattern": "generated/src/main/java/br/com/myapp/rules/CalcularDescontoProdutoRulePort.java",
       "dataModelKey": "jpa",
       "additionalData": null
     }
@@ -280,7 +321,7 @@
 }
     </pre>
     <p class="note">
-      <strong>Note:</strong> The example includes inline explanations for clarity. In practice, comments should not be part of the JSON.
+      <strong>Note:</strong> This example includes inline explanations. In practice, remove any comments from the JSON.
     </p>
   </section>
 
@@ -289,39 +330,37 @@
     <ol>
       <li>
         <strong>Conversion &amp; Validation:</strong>
-        <p>The JSON payload is converted into a <code>Genhex4jDTO</code> object and validated using annotations (<code>@NotNull</code>, <code>@NotEmpty</code>, etc.).</p>
+        <p>The JSON payload is converted into a <code>Genhex4jDTO</code> object and validated using annotations (e.g., <code>@NotNull</code>, <code>@NotEmpty</code>).</p>
       </li>
       <li>
         <strong>Credentials Extraction:</strong>
-        <p>Headers are processed by the <code>headersToLLmCredencial</code> method to create a <code>LLMCredencials</code> object. If credentials are included in the payload, header values take precedence.</p>
+        <p>Headers are processed by the <code>headersToLLmCredencial</code> method to create a <code>LLMCredencials</code> object. Header credentials override payload values if both are provided.</p>
       </li>
       <li>
         <strong>Template Processing:</strong>
         <p>
-          The three sets of templates (<code>templates</code>, <code>standardTemplates</code>, and <code>rulesTemplates</code>) are passed to the <code>generateCode</code> method along with the <code>entityDescriptor</code>. The template engine (e.g., FreeMarker) processes each template by replacing variables (like <code>${packageName}</code> and <code>${entityName}</code>) with the provided values.
+          The three sets of templates (<code>templates</code>, <code>standardTemplates</code>, and <code>rulesTemplates</code>) are passed to the <code>generateCode</code> method along with the <code>entityDescriptor</code>. The template engine (e.g., FreeMarker) processes each template by replacing variables (e.g., "br.com.myapp" and "Produto") with the provided values.
         </p>
         <p>
           <strong>Required Templates:</strong> At minimum, you must provide:
         </p>
         <ul>
-          <li><code>templates</code>: Any additional custom templates.</li>
-          <li><code>standardTemplates</code>: At least <code>"application.ftl"</code> and <code>"entity.ftl"</code>.</li>
-          <li><code>rulesTemplates</code>: At least one rule template (e.g., <code>"rule_port.ftl"</code>).</li>
+          <li><code>templates</code>: Additional custom templates.</li>
+          <li><code>standardTemplates</code>: At least "application.ftl" and "entity.ftl" (must not include "rule" in the name).</li>
+          <li><code>rulesTemplates</code>: At least one business rule template (e.g., "rule_port.ftl"; must include "rule" in the name).</li>
         </ul>
-        <p>
-          Omitting any required template set may result in incomplete project generation.
-        </p>
+        <p>Omitting any required template set may result in incomplete project generation.</p>
       </li>
       <li>
         <strong>Project Generation:</strong>
         <p>
-          Processed templates are assembled into a structured project, then compressed into a ZIP archive. The <code>generateCode</code> method returns a <code>Pair&lt;String, byte[]&gt;</code> where <code>byte[]</code> represents the ZIP file.
+          Processed templates are assembled into a structured project, then compressed into a ZIP archive. The <code>generateCode</code> method returns a <code>Pair&lt;String, byte[]&gt;</code> where the <code>byte[]</code> represents the ZIP file.
         </p>
       </li>
       <li>
         <strong>Response Creation:</strong>
         <p>
-          The byte array is wrapped in a <code>ResponseEntity&lt;byte[]&gt;</code> via the <code>createResponse</code> method, setting <code>Content-Type: application/octet-stream</code> for download.
+          The byte array is wrapped in a <code>ResponseEntity&lt;byte[]&gt;</code> via the <code>createResponse</code> method, with <code>Content-Type: application/octet-stream</code> for download.
         </p>
       </li>
     </ol>
@@ -354,7 +393,7 @@
         <strong>Credentials Precedence:</strong> Header-provided credentials override those in the payload.
       </li>
       <li>
-        <strong>Usage Examples:</strong> Refer to our cURL/Postman examples in the repository documentation for step-by-step usage.
+        <strong>Usage Examples:</strong> Refer to our cURL/Postman examples in our repository documentation for step-by-step usage.
       </li>
       <li>
         <strong>FAQ &amp; Sandbox Environment:</strong> Visit our FAQ section and sandbox environment for testing without impacting production.
