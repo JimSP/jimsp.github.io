@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ene3xt.ai API Documentation – POST Endpoint (v1.0)</title>
+  <style>
+    :root {
+      --primary-color: #6A44F2;
+      --secondary-color: #4A30A3;
+      --accent-color: #8776FF;
+      --text-color: #2D2B38;
+      --text-light: #6B6B6B;
+      --background-color: #FFFFFF;
+      --background-secondary: #F8F9FA;
+      --card-background: #FFFFFF;
+      --border-color: #E5E7EB;
+      --border-radius: 8px;
+      --shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      --font-mono: 'Roboto Mono', monospace;
+      --font-display: 'Playfair Display', serif;
+    }
+    body {
+      font-family: var(--font-mono);
+      background-color: var(--background-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    .logo-title {
+      font-size: 3.5rem;
+      background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 1rem;
+    }
+    section {
+      max-width: 1200px;
+      margin: 0 auto 2rem auto;
+      padding: 2rem;
+      background-color: var(--card-background);
+      border: 1px solid var(--border-color);
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+    }
+    h2 {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    h3, h4 {
+      font-family: var(--font-display);
+      margin-top: 1.5rem;
+    }
+    pre {
+      background: var(--background-secondary);
+      padding: 1rem;
+      border-radius: var(--border-radius);
+      overflow-x: auto;
+    }
+    code {
+      font-family: var(--font-mono);
+      background: #f4f4f4;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+    }
+    ul {
+      list-style: disc;
+      margin-left: 2rem;
+    }
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: var(--background-secondary);
+      border-top: 1px solid var(--border-color);
+    }
+    .note {
+      font-size: 0.9em;
+      color: var(--text-light);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="logo-title">ene3xt.ai API Documentation</h1>
+    <p>Developer Guide – POST Endpoint (v1.0)</p>
+  </header>
+
+  <section>
+    <h2>1. Overview</h2>
+    <p>
+      The POST endpoint generates a complete Java project based on the submitted data. The system integrates domain definitions, business rules, and templates to build the project. The final output is a binary file (typically a ZIP archive) containing the generated code.
+    </p>
+    <p class="note">
+      For further details, please refer to our repository documentation.
+    </p>
+  </section>
+
+  <section>
+    <h2>2. Request</h2>
+    <h3>2.1 Headers</h3>
+    <p>
+      The following headers are required for configuring the LLM service integration (e.g., OpenAI or an alternative model):
+    </p>
+    <ul>
+      <li><strong>OPENAI-API-KEY:</strong> Access key for the LLM service.</li>
+      <li><strong>OPENAI-BASE-URL:</strong> Base URL for LLM service requests.</li>
+      <li><strong>CHAT-OPTIONS-MODEL:</strong> Processing model (e.g., <code>meta-llama/llama-4-scout-17b-16e-instruct</code>).</li>
+      <li><strong>CHAT-OPTIONS-TEMPERATURE:</strong> Temperature value (e.g., <code>0.7</code>).</li>
+      <li><strong>CHAT-OPTIONS-TOP_P:</strong> Top_p parameter (default: <code>1.0</code>).</li>
+    </ul>
+    <p class="note">
+      If credentials are provided in both headers and payload, header values take precedence.
+    </p>
+
+    <h3>2.2 Payload</h3>
+    <p>
+      The request body must follow the structure of the <code>Genhex4jDTO</code> object and include the following elements:
+    </p>
+    
+    <h4>a) <code>credentials</code></h4>
+    <p>
+      <em>(Optional in payload – used for testing)</em>
+    </p>
+    <ul>
+      <li><strong>openAiApiKey:</strong> e.g., <code>"gsk_mVsDt75yB8Aaz...ArZID"</code></li>
+      <li><strong>openAiBaseUrl:</strong> e.g., <code>"https://api.groq.com/openai"</code></li>
+      <li><strong>chatOptionsModel:</strong> e.g., <code>"meta-llama/llama-4-scout-17b-16e-instruct"</code></li>
+      <li><strong>chatOptionsTemperature:</strong> e.g., <code>"0.7"</code></li>
+    </ul>
+
+    <h4>b) <code>entityDescriptor</code></h4>
+    <ul>
+      <li><strong>packageName:</strong> e.g., <code>"br.com.myapp"</code></li>
+      <li><strong>entityName:</strong> e.g., <code>"Produto"</code></li>
+      <li><strong>systemPrompt:</strong> A command instructing code generation. Example:
+        <br><code>"You are a Java software engineer specialized in Clean Code, SOLID, DDD, and Hexagonal Architecture. Generate only the requested code snippet without class definitions, imports, or extra comments. Generate only the method body."</code>
+      </li>
+      <li><strong>jpaDescriptor:</strong>
+        <ul>
+          <li><strong>tableName:</strong> e.g., <code>"produtos"</code></li>
+          <li><strong>attributes:</strong> A list of entity attributes. Each attribute must include:
+            <ul>
+              <li><code>name</code> (e.g., <code>"id"</code>, <code>"nome"</code>, etc.)</li>
+              <li><code>type</code> (e.g., <code>"java.lang.Long"</code>, <code>"java.lang.String"</code>, etc.)</li>
+              <li>Other properties: <code>primaryKey</code>, <code>required</code>, <code>generatedValue</code>, <code>columnDefinition</code>.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><strong>rulesDescriptor:</strong>
+        <ul>
+          <li>List of business rules. Each rule must include:
+            <ul>
+              <li><code>ruleName</code> (e.g., <code>"CalcularDesconto${entityName}"</code>)</li>
+              <li><code>description</code> (e.g., <code>"calculate discount for products"</code>)</li>
+              <li><code>ruleInput</code> (e.g., <code>"${packageName}.domains.${entityName}Domain"</code>)</li>
+              <li><code>ruleOutput</code> (e.g., <code>"java.lang.Double"</code> or <code>"java.lang.Void"</code>)</li>
+              <li><code>llmGeneratedLogic</code> – Instruction for generating the rule’s code snippet.</li>
+              <li><code>javaFunctionalInterface</code> and <code>javaFuncionalIntefaceMethodName</code> – Define the functional interface and its method name.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><strong>domainDescriptor</strong> and <strong>dtoDescriptor</strong>:
+        <ul>
+          <li>Define the domain and DTO attributes, respectively (including validations like maximum length).</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h4>c) Templates</h4>
+    <p>
+      The payload must include three sets of templates:
+    </p>
+    <ul>
+      <li><strong>templates (TemplateDTO):</strong>
+        <ul>
+          <li><em>Required Fields:</em> <code>name</code> and <code>content</code>.</li>
+          <li><em>Example:</em> A test template (e.g., <code>"templates/entity_test.ftl"</code>) with its FreeMarker content.</li>
+        </ul>
+      </li>
+      <li><strong>standardTemplates (TemplateDescriptor):</strong>
+        <ul>
+          <li><em>Required:</em> At least the core templates (e.g., <code>"application.ftl"</code> and <code>"entity.ftl"</code>). These must NOT contain "rule" in the name.</li>
+        </ul>
+      </li>
+      <li><strong>rulesTemplates (TemplateDescriptor):</strong>
+        <ul>
+          <li><em>Required:</em> At least one template for business rules (e.g., <code>"rule_port.ftl"</code>). These must include "rule" in the name.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h3>Example Payload</h3>
+    <pre>
+{
+  "credentials": {
+    "openAiApiKey": "gsk_mVsDt75yB8Aaz...ArZID",
+    "openAiBaseUrl": "https://api.groq.com/openai",
+    "chatOptionsModel": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "chatOptionsTemperature": "0.7"
+  },
+  "entityDescriptor": {
+    "packageName": "br.com.myapp",
+    "entityName": "Produto",
+    "systemPrompt": "You are a Java software engineer specialized in Clean Code, SOLID, DDD, and Hexagonal Architecture. Generate only the requested code snippet without class definitions, imports, or extra comments. Generate only the method body.",
+    "jpaDescriptor": {
+      "tableName": "produtos",
+      "attributes": [
+        {"name": "id", "type": "java.lang.Long", "primaryKey": true, "required": null, "maxLength": null, "generatedValue": true, "columnDefinition": null},
+        {"name": "nome", "type": "java.lang.String", "primaryKey": null, "required": true, "maxLength": null, "generatedValue": null, "columnDefinition": "VARCHAR(100)"},
+        {"name": "descricao", "type": "java.lang.String", "primaryKey": null, "required": true, "maxLength": null, "generatedValue": null, "columnDefinition": null},
+        {"name": "preco", "type": "java.lang.Double", "primaryKey": null, "required": true, "maxLength": null, "generatedValue": null, "columnDefinition": null}
+      ]
+    },
+    "rulesDescriptor": [
+      {
+        "ruleName": "CalcularDesconto${entityName}",
+        "description": "calculate discount for products",
+        "ruleInput": "${packageName}.domains.${entityName}Domain",
+        "ruleAdditionalInput": null,
+        "ruleOutput": "java.lang.Double",
+        "llmGeneratedLogic": "Implement discount logic for method applyDiscount: apply a 10% discount if price > 100. Return only the code snippet.",
+        "javaFunctionalInterface": "java.util.function.Function",
+        "javaFuncionalIntefaceMethodName": "apply"
+      },
+      {
+        "ruleName": "Despachar${entityName}",
+        "description": "dispatch products for delivery",
+        "ruleInput": "${packageName}.domains.${entityName}Domain",
+        "ruleAdditionalInput": null,
+        "ruleOutput": "java.lang.Void",
+        "llmGeneratedLogic": "System.out.println(domain)",
+        "javaFunctionalInterface": "java.util.function.Consumer",
+        "javaFuncionalIntefaceMethodName": "accept"
+      }
+    ],
+    "attributesMap": null,
+    "domainDescriptor": {
+      "attributes": [
+        {"name": "id", "type": "java.lang.Long", "primaryKey": null, "required": null, "maxLength": null, "generatedValue": null, "columnDefinition": null},
+        {"name": "nome", "type": "java.lang.String", "primaryKey": null, "required": null, "maxLength": null, "generatedValue": null, "columnDefinition": null},
+        {"name": "descricao", "type": "java.lang.String", "primaryKey": null, "required": null, "maxLength": null, "generatedValue": null, "columnDefinition": null},
+        {"name": "preco", "type": "java.lang.Double", "primaryKey": null, "required": null, "maxLength": null, "generatedValue": null, "columnDefinition": null}
+      ]
+    },
+    "dtoDescriptor": {
+      "attributes": [
+        {"name": "id", "type": "java.lang.Long", "primaryKey": null, "required": null, "maxLength": null, "generatedValue": null, "columnDefinition": null},
+        {"name": "nome", "type": "java.lang.String", "primaryKey": null, "required": true, "maxLength": 100, "generatedValue": null, "columnDefinition": null},
+        {"name": "descricao", "type": "java.lang.String", "primaryKey": null, "required": true, "maxLength": null, "generatedValue": null, "columnDefinition": null},
+        {"name": "preco", "type": "java.lang.Double", "primaryKey": null, "required": null, "maxLength": null, "generatedValue": null, "columnDefinition": null}
+      ]
+    }
+  },
+  "templates": [
+    {
+      "name": "templates/entity_test.ftl",
+      "content": "<#import \"testValueModule.ftl\" as testValues>\n\npackage ${packageName}.entities;\n\nimport org.junit.jupiter.api.Test;\nimport static org.junit.jupiter.api.Assertions.*;\n\nclass ${entityName}EntityTest {\n    @Test\n    void test${entityName}EntityGettersAndSetters() {\n        final ${entityName}Entity entity = new ${entityName}Entity();\n        <#list jpaDescriptor.attributes as attribute>\n        final ${attribute.type} ${attribute.name}Value = <@testValues.generateTestValue attribute.type />;\n        entity.set${attribute.name?cap_first}(${attribute.name}Value);\n        assertEquals(${attribute.name}Value, entity.get${attribute.name?cap_first}());\n        </#list>\n    }\n}\n"
+    },
+    {
+      "name": "templates/dto.ftl",
+      "content": "package ${packageName}.dtos;\n\nimport com.fasterxml.jackson.annotation.JsonProperty;\nimport com.fasterxml.jackson.databind.annotation.JsonDeserialize;\n\nimport lombok.AccessLevel;\nimport lombok.Builder;\nimport lombok.Value;\n\nimport jakarta.validation.constraints.*;\n\n@Value\n@Builder(access = AccessLevel.PUBLIC, toBuilder = true)\n@JsonDeserialize(builder = ${entityName}DTO.${entityName}DTOBuilder.class)\npublic class ${entityName}DTO {\n    <#if dtoDescriptor?? && dtoDescriptor.attributes?? && (dtoDescriptor.attributes?size > 0)>\n        <#list dtoDescriptor.attributes as attribute>\n            <#if attribute.required?? && attribute.required>\n            @NotNull(message = \"${attribute.name} is required\")\n            </#if>\n            <#if attribute.maxLength??>\n            @Size(max = ${attribute.maxLength}, message = \"${attribute.name} cannot exceed ${attribute.maxLength} characters\")\n            </#if>\n            @JsonProperty\n            ${attribute.type} ${attribute.name};\n        </#list>\n    </#if>\n}\n"
+    }
+  ],
+  "standardTemplates": [
+    {
+      "templateName": "application.ftl",
+      "outputPathPattern": "generated/src/main/java/${packageName}/${entityName}Application.java",
+      "dataModelKey": "domain",
+      "additionalData": {"author": "Alexandre M S Lima", "date": "2024-10-26"}
+    },
+    {
+      "templateName": "entity.ftl",
+      "outputPathPattern": "generated/src/main/java/${packageName}/entities/${entityName}Entity.java",
+      "dataModelKey": "jpa",
+      "additionalData": {"author": "Alexandre M S Lima", "date": "2024-10-26"}
+    }
+  ],
+  "rulesTemplates": [
+    {
+      "templateName": "rule_port.ftl",
+      "outputPathPattern": "generated/src/main/java/${packageName}/rules/${ruleName}RulePort.java",
+      "dataModelKey": "jpa",
+      "additionalData": null
+    }
+  ]
+}
+    </pre>
+    <p class="note">
+      <strong>Note:</strong> The example includes inline explanations for clarity. In practice, comments should not be part of the JSON.
+    </p>
+  </section>
+
+  <section>
+    <h2>3. Processing Flow</h2>
+    <ol>
+      <li>
+        <strong>Conversion &amp; Validation:</strong>
+        <p>The JSON payload is converted into a <code>Genhex4jDTO</code> object and validated using annotations (<code>@NotNull</code>, <code>@NotEmpty</code>, etc.).</p>
+      </li>
+      <li>
+        <strong>Credentials Extraction:</strong>
+        <p>Headers are processed by the <code>headersToLLmCredencial</code> method to create a <code>LLMCredencials</code> object. If credentials are included in the payload, header values take precedence.</p>
+      </li>
+      <li>
+        <strong>Template Processing:</strong>
+        <p>
+          The three sets of templates (<code>templates</code>, <code>standardTemplates</code>, and <code>rulesTemplates</code>) are passed to the <code>generateCode</code> method along with the <code>entityDescriptor</code>. The template engine (e.g., FreeMarker) processes each template by replacing variables (like <code>${packageName}</code> and <code>${entityName}</code>) with the provided values.
+        </p>
+        <p>
+          <strong>Required Templates:</strong> At minimum, you must provide:
+        </p>
+        <ul>
+          <li><code>templates</code>: Any additional custom templates.</li>
+          <li><code>standardTemplates</code>: At least <code>"application.ftl"</code> and <code>"entity.ftl"</code>.</li>
+          <li><code>rulesTemplates</code>: At least one rule template (e.g., <code>"rule_port.ftl"</code>).</li>
+        </ul>
+        <p>
+          Omitting any required template set may result in incomplete project generation.
+        </p>
+      </li>
+      <li>
+        <strong>Project Generation:</strong>
+        <p>
+          Processed templates are assembled into a structured project, then compressed into a ZIP archive. The <code>generateCode</code> method returns a <code>Pair&lt;String, byte[]&gt;</code> where <code>byte[]</code> represents the ZIP file.
+        </p>
+      </li>
+      <li>
+        <strong>Response Creation:</strong>
+        <p>
+          The byte array is wrapped in a <code>ResponseEntity&lt;byte[]&gt;</code> via the <code>createResponse</code> method, setting <code>Content-Type: application/octet-stream</code> for download.
+        </p>
+      </li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>4. Expected Response</h2>
+    <ul>
+      <li><strong>HTTP Status:</strong> 200 OK</li>
+      <li><strong>Content-Type:</strong> <code>application/octet-stream</code></li>
+      <li><strong>Body:</strong> A byte array representing the generated ZIP archive.</li>
+    </ul>
+    <p>
+      <strong>Error Handling:</strong> Common error responses include:
+    </p>
+    <ul>
+      <li><code>400 Bad Request</code> – Invalid payload or missing required fields.</li>
+      <li><code>500 Internal Server Error</code> – Processing errors during code generation.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>5. Developer Considerations</h2>
+    <ul>
+      <li>
+        <strong>Payload Limits &amp; Processing Time:</strong> 
+        <p>Payload size should not exceed 1MB. Average processing time is ~10 seconds, with a maximum of 30 seconds.</p>
+      </li>
+      <li>
+        <strong>Credentials Precedence:</strong> Header-provided credentials override those in the payload.
+      </li>
+      <li>
+        <strong>Usage Examples:</strong> Refer to our cURL/Postman examples in the repository documentation for step-by-step usage.
+      </li>
+      <li>
+        <strong>FAQ &amp; Sandbox Environment:</strong> Visit our FAQ section and sandbox environment for testing without impacting production.
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>6. Step-by-Step Workflow</h2>
+    <ol>
+      <li>Prepare your JSON payload with the required domain, rules, and templates data.</li>
+      <li>Ensure headers are set with valid LLM credentials.</li>
+      <li>Send the POST request to the API endpoint.</li>
+      <li>On success, download and extract the returned ZIP file to review the generated project.</li>
+    </ol>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 ene3xt.ai – Developer Documentation (v1.0)</p>
+  </footer>
+</body>
+</html>
