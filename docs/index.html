@@ -127,22 +127,7 @@
     </p>
 
     <h3>2.2 Payload</h3>
-    <p>
-      The request body must follow the structure of the <code>Genhex4jDTO</code> object and include the following elements:
-    </p>
-    
-    <h4>a) <code>credentials</code></h4>
-    <p>
-      <em>(Optional in payload – used for testing)</em>
-    </p>
-    <ul>
-      <li><strong>openAiApiKey:</strong> e.g., <code>"gsk_mVsDt75yB8Aaz...ArZID"</code></li>
-      <li><strong>openAiBaseUrl:</strong> e.g., <code>"https://api.groq.com/openai"</code></li>
-      <li><strong>chatOptionsModel:</strong> e.g., <code>"meta-llama/llama-4-scout-17b-16e-instruct"</code></li>
-      <li><strong>chatOptionsTemperature:</strong> e.g., <code>"0.7"</code></li>
-    </ul>
-
-    <h4>b) <code>entityDescriptor</code></h4>
+    <h4>a) <code>entityDescriptor</code></h4>
     <ul>
       <li><strong>packageName:</strong> e.g., <code>"br.com.myapp"</code></li>
       <li><strong>entityName:</strong> e.g., <code>"Produto"</code></li>
@@ -182,7 +167,7 @@
       </li>
     </ul>
 
-    <h4>c) Templates</h4>
+    <h4>b) Templates</h4>
     <p>
       The payload must include three sets of templates:
     </p>
@@ -207,13 +192,6 @@
 
     <h3>Example Payload</h3>
     <pre>
-{
-  "credentials": {
-    "openAiApiKey": "gsk_mVsDt75yB8Aaz...ArZID",
-    "openAiBaseUrl": "https://api.groq.com/openai",
-    "chatOptionsModel": "meta-llama/llama-4-scout-17b-16e-instruct",
-    "chatOptionsTemperature": "0.7"
-  },
   "entityDescriptor": {
     "packageName": "br.com.myapp",
     "entityName": "Produto",
